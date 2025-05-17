@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="criar-conta/style.css" />
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+  </head>
+
+  <body>
+    <div id="tela" class="telacriarconta">
+      <div id="imagem">
+        <img src="" alt="" />
+      </div>
+      <div id="dados">
+        <div id="dados1">
+          <input type="text" placeholder="Nome completo" />
+        </div>
+        <div id="dados2">
+          <input type="text" placeholder="Email ID" />
+        </div>
+        <div id="dados3">
+          <input type="password" placeholder="Senha" id="senha1" />
+          <i onclick ="toggleSenha()"  class ="mdi mdi-eye" id="olho1"></i>
+        </div>
+        <div id="dados4">
+          <input type="password" placeholder="Confirmar senha" id="senha2"/>
+          <i  onclick="toggleSenha2()" class="mdi mdi-eye" id="olho2"></i>
+        </div>
+      </div>
+      <div id="botaocriarconta">
+        <button id="botaocriar" onclick="mostrartela(event)">Criar</button>
+      </div>
+    </div>
+
+    <script src="criar-conta/criarconta.js"></script>
+  </body>
+</html>

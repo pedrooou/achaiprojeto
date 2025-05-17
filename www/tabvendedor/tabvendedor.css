@@ -1,0 +1,35 @@
+
+body{
+  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  height: 100dvh;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+#tab_bar {
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    border: none;
+    position: absolute;
+}
+
+#tab_bar button {
+flex: 1;
+color: white;
+border: none;
+color: black;
+}
+
+iframe {
+    height: 94.49%;
+    border: none;
+    width: 100%;
+}
