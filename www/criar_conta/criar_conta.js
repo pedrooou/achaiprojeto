@@ -33,7 +33,7 @@ function toggleSenha2() {
 
 function mostrartela(event) {
     tela.classList.add("sair"); tela.addEventListener("animationend", function aoFinalSair() {
-    window.location.href = "tabvendedor.html";
+    window.location.href = "../tabcomprador/telaTabComprador/telaTabComprador/tabcomprador.html";
     });
   };
 

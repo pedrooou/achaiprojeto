@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.Sair2 = function(event) {
     tela.classList.add("sair");
     tela.addEventListener("animationend", function aoFinalSair() {
-      window.location.href = "criar_conta.html";
+      window.location.href = "criar_conta/criar_conta.html";
     });
   };
 });

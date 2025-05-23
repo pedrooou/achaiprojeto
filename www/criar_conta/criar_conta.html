@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="criar-conta/style.css" />
-    <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="criar_conta.css" />
+    <link rel="stylesheet" href="../tabcomprador/telaTabComprador/telaTabComprador/tabcomprador.html" />
   </head>
 
   <body>
@@ -29,11 +29,18 @@
           <i  onclick="toggleSenha2()" class="mdi mdi-eye" id="olho2"></i>
         </div>
       </div>
+      <div id="tipo_de_app">
+        <label>tipo</label>
+      <select id="">
+        <option id="opcao1" value="1">Vendedor</option>
+        <option  id="opcao2" value="2">Comprador</option>
+      </select>
+    </div>
       <div id="botaocriarconta">
         <button id="botaocriar" onclick="mostrartela(event)">Criar</button>
       </div>
     </div>
 
-    <script src="criar-conta/criarconta.js"></script>
+    <script src="criar_conta.js"></script>
   </body>
 </html>

@@ -40,6 +40,37 @@ position: relative;
   max-width: 100%;
   
 }
+
+#tipo_de_app{
+  padding-top: 10px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#tipo_de_app label{
+  padding-right: 12px;
+  padding-left: 15px;
+  color: #9A7F98;
+  font-size: 17px;
+}
+
+#tipo_de_app select {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #a2a2a211;
+  border: none;
+  color: #9a7f98;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  outline: none;
+}
+
+#opcao1, #opcao2{
+  background:#a2a2a211;
+  color: #9a7f98;
+}
  
 @keyframes slideUp { 
 from { transform: translateX(100%); }
