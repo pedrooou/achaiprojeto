@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="criar_conta.css" />
-    <link rel="stylesheet" href="../tabcomprador/telaTabComprador/telaTabComprador/tabcomprador.html" />
+    <link rel="stylesheet" href="../css/materialdesignicons.min.css" />
   </head>
 
   <body>
@@ -15,27 +15,40 @@
       </div>
       <div id="dados">
         <div id="dados1">
-          <input type="text" placeholder="Nome completo" />
+          <input type="text" required />
+          <label id="label1" class="labels">nome completo</label>
         </div>
         <div id="dados2">
-          <input type="text" placeholder="Email ID" />
+          <input type="text" required />
+          <label id="label2" class="labels">email ID</label>
         </div>
         <div id="dados3">
-          <input type="password" placeholder="Senha" id="senha1" />
-          <i onclick ="toggleSenha()"  class ="mdi mdi-eye" id="olho1"></i>
+          <input type="password" id="senha1" required />
+          <label id="label3" class="labels">senha</label>
+          <i onclick="toggleSenha()" class="mdi mdi-eye" id="olho1"></i>
         </div>
         <div id="dados4">
-          <input type="password" placeholder="Confirmar senha" id="senha2"/>
-          <i  onclick="toggleSenha2()" class="mdi mdi-eye" id="olho2"></i>
+          <input type="password" id="senha2" required />
+          <label id="label4" class="labels">confirmar senha</label>
+          <i onclick="toggleSenha2()" class="mdi mdi-eye" id="olho2"></i>
         </div>
       </div>
-      <div id="tipo_de_app">
-        <label>tipo</label>
-      <select id="">
-        <option id="opcao1" value="1">Vendedor</option>
-        <option  id="opcao2" value="2">Comprador</option>
-      </select>
-    </div>
+      <div id="selecao">
+        <div id="categoria-selecao">
+
+          <div id="caixa-de-selecao" class="caixa-selecao">
+            <label id="selecoes">selecione o tipo</label>
+            <div id="chevrons">
+              <i class="mdi mdi-chevron-down"></i>
+            </div>
+           
+          </div>
+           <ul>
+              <li class="opcoes" id="opcao1">comprador</li>
+              <li class="opcoes" id="opcao2">vendedor</li>
+            </ul>
+        </div>
+      </div>
       <div id="botaocriarconta">
         <button id="botaocriar" onclick="mostrartela(event)">Criar</button>
       </div>

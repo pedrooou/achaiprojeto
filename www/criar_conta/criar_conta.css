@@ -20,7 +20,7 @@ overflow: hidden;
 display: flex;
 justify-content: center;
 align-items: center;
-background: linear-gradient(to bottom right,#190423, #480049) ;
+background: linear-gradient( to bottom, #faf3fe, #f3e7fa);
 position: relative;
 }
 
@@ -29,7 +29,7 @@ position: relative;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);
   padding: 10px;
-  background: rgba(255, 255, 255, 0.05);
+  background: #f6e5fe;
   border-radius: 20px;
   animation: slideUp 0.5s forwards ease-in-out;
   justify-content: center;
@@ -41,36 +41,6 @@ position: relative;
   
 }
 
-#tipo_de_app{
-  padding-top: 10px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-#tipo_de_app label{
-  padding-right: 12px;
-  padding-left: 15px;
-  color: #9A7F98;
-  font-size: 17px;
-}
-
-#tipo_de_app select {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: #a2a2a211;
-  border: none;
-  color: #9a7f98;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(15px);
-  outline: none;
-}
-
-#opcao1, #opcao2{
-  background:#a2a2a211;
-  color: #9a7f98;
-}
  
 @keyframes slideUp { 
 from { transform: translateX(100%); }
@@ -91,7 +61,7 @@ to { transform: translateX(-200%); }
   color: #9a7f98;
   position: absolute;
   top: 15px;
-  right: 40px;
+  right: 34.5px;
 
 
 }
@@ -99,11 +69,11 @@ to { transform: translateX(-200%); }
   color:#9a7f98;
   top: 15px;
   position: absolute;
-  right: 40px;
+  right: 34.5px;
   
 }
 
-#dados3, #dados4{
+ #dados1 ,#dados2,#dados3, #dados4{
   display: flex;
   position: relative;
 }
@@ -112,9 +82,11 @@ input {
   font-size: 13px;
   display: block;
   padding: 15px;
+  padding-bottom: 10px;
+  padding-left: 0;
   margin: 0 auto;
-  margin-bottom: 5px;
-  width: 160px;
+  margin-bottom: 20px;
+  width: 190px;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
   outline: none;
@@ -124,27 +96,121 @@ input {
   color: #9A7F98;
 }
 
+#senha2{
+  margin-bottom: 5px;
+}
+
+.labels{
+  color: #5b4766;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  transition: 0.3s;
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+}
+
+#dados #dados1 input:focus + label,
+#dados #dados1 input:valid + label, 
+#dados #dados2 input:focus + label,
+#dados #dados2 input:valid + label, 
+#dados #dados3 input:focus + label,
+#dados #dados3 input:valid + label, 
+#dados #dados4 input:focus + label,
+#dados #dados4 input:valid + label {
+  top: -10px;
+color: #2d2232;
+}
+
+
+
 #botaocriar {
-    background: linear-gradient(to bottom right,#3E234F, #480049);
+  background: #8624b7;
   margin-right:50px ;
   margin-left: 50px ;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-decoration: none;
-  background-color: black;
   border: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   text-align: center;
   font-size: 15px;
 
 
   border-radius: 20px;
   display: block;
-  color: rgb(255, 255, 255);
+color: #f6e6fe;
 }
 
 
+
+.caixa-selecao{
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  width: 190px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background: #5b4766;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.278);
+  border-radius: 20px;
+}
+
+#selecoes{
+    width: 130px;
+    padding: 2px;
+    padding-left: 4px;
+    color: #2d2232;
+    font-size: 17px;
+color: #f6e6fe;
+}
+
+.mdi-chevron-down{
+      margin-bottom: 20px;
+      padding: 0.5px;
+      padding-left: 22px;
+      font-size: 25px;
+color: #f6e6fe;
+}
+
+#categoria-selecao{
+  text-align:left;
+}
+
+.opcoes{
+  display: none;
+  list-style-type: none;
+  width: 190px;
+  margin: auto;
+  padding-left: 9px;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #5b4766;
+  color: #f6e6fe;
+  border-top: 1px solid #f6e6fe;
+}
+
+#opcao2{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.caixa-selecao2{
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  width: 190px;
+  margin: auto;
+  margin-top: 7px;
+  background: #5b4766;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.278);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}

@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       overlay.addEventListener("animationend", function aoFinalOverlay() {
         overlay.removeEventListener("animationend", aoFinalOverlay);
-        window.location.href = "link1.html";
+        window.location.href = "tabcomprador/telaTabComprador/telaTabComprador/tabcomprador.html";
       });
     });
   };

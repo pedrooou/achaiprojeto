@@ -15,26 +15,26 @@ overflow: hidden;
 display: flex;
 justify-content: center;
 align-items: center;
-background: linear-gradient(to bottom right,#190423, #480049);
+background: linear-gradient( to bottom, #faf3fe, #f3e7fa);
 position: relative;
 }
 
 
 
 #botao_entrada{
-padding-left: 40px;
-padding-right: 40px;
+padding-left: 46px;
+padding-right: 46px;
 padding-top: 15px;
 padding-bottom: 15px;
 margin-bottom: 5px;
 font-size: 15px;
 border-radius: 27px;
 margin-top: 30px;
-color: #9A7F98;  
+color: #f6e6fe;  
 margin-left: 30px;  
 margin-right: 30px;
-background: linear-gradient(to bottom right,#3E234F, #480049);
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+background: #8624b7;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 backdrop-filter: blur(15px);
 outline: none;
 -webkit-tap-highlight-color: transparent;
@@ -52,12 +52,12 @@ margin-bottom: 30px;
 border-radius: 27px;
 font-size: 15px;
 margin-top: 10px;
-background: rgba(255, 255, 255, 0.05);
-color: #9A7F98;
+background: #5b4766;
+color: #f6e6fe;
 margin-left: 30px;
 margin-right:30px;
-border: 0.7px solid #290A3C;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+border: none;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 backdrop-filter: blur(15px);
 -webkit-tap-highlight-color: transparent;
 outline: none;
@@ -78,7 +78,7 @@ background-color: #351335 ;
 color: #9A7F98;
 border: none;
 background: transparent;
-border-bottom: 1px solid #9A7F98;
+border-bottom: 1px solid #2d2232;
 outline: none;
 }
 
@@ -87,7 +87,7 @@ outline: none;
   top: 10px;
   left: 0;
   font-size: 13px;
-  color: #9A7F98;
+  color: #2d2232;
   pointer-events: none;
   transition: 0.3s;
   margin-left: 30px;
@@ -101,7 +101,7 @@ outline: none;
 #dados .dados1 input:valid + label {
 top: -10px;
 font-size: 11px;
-color: #9A7F98;
+color: #2d2232;
 }
 
 #botoes {
@@ -112,7 +112,7 @@ color: #9A7F98;
 
 .tela-de-login{
 
-  background: rgba(255, 255, 255, 0.05);
+  background: #f6e5fe;
   border-radius: 20px;
   backdrop-filter: blur(15px);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
@@ -187,7 +187,8 @@ animation: fadeBody 3s forwards ease-in-out;
   top: 7px;
   outline: none;
   font-size: 20px;
-  color: #9A7F98;
+  color: #2d2232;
+  background: transparent;
 }
 
 .mdi-eye-off{
@@ -196,5 +197,7 @@ animation: fadeBody 3s forwards ease-in-out;
   top: 7px;
   font-size: 20px;
   outline: none;
-  color: #9A7F98;
+  color:#2d2232;
+  background: transparent;
 }
+
