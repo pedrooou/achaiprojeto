@@ -11,6 +11,7 @@ body{
   padding: 0;
   height: 100dvh;
   width: 100%;
+  padding-top:200px;
 overflow: hidden;
 display: flex;
 justify-content: center;
@@ -121,6 +122,7 @@ color: #2d2232;
   position: absolute;
   max-height: 100%;
   margin: 0 auto;
+  top: 275px;
   padding-left: 0;
 }
 
