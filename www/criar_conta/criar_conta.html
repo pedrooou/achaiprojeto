@@ -11,41 +11,41 @@
   <body>
     <div id="tela" class="telacriarconta">
       <div id="imagem">
-        <img src="" alt="" />
+        <img src="../imagens/logo.png" id="logoachai"/>
       </div>
       <div id="dados">
         <div id="dados1">
           <input type="text" required />
-          <label id="label1" class="labels">nome completo</label>
+          <label id="label1" class="labels">Nome completo</label>
         </div>
         <div id="dados2">
           <input type="text" required />
-          <label id="label2" class="labels">email ID</label>
+          <label id="label2" class="labels">Email ID</label>
         </div>
         <div id="dados3">
           <input type="password" id="senha1" required />
-          <label id="label3" class="labels">senha</label>
+          <label id="label3" class="labels">Senha</label>
           <i onclick="toggleSenha()" class="mdi mdi-eye" id="olho1"></i>
         </div>
         <div id="dados4">
           <input type="password" id="senha2" required />
-          <label id="label4" class="labels">confirmar senha</label>
+          <label id="label4" class="labels">Confirmar senha</label>
           <i onclick="toggleSenha2()" class="mdi mdi-eye" id="olho2"></i>
         </div>
       </div>
       <div id="selecao">
         <div id="categoria-selecao">
 
-          <div id="caixa-selecao" class="caixa-selecao caixa-selecao2">
-            <label id="selecoes">selecione o tipo</label>
+          <div id="caixa-selecao" class="caixa-selecao caixa-selecao2" onclick="toggleOpcoes()">
+            <label id="selecoes">Selecione o tipo</label>
             <div id="chevrons">
               <i class="mdi mdi-chevron-down"></i>
             </div>
            
           </div>
            <ul>
-              <li class="opcoes" id="opcao1">comprador</li>
-              <li class="opcoes" id="opcao2">vendedor</li>
+               <li class="opcoes" id="opcao1" onclick="selecionarOpcao(this)">Comprador</li>
+               <li class="opcoes" id="opcao2" onclick="selecionarOpcao(this)">Vendedor</li>
             </ul>
         </div>
       </div>

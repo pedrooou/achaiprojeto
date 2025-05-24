@@ -8,6 +8,21 @@ html{
   overflow: hidden;
 }
 
+#imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#logoachai{
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-top: -70px;
+  margin-bottom: -100px;
+}
 
 body{
   margin: 0 ;
@@ -93,7 +108,7 @@ input {
   background: none;
   border: none;
   border-bottom: 1px solid #9a7f98;
-  color: #9A7F98;
+  color: #9a7f98;
 }
 
 #senha2{
@@ -129,7 +144,7 @@ color: #2d2232;
   margin-right:50px ;
   margin-left: 50px ;
   margin-bottom: 15px;
-  margin-top: 10px;
+  margin-top: 15px;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 15px;
@@ -149,7 +164,7 @@ color: #f6e6fe;
 
 
 .caixa-selecao{
-  transition: 2s;
+  transition: 1s;
   display: flex;
   padding-top: 7px;
   padding-bottom: 3px;
@@ -157,12 +172,12 @@ color: #f6e6fe;
   width: 190px;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 15px;
   background: #5b4766;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.278);
   border-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+
 }
 
 #selecoes{
@@ -198,9 +213,16 @@ color: #f6e6fe;
   background: #5b4766;
   color: #f6e6fe;
   border-top: 1px solid #f6e6fe;
+  
 }
 
 #opcao2{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+.caixa-selecao.aberta {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+

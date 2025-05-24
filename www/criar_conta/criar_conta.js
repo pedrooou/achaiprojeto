@@ -37,3 +37,72 @@ function mostrartela(event) {
     });
   };
 
+  // ...existing code...
+
+function toggleOpcoes() {
+  const opcoes = document.querySelectorAll('.opcoes');
+  opcoes.forEach(opcao => {
+    opcao.style.display = (opcao.style.display === 'block') ? 'none' : 'block';
+  });
+}
+
+function selecionarOpcao(elemento) {
+  document.getElementById('selecoes').textContent = elemento.textContent;
+  // Esconde as opções após selecionar
+  const opcoes = document.querySelectorAll('.opcoes');
+  opcoes.forEach(opcao => {
+    opcao.style.display = 'none';
+  });
+}
+
+// Fechar opções ao clicar fora
+document.addEventListener('click', function(e) {
+  const caixa = document.getElementById('caixa-selecao');
+  if (!caixa.contains(e.target)) {
+    const opcoes = document.querySelectorAll('.opcoes');
+    opcoes.forEach(opcao => {
+      opcao.style.display = 'none';
+    });
+  }
+});
+
+//codigo para mudar o border radius da div de seleçao
+function toggleOpcoes() {
+  const opcoes = document.querySelectorAll('.opcoes');
+  const caixa = document.getElementById('caixa-selecao');
+  let aberto = false;
+  opcoes.forEach(opcao => {
+    if (opcao.style.display === 'block') {
+      opcao.style.display = 'none';
+    } else {
+      opcao.style.display = 'block';
+      aberto = true;
+    }
+  });
+  if (aberto) {
+    caixa.classList.add('aberta');
+  } else {
+    caixa.classList.remove('aberta');
+  }
+}
+
+function selecionarOpcao(elemento) {
+  document.getElementById('selecoes').textContent = elemento.textContent;
+  const opcoes = document.querySelectorAll('.opcoes');
+  opcoes.forEach(opcao => {
+    opcao.style.display = 'none';
+  });
+  document.getElementById('caixa-selecao').classList.remove('aberta');
+}
+
+document.addEventListener('click', function(e) {
+  const caixa = document.getElementById('caixa-selecao');
+  if (!caixa.contains(e.target)) {
+    const opcoes = document.querySelectorAll('.opcoes');
+    opcoes.forEach(opcao => {
+      opcao.style.display = 'none';
+    });
+    caixa.classList.remove('aberta');
+  }
+});
+
