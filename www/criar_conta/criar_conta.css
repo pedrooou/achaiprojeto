@@ -73,7 +73,7 @@ to { transform: translateX(-200%); }
 
 
  #olho1 {
-  color: #9a7f98;
+  color: #5b4766;
   position: absolute;
   top: 15px;
   right: 34.5px;
@@ -81,7 +81,7 @@ to { transform: translateX(-200%); }
 
 }
  #olho2 {
-  color:#9a7f98;
+  color: #5b4766;
   top: 15px;
   position: absolute;
   right: 34.5px;
@@ -185,7 +185,7 @@ color: #f6e6fe;
     padding: 2px;
     padding-left: 4px;
     color: #2d2232;
-    font-size: 17px;
+    font-size: 15px;
 color: #f6e6fe;
 }
 

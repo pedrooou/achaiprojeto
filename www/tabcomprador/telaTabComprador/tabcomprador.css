@@ -16,10 +16,10 @@ body{
     display: flex;
     position: fixed;
     width: 100%;
-    background: linear-gradient(to bottom right,#3E234F, #480049);
+    background: #f6e6fe;
     bottom: 0;
     border: none;
-    height: 50px;
+    height: 65px;
 }
 
 #tab_bar button {
@@ -31,12 +31,13 @@ body{
     font-size: 15px;;
 }
 
-iframe {
+.conteudo-do-app {
     display: block;
     height:100%;
     border: none;
     margin-bottom: 50px;
     width: 100%;
+    border-bottom-left-radius: 10px;
 }
 
 #tab_bar2{
@@ -85,5 +86,64 @@ border-radius: 50%;
     border-radius: 50%;
 }
 
+#barra-superior {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #f6e6fe;
+}
+
+#icone-lupa {
+    position: absolute;
+    font-size: 30px;
+    left: 317px;
+    top: 2px;
+}
+
+#icone-perfil {
+    position: absolute;
+    font-size: 30px;
+    left: 365px;
+    top: 2px;
+}
 
 
+
+#pesquisa{
+    display: none;
+    width: 170px;
+    height:  25px;
+}
+
+#label1 {
+    display: none;
+    position: absolute;
+}
+
+ #barra-superior-esquerda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+#dis-inicio{
+    font-size: 12px;
+    position: absolute;
+    bottom: 12px;
+    left: 55px;
+}
+
+.mdi-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0;
+}  
+
+#caixa-home{
+   width: 60px;
+   height: 40px;
+   margin: auto;
+}

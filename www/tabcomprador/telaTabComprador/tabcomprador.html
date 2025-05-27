@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="tabcomprador.css" />
+  <title>tabcomprador</title>
+</head>
+
+<body>
+  <div id="barra-superior">
+    <div id="barra-superior-esquerda">
+      <input type="text" id="pesquisa" /> <label id="label1">pesquisar</label> <i id="icone-lupa"
+        class="mdi mdi-magnify"></i>
+    </div>
+    <i id="icone-perfil" class="mdi mdi-account"></i>
+  </div>
+  <iframe src="../telascomprador/tela1/tela1comprador.html" id="conteudo" class="conteudo-do-app"> </iframe>
+  <div id="tab_bar">
+    <button id="botao-home" onclick="mostrar('../telascomprador/tela1/tela1comprador.html')">
+      <div id="caixa-home">
+        <i class="mdi mdi-home"></i>
+        <label id="dis-inicio">inicio</label>
+      </div>
+    </button>
+    <button onclick="mostrar('../telascomprador/tela2/tela2comprador.html')">Mapa</button>
+    <button onclick="mostrar('../telascomprador/tela3/tela3comprador.html')">Perfil</button>
+  </div>
+
+  <script src="tabcomprador.js"></script>
+</body>
+
+</html>

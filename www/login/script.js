@@ -52,20 +52,49 @@ document.addEventListener("DOMContentLoaded", () => {
   inputSenha.addEventListener("blur", verificarFora);
 
   // Verifica se o teclado foi fechado (em dispositivos móveis)
+document.addEventListener("deviceready", () => {
+  document.addEventListener("backbutton", (e) => {
+    const campoAtivo = document.activeElement;
+    const ehInputAtivo = campoAtivo === inputEmail || campoAtivo === inputSenha;
+
+    if (ehInputAtivo) {
+      e.preventDefault();
+      campoAtivo.blur(); // fecha teclado
+
+      // Espera o teclado fechar antes de descer a tela
+      const alturaInicial = window.innerHeight;
+
+      const esperarFechamentoTeclado = setInterval(() => {
+        const alturaAtual = window.innerHeight;
+        const tecladoFechou = alturaAtual >= alturaInicial;
+
+        if (tecladoFechou) {
+          clearInterval(esperarFechamentoTeclado);
+          descerTela();
+          interagiu = false;
+        }
+      }, 100);
+    }
+  }, false);
+});
+
+
+
   window.addEventListener("resize", () => {
     const alturaAtual = window.innerHeight;
-    if (alturaAtual > alturaAnterior) {
+    if (!alturaAtual > alturaAnterior) {
       descerTela();
     }
     alturaAnterior = alturaAtual;
   });
 
+
   // Alterna visibilidade da senha e sobe tela se necessário
   olho.addEventListener("click", () => {
-    if (!tela.classList.contains("subir")) {
+    if (!tela.classList.contains ("subir")) {
       subirTela();
     }
-    inputSenha.focus();
+      inputSenha.focus();
     if (inputSenha.type === "password") {
       inputSenha.type = "text";
       olho.classList.remove("mdi-eye");
@@ -75,6 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
       olho.classList.remove("mdi-eye-off");
       olho.classList.add("mdi-eye");
     }
+  
   });
 
   // Pressionar Enter desce a tela
@@ -98,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       overlay.addEventListener("animationend", function aoFinalOverlay() {
         overlay.removeEventListener("animationend", aoFinalOverlay);
-        window.location.href = "tabcomprador/telaTabComprador/telaTabComprador/tabcomprador.html";
+        window.location.href = "tabcomprador/telaTabComprador/tabcomprador.html";
       });
     });
   };
