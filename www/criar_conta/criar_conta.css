@@ -46,6 +46,7 @@ position: relative;
   padding: 10px;
   background: #f6e5fe;
   border-radius: 20px;
+  transition: 1s;
   animation: slideUp 0.5s forwards ease-in-out;
   justify-content: center;
   align-items: center;
@@ -226,3 +227,7 @@ color: #f6e6fe;
   border-bottom-right-radius: 0;
 }
 
+.caixa-sele{
+  transition: 1s;
+
+}

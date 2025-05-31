@@ -1,76 +1,77 @@
-#tab_bar {
-    display: flex;
-    background-color : #222;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: 50px;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background: #fff;
 }
 
-#tab_bar button {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    color: #9A7F97;
-    background: linear-gradient(to bottom right,#3E234F, #480049);
-    font-size: 15px;;
+.slider {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  overflow: hidden;
+  touch-action: pan-y;
 }
 
-iframe {
-    display: block;
-    height:100%;
-    border: none;
-    margin-bottom: 50px;
-    width: 100%;
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  box-sizing: border-box;
+  padding-left: 0;
 }
 
-#tab_bar2{
-    width: 100%;
-    top: 0;
-    display: flex;
-    height: 50px;
-}
+.slide {
+  flex: 0 0 70%;
+  margin-right: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 
-#tab_bar2 button {
-    flex: 1;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #4f0c4b;
-    padding: 10px 20px;
-}
-
-.barradepesquisa input {
-padding: 8px;
-font-size: 1em;
-border: none;
-border-radius: 20px;
-width: 250px;
-padding-left: 20px;
-}
-
-.mdi-account {
-    width: 40px;
-height: 40px;
-border-radius: 50%;
-font-size: 35px;
-color: #9A7F97;
-}
-
-.mdi-account {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  /* Melhor renderização */
+  backface-visibility: hidden;
+  will-change: transform;
+  transform-style: preserve-3d;
 }
 
 
+.pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
 
+.pagination span {
+  width: 12px;
+  height: 12px;
+  background:   #dac3e5;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.pagination span.active {
+  background:#8624b7;
+}
+
+#tela1{
+    background: #75e658;
+}
+
+#tela2{
+    background: #8624b7;
+}
+
+#tela3{
+    background: #75e658;
+}
