@@ -16,20 +16,215 @@ body{
     display: flex;
     width: 100%;
     bottom: 0;
-    height: 50px;
+    height: 65px;
     border: none;
-    position: absolute;
+    position: fixed;
+    background: #f6e6fe;
 }
 
 #tab_bar button {
 flex: 1;
-color: white;
+padding: 10px;
+background: none;
+color: #5b4766;
+font-size: 15px;
 border: none;
-color: black;
 }
 
 iframe {
-    height: 94.49%;
+    height: 98%;
     border: none;
     width: 100%;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 50px;
 }
+
+#tab_bar button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    color: #5b4766;
+    background: none;
+    font-size: 15px;;
+}
+
+.conteudo-do-app {
+    display: block;
+    height:100%;
+    border: none;
+    margin-bottom: 50px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+}
+
+#tab_bar2{
+    width: 100%;
+    top: 0;
+    display: flex;
+    height: 50px;
+}
+
+#tab_bar2 button {
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4f0c4b;
+    padding: 10px 20px;
+}
+
+.barradepesquisa input {
+padding: 8px;
+font-size: 1em;
+border: none;
+border-radius: 20px;
+width: 250px;
+padding-left: 20px;
+}
+
+.perfil {
+    width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+
+.perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#barra-superior {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #f6e6fe;
+    color:  #5b4766;
+}
+
+#icone-lupa {
+    position: absolute;
+    font-size: 30px;
+    left: 317px;
+    top: 7px;
+}
+
+#icone-perfil {
+    position: absolute;
+    font-size: 30px;
+    left: 365px;
+    top: 7px;
+}
+
+
+
+#pesquisa{
+    display: none;
+    width: 170px;
+    height:  25px;
+}
+
+#label1 {
+    display: none;
+    position: absolute;
+}
+
+ #barra-superior-esquerda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ /* nomes dos botões da tab*/
+
+#dis-inicio{
+    font-size: 12px;
+    display: block;
+    margin-top: -10px;
+    color: #f6e6fe;
+}
+
+ #dis-cverde{
+    font-size: 12px;
+    display: block;
+    margin-top: -7.9px;
+}
+
+#dis-pedidos{
+      font-size: 12px;
+    display: block;
+    margin-top: -5px;
+}
+
+#dis-menu{
+  font-size: 12px;
+    display: block;
+    margin-top: -8px;
+}
+
+/*Icones dos Botões*/
+
+ .mdi-home{
+    justify-content: center;
+    align-items: center;
+    color: #f6e6fe;
+    font-size: 33px;
+    margin: 0;
+} 
+
+.mdi-leaf{
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin: 0;
+}
+
+.mdi-menu{
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+ .mdi-shopping{
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    margin: 0;
+ }
+
+/*caixas dos icones*/
+
+#caixa-home, #caixa-localizar, #caixa-pedidos, #caixa-menu{
+   margin: auto;
+}
+
+#caixa-home{
+    margin-top: -2px;
+    background-color: #5b4766;
+    border-radius: 10px;
+    height: 45px;
+}
+
+ #caixa-cverde{
+    height: 45px;
+ }
+
+#sacola{
+    height: 20px;
+    width: auto;
+}
+
+
+

@@ -1,0 +1,54 @@
+.bloco-icone-texto {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço entre ícone e texto */
+    background: #f6e6fe;
+    border-radius: 10px;
+    padding: 16px 24px;
+    margin: 16px auto;
+    width: 250px; /* ajuste conforme necessário */
+    box-shadow: 0 2px 8px #0001;
+    font-size: 1.2em;
+}
+.bloco-icone-texto i {
+    font-size: 2em;
+    color: #5b4766;
+}
+
+#selo {
+    background: #f6e6fe;
+    border-radius: 10px;
+    padding-top: 16px ;
+    padding-right: 24px;
+    padding-bottom: 50px;
+    padding-left: 24px;
+    margin: 16px auto;
+    width: 250px;
+    box-shadow: 0 2px 8px #0001;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    
+}
+#selo .linha-baixo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#seloimg {
+    width: 150px;
+    height: auto;
+    left: 16px;
+    bottom: 16px;
+    margin-bottom: -100px ;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+#patente {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
