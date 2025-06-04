@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* divs do pedidos */
+.pedidos-div{
+       display: flex;
+}
+
+.pedidos-tela{
+  background: #f6e6fe ;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.logo-da-loja{
+    height: 60px;
+    width: auto;
+}
+
+.infor-data-hora{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.preco{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+
+#icone-mais{
+    font-size: 30px;
+}
+
+.organ-imagem-data-hora{
+    display: flex;
+}
+.infor-mais {
+    font-size: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    display: block; /* Mude para block para funcionar a transição */
+}
+.infor-mais.aberta {
+    max-height: 200px; /* Ajuste conforme o conteúdo */
+}

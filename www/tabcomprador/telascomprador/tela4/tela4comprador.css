@@ -58,7 +58,7 @@ body{
 }
 
 #pontos #imagem-logo{
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
@@ -80,16 +80,13 @@ body{
     height: 160px;
     width: 90%;
     margin: auto;
+    position: relative;
 }
 
-#imagem-acaizito{
-  display: flex;
-}
 
 #pontos{
     display: block;
     width: 100%;
-    position: relative;
 }
 
 #pontos-acumulados {
@@ -98,4 +95,8 @@ body{
 
 #pontos-acumulados span{
     display: flex;
+}
+
+#descricao-ponto{
+    display: block;
 }
