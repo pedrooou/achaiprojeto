@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botoesnosso {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    margin-bottom:0px;
+    justify-content: center;
+    width: 350px;
+    min-height: 50px;
+    box-sizing: border-box;
+    font-size: 30px;
+    background-color: #f6e6fe;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+#botaoquem, #botaocontato, #botaopoliticas{
+ margin-bottom: 30px;
+}
+
+#botaoquem {
+    margin-top: 40px;
+}
+
+#botaocontato {
+}
+
+#divlogo{
+    background-color: #f6e6fe; 
+    border-radius: 700px;
+    padding: 40px;
+    border: 4px solid #d1c0f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logoprincipal {
+    width: 160px;
+
+}
+
+.botoesnosso i {
+    font-size: 100px;
+    margin-right: 20px;
+    margin-left: 0;
+    color: #4d0f6c; 
+}
+
+.botoesnosso span {
+    flex: 1;
+    text-align: left;
+}

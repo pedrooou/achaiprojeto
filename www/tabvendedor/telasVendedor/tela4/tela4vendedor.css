@@ -1,0 +1,101 @@
+body{
+   margin: 0;
+   padding: 0; 
+}
+
+#tela{
+ height: 100%;
+ width: 100%;
+}
+#tela-conta{
+    border-radius: 25px;
+    background-color:#f6e6fe;
+    margin: auto;
+    height: 140px;
+    width: 90%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+#sair i{
+    display: block;
+    font-size: 90px;
+    margin-bottom: -12px;
+}
+
+#sair{
+    background: none;
+    border: none;
+    width: 70px;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+#sair span{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#sair-conta{
+    margin-top: 30px;
+    padding-top: 20px;
+    background: none;
+    border: none;
+    width: 80%;
+    display: flex;
+}
+
+#inform span{
+    display: flex;
+    font-size: 25px;
+}
+
+#inform{
+     margin-left: 50px;
+     margin-top: 5px;
+}
+
+#pontos #imagem-logo{
+    height: 40px;
+    width: auto;
+}
+
+#imagem-logo{
+  height: 70px;
+  width: auto;  
+}
+#image-logo{
+  height: 100px;
+  width: auto; 
+}
+
+#imagem1{
+    margin-left: 20px;
+    display: flex;
+}
+
+#infor-projeto{
+    height: 160px;
+    width: 90%;
+    margin: auto;
+}
+
+#imagem-acaizito{
+  display: flex;
+}
+
+#pontos{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+#pontos-acumulados {
+    margin-bottom: 10px;
+}
+
+#pontos-acumulados span{
+    display: flex;
+}
