@@ -50,9 +50,11 @@ body{
     font-size: 25px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s ease;
-    display: block; /* Mude para block para funcionar a transição */
+    display: block;
+    transition: max-height 0.3s ease; /* transição padrão de fechamento */
 }
+
 .infor-mais.aberta {
-    max-height: 200px; /* Ajuste conforme o conteúdo */
+    max-height: 200px;
+    transition: max-height 1s ease; /* transição de abertura */
 }
