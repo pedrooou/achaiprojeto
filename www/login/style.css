@@ -29,12 +29,11 @@ position: relative;
 }
 
 #logoachai{
-  width: 250px;
+  width: 170px;
   height: auto;
   border-radius: 50%;
   display: block;
-  margin-top: -70px;
-  margin-bottom: -100px;
+  margin-top: 20px;
 }
 
 #botao_entrada{
