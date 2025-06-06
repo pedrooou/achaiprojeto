@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>telamenu</title>
-    <link rel="stylesheet" href="../../../css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="tela4comprador.css">
-</head>
+    <link rel="stylesheet" href="../../../css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="tela4comprador.css" />
+  </head>
 
-<body>
+  <body>
     <div id="tela">
-        <!--div da conta / sair da conta-->
-        <!--<div id="tela1-conta" class="telas-menu">
-            <div id="sair-conta">
-                <div id="imagem1">
-                    <img id="image-logo" src="../../../imagens/logo.png" alt="logo">
-                </div>
-                <div id="inform">
-                    <span>nome</span>
-                    <span>email</span>
-                    <span>telefone</span>
-                </div>
-            </div>
-
-            <div id="sair">
-                <i class="mdi mdi-logout"></i>
-                <span>sair</span>
-            </div>
-        </div>-->
-
-        <div id="tela2-infor-projeto" class="telas-menu">
-            <div id="pontos" class="infor-projeto">
-                <span>seus pontos</span>
-                <div id="valor-ponto">
-                    <img src="../../../imagens/mascote.png" alt="mascote">
-                    <span>10.00</span>
-                </div>
-            </div>
-            <div id="central-verde" class="infor-projeto"> </div>
-            <div id="nosso-projeto" class="infor-projeto"> </div>
+      <!--div da conta / sair da conta-->
+      <div id="tela1-conta" class="telas-menu">
+        <div id="sair-conta">
+          <div id="imagem1">
+            <img id="imagem-perfil" src="../../../imagens/logo.png" alt="logo" onclick="sairParaPerfil()" />
+          </div>
+          <div id="inform">
+            <span class="spans" id="nome">nome</span>
+            <span class="spans" id="email">email</span>
+          </div>
         </div>
 
+        <div id="sair">
+          <i id="icone-sair" class="mdi mdi-logout" onclick="sairDaConta()"></i>
+        </div>
+      </div>
 
+      <div id="tela2-infor-projeto" class="telas-menu">
+        <div id="pontos" class="infor-pontos" onclick="sairParaSeusPontos()">
+          <span class="spans" id="dis-ponto">seus pontos</span>
+          <div id="valor-ponto">
+            <img
+              id="mascote"
+              src="../../../imagens/mascote.png"
+              alt="mascote"
+            />
+            <span class="spans" id="quant-pontos">10.000</span>
+          </div>
+        </div>
+        <div id="central-verde" class="infor-projeto" onclick="sairParaCentralVerde()">
+         <i id="icone-central-verde" class="mdi mdi-leaf"></i>
+          <span id="dis-central-verde" class="spans">central verde</span>
+        </div>
+        <div id="nosso-projeto" class="infor-projeto" onclick="sairParaNossoProjeto()">
+          <i id="icone-nosso-projeto" class="mdi mdi-book-cog"></i>
+          <span id="dis-nosso-projeto" class="spans">nosso projeto</span>
+        </div>
+      </div>
     </div>
     <script src="tela4comprador.js"></script>
-</body>
-
+    <script src="../../telaTabComprador/tabcomprador.js"></script>
+  </body>
 </html>

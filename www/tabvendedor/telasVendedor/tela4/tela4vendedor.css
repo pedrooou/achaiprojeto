@@ -1,12 +1,132 @@
 body{
    margin: 0;
    padding: 0; 
+   overflow: hidden;
+
 }
 
 #tela{
- height: 100%;
- width: 100%;
+ height: 100vh; /* ocupa toda a altura da tela */
+    width: 100vw;  /* ocupa toda a largura da tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* centraliza horizontalmente */
+    justify-content: center;/* centraliza verticalmente */
+    gap: 20px ; /* espaçamento entre os elementos */   
+   margin-top:-20%
+   }
+
+.telas-menu {
+   margin-top: 10px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+   background: #f6e6fe;
+   padding: 10px;
 }
+
+
+#linhacima {
+   display: flex;
+  align-items: center;
+   justify-content: space-between;
+}
+
+#image-logo{
+   width: 80px ; 
+   margin-right: 20px;
+   height: auto;
+}
+
+#infouser {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex: 1;
+   min-width: 0;
+}
+
+#nome {
+   font-size: 30px;
+   flex: 1;
+   line-height: 1.1;
+}
+
+#email {
+   margin-top: 8px;
+   font-size: 18px;
+}
+
+.mdi-logout {
+   font-size: 50px;
+   margin-right: -15px ;
+   margin-left: 10px ;
+   color: #5b4766;
+   margin-bottom: -5px;
+}
+
+
+#mascote {
+   height: 100px;
+}
+
+#tela1-conta {
+   background: #f6e6fe;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+
+#tela2-loja {
+   background: #f6e6fe;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+
+}
+
+#tela3-projeto {
+   background: #f6e6fe;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+#loja {
+   width: 100%;
+   justify-content: flex-start;
+   display: flex;
+   align-items: center;
+   font-size: 40px;
+   color: #5b4766;
+}
+
+#projeto {
+   justify-content: flex-start;
+   display: flex;
+   align-items: center;
+   font-size: 40px;
+   color: #5b4766;
+}
+
+.mdi-book-cog {
+   font-size: 80px;
+   color: #5b4766;
+   margin-right: 20px;
+}
+
+.mdi-store {
+   font-size: 80px;
+   color: #5b4766;
+   margin-right: 20px;
+
+}
+
+
 
 /* edição da tela de informações do menu*/
 

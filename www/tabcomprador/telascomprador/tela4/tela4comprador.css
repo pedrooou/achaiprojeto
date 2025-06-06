@@ -10,3 +10,110 @@ body{
 
 /* edição da tela de informações do menu*/
 
+/* conta e sair da conta*/
+
+#tela1-conta{
+   position: relative;
+    width: 90%;
+   height: 10dvh;
+   margin: auto;
+    background:#f6e6fe;
+    border-radius: 20px;
+    margin-top: 5dvh;
+   margin-bottom: 20px;
+}
+
+#imagem-perfil{
+   position: absolute;
+   bottom: 15px;
+   left: 15px;
+   height: 70px;
+   width: auto;
+}
+
+#nome{
+   left: 100px;
+   top: 15px;
+}
+
+#email{
+   left: 100px;
+   top: 40px;
+}
+
+#sair{
+   position: relative;
+}
+
+#icone-sair{
+   position: absolute;
+   right: 10px;
+   top: 17px;
+   color: #5b4766;
+   font-size: 50px;
+}
+
+/*seus pontos*/ 
+.infor-pontos, .infor-projeto{
+   width: 90%;
+   height: 10dvh;
+   margin: auto;
+    background:#f6e6fe;
+    border-radius: 20px;
+}
+
+.infor-pontos{
+   position: relative;
+   margin-bottom: 20px;
+}
+
+#central-verde{
+   margin-bottom: 20px;
+}
+
+.spans{
+   position: absolute;
+   font-size: 25px;
+}
+.infor-pontos #dis-ponto{
+   top: 7px;
+   left: 30px;
+}
+.infor-pontos #quant-pontos{
+  bottom: 20px;
+   left: 77px;
+}
+
+#mascote{
+   position: absolute;
+   bottom: 15px;
+   left: 30px;
+   height: 40px;
+   width: auto;
+}
+
+/* central verde e nosso projeto*/
+
+.infor-projeto{
+   position: relative;
+}
+
+#dis-central-verde, #dis-nosso-projeto{
+   top: 27px;
+   left: 80px;
+}
+
+#icone-central-verde{
+   position: absolute;
+   top: 15px;
+   left: 25px;
+   color: #5b4766;
+   font-size: 50px;
+}
+#icone-nosso-projeto{
+   position: absolute;
+   top: 15px;
+   color: #5b4766;
+   left: 25px;
+   font-size: 50px;
+}

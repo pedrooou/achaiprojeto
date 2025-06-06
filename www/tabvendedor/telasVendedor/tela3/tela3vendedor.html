@@ -1,12 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="tela3vendedor.css">
+    <link rel="stylesheet" href="../../../css/materialdesignicons.min.css">
+    <title>pedidos</title>
 </head>
+
 <body>
+    <div id="tela">
+       <div class="pedidos-tela" id="tela-pedidos" onclick="mostrarInforMais()">
+            <div class="pedidos-div">
+                <div class="organ-imagem-data-hora">
+                    <div id="imagem-loja">
+                        <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
+                    </div>
+
+                    <div class="infor-data-hora">
+                        <div id="nome">
+                           <span>José Alvez</span>
+                           <span></span>
+                        </div>
+                        <div id="data">
+                            <span>Data:</span>
+                            <span>31/05/2025</span>
+                        </div>
+                        <div id="hora">
+                            <span>Horário:</span>
+                            <span>10:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preco">
+                    <span>R$:</span>
+                    <span>150,00</span>
+                      <div id="item">
+                        <span>Item 03</span>
+                    </div>
+
+                    <div id="pagamento">
+                        <span>Pago</span>
+                    </div>
+                  
+                </div>
+                <i id="icone-mais" class="mdi mdi-chevron-down"></i>
+            </div>
+            <div class="infor-mais" id="mais">
+                <span>5 litros de açaí</span>
+                <div class="aceitar"> <span>Aceitar</span></div>
+            </div>
+        </div>
+
+       
+         <div class="pedidos-tela" id="tela-pedidos" onclick="mostrarInforMais2()">
+            <div class="pedidos-div">
+                <div class="organ-imagem-data-hora">
+                    <div id="imagem-loja">
+                        <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
+                    </div>
+
+                    <div class="infor-data-hora">
+                        <div id="nome">
+                           <span>João Frango</span>
+                           </div>
+                        <div id="data">
+                            <span>Data:</span>
+                            <span>31/05/2025</span>
+                        </div>
+                        <div id="hora">
+                            <span>Horário:</span>
+                            <span>15:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preco">
+                    <span>R$:</span>
+                    <span>35,00</span>
+                    <div>
+                        <span id="item">Item 02</span>
+                    </div>
+
+                    <div id="pagamento">
+                        <span>Pago</span>
+                    </div>
+                </div>
+                <i id="icone-mais" class="mdi mdi-chevron-down"></i>
+            </div>
+            <div class="infor-mais" id="mais2">
+                <span>2 Litros de açaí médio</span>
+                <div class="aceitar">Aceitar</div>
+            </div>
+        </div>
+         <div class="pedidos-tela" id="tela-pedidos" onclick="mostrarInforMais3()">
+            <div class="pedidos-div">
+                <div class="organ-imagem-data-hora">
+                    <div id="imagem-loja">
+                        <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
+                    </div>
+
+                    <div class="infor-data-hora">
+                        <div>
+                            <span>Maria Silva</span>
+                        </div>
+                        <div id="data">
+                            <span>Data:</span>
+                            <span>31/05/2025</span>
+                        </div>
+                        <div id="hora">
+                            <span>Horário:</span>
+                            <span>13:15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preco">
+                    <span>R$:</span>
+                    <span>23,00</span>
+
+                    <div>
+                        <span id="item">Item 01</span>
+                    </div>
+                    <div id="pagamento">
+                        <span>Pago</span>
+                    </div>
+                </div>
+                <i id="icone-mais" class="mdi mdi-chevron-down"></i>
+            </div>
+            <div class="infor-mais" id="mais3">
+                <span>1 Litro de açai</span>
+                <div class="aceitar">Aceitar</div>
+            </div>
+        </div>
+        <div class="pedidos-tela" id="tela-pedidos" onclick="mostrarInforMais4()">
+            <div class="pedidos-div">
+                <div class="organ-imagem-data-hora">
+                    <div id="imagem-loja">
+                        <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
+                    </div>
+
+                    <div class="infor-data-hora">
+                        <div id="nome">
+                            <span>Pedro Souza</span>
+                        </div>
+                        <div id="data">
+                            <span>data:</span>
+                            <span>31/05/2025</span>
+                        </div>
+                        <div id="hora">
+                            <span>horário:</span>
+                            <span>09:23</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="preco">
+                    <span>R$:</span>
+                    <span>50,00</span>
+
+                    <div>
+                        <span id="item">Item 04</span>
+                    </div>
+
+                    <div id="pagamento">
+                        <span>pago</span>
+                    </div>
+                </div>
+                <i id="icone-mais" class="mdi mdi-chevron-down"></i>
+            </div>
+            <div class="infor-mais" id="mais4">
+                <span>Barca de açaí - retirada</span>
+                <div class="aceitar">Aceitar</div>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
    <script src="tela3vendedor.js"></script>
 </body>
 </html>
