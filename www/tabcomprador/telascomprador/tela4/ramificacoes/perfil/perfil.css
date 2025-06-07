@@ -1,0 +1,156 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#foto-perfil {
+    margin-top: 5vh;
+    border-radius: 50%;
+     width: 30vw;
+    height: 30vw;
+ background: url('../../../../../imagens/logo.png') center center/cover no-repeat; /* alterado para contain */
+}
+
+.foto-perfil-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+
+
+
+#editar-perfil-loja {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #5b4766;
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+label[for="input-banner-loja"] {
+    position: relative;
+    z-index: 2;
+    margin-top: 16px;
+}
+
+#input-banner-loja {
+    display: none;
+}
+
+
+#telaloja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#divsalvar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#divitens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.inputs {
+    font-size: 18px;
+    display: block;
+    padding: 15px 0 10px 0;
+    margin: 0 auto 20px auto;
+    width: 220px;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #9a7f98;
+    color: #5b4766;
+    outline: none;
+    border-radius: 0;
+}
+
+textarea.inputs {
+    color: #5b4766;
+}
+
+
+/* Ajuste para tablets e telas maiores */
+@media (min-width: 600px) {
+    .inputs {
+        width: 350px;
+        font-size: 16px;
+        padding: 18px 0 12px 0;
+    }
+    #fotoloja {
+        width: 180px;
+    }
+    #salvar, #botao-itens {
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+#salvar {
+    width: 40% ;
+    text-align: center;
+border-radius: 12px;
+    background-color: #5b4766;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#botao-itens {
+
+    background: linear-gradient(135deg, #f6e6fe, #d8c2e0, #bfa0c9);
+    font-size: 18px;
+    width: 35%;
+    height: 100%;
+border-radius: 12px;
+    background-color: #f6e6fe;
+    color: #5b4766;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    margin-top: 20px;
+}

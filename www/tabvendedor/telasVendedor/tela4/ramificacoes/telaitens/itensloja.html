@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itens loja</title>
+    <link rel="stylesheet" href="../../../../../css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="itensloja.css">
+</head>
+<body>
+    <div id="telaitens">
+       
+        <div class="item-bloco" onclick="mostrarEditar(this)">
+            <div class="item-imagem">
+                <img src="../../../../../imagens/mascote.png" alt="Item">
+            </div>
+            <div class="item-info">
+                <div class="item-nome">Açaí com peixe e farinha</div>
+                <div class="item-preco">R$ 70,00</div>
+            </div>
+            <button class="item-editar" style="display:none;" onclick="editarItem()">Editar</button>
+        </div>
+        <div class="item-bloco" onclick="mostrarEditar(this)">
+            <div class="item-imagem">
+                <img src="../../../../../imagens/logo.png" alt="Item">
+            </div>
+            <div class="item-info">
+                <div class="item-nome">Açaí normal - 1 litro</div>
+                <div class="item-preco">R$ 25,00</div>
+            </div>
+            <button class="item-editar" style="display:none;" onclick="editarItem()">Editar</button>
+        </div>
+        <div class="item-bloco" onclick="mostrarEditar(this)">
+            <div class="item-imagem">
+                <img src="../../../../../imagens/logo.png" alt="Item">
+            </div>
+            <div class="item-info">
+                <div class="item-nome">Açaí médio - 1 litro</div>
+                <div class="item-preco">R$ 35,00</div>
+            </div>
+            <button class="item-editar" style="display:none;" onclick="editarItem()">Editar</button>
+        </div>
+         <div class="adicionar-item">Adicionar item</div>
+    </div>
+    <script src="itensloja.js"></script>
+</body>
+</html>

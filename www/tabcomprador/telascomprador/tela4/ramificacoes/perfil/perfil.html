@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>perfil loja</title>
+    <link rel="stylesheet" href="../../../css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="perfil.css">
 </head>
+
 <body>
-    <h1>tela do perfil</h1>
+    <div id="telaloja">
+        <div class="foto-perfil-container">
+            <div id="foto-perfil"></div>
+            <input type="file" id="input-banner-loja" accept="image/*" style="display:none;">
+            <label for="input-banner-loja" class="custom-file-label">selecionar foto</label>
+        </div>
+        <br>
+        <form id="editar-perfil-loja">
+            <input class="inputs" placeholder="Seu nome" type="text" id="nome-loja" name="nome-loja"
+                required><br>
+
+            <input class="inputs" placeholder="email" type="text" id="endereco-loja" name="endereco-loja"
+                required><br>
+
+           <!-- <textarea class="inputs" placeholder="Descrição" id="descricao-loja" name="descricao-loja" rows="1"
+                required></textarea><br>-->
+
+            <div id="divsalvar"><button id="salvar" type="submit">Salvar</button></div>
+        </form>
+    </div>
+
+
+    <script src="perfil.js"> </script>
 </body>
+
 </html>

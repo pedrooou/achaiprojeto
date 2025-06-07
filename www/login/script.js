@@ -128,7 +128,7 @@ document.addEventListener("deviceready", () => {
 
       overlay.addEventListener("animationend", function aoFinalOverlay() {
         overlay.removeEventListener("animationend", aoFinalOverlay);
-        window.location.href = "tabcomprador/telaTabComprador/tabcomprador.html";
+        window.location.href = "";
       });
     });
   };
@@ -137,7 +137,7 @@ document.addEventListener("deviceready", () => {
   window.Sair2 = function(event) {
     tela.classList.add("sair");
     tela.addEventListener("animationend", function aoFinalSair() {
-      window.location.href = "tabvendedor/telaTabVendedor/tabvendedor.html";
+      window.location.href = "criar_conta/criar_conta.html";
     });
   };
 });

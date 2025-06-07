@@ -8,7 +8,29 @@
     <link rel="stylesheet" href="lojaperfil.css">
 </head>
 <body>
-    <h1>perfil loja</h1>
+<div id="telaloja">
+    <div class="foto-loja-container">
+        <div id="banner-loja"></div>
+        <input type="file" id="input-banner-loja" accept="image/*" style="display:none;">
+    <label for="input-banner-loja" class="custom-file-label">Mudar banner</label>
+        <img id="fotoloja" src="../../../../imagens/logo.png" alt="Foto da Loja" >
+        <br>
+        <input type="file" id="input-foto-loja" accept="image/*">
+        <label for="input-foto-loja" class="custom-file-label">Selecionar foto</label>
+    </div>
+    <br>
+
+    <form id="editar-perfil-loja">
+        <input class="inputs" placeholder="Nome da sua loja" type="text" id="nome-loja" name="nome-loja" required><br>
+
+        <input class="inputs" placeholder="Endereço" type="text" id="endereco-loja" name="endereco-loja" required><br>
+
+        <textarea class="inputs" placeholder="Descrição" id="descricao-loja" name="descricao-loja" rows="1" required></textarea><br>
+
+        <div id="divsalvar"><button id="salvar" type="submit">Salvar</button></div>
+        <div id="divitens"><button type="button" id="botao-itens">Itens</button></div>
+    </form>
+</div>
     
 
     <script src="lojaperfil.js"> </script>

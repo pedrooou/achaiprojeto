@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.adicionar-item {
+    background: #5b4766;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto 30px auto;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.item-bloco {
+    display: flex;
+    align-items: center;
+    background: #f6e6fe;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 16px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 500px;
+}
+
+#telaitens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px ;
+}
+
+.item-imagem img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-nome {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5b4766;
+}
+
+.item-preco {
+    font-size: 16px;
+    color: #5b4766;
+    margin-top: 8px;
+}
+
+.item-editar {
+    background: #5b4766;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 16px;
+    transition: background 0.2s;
+    display: none;
+}
+
+.item-editar:hover {
+    background: #7a5a8c;
+}

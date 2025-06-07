@@ -104,6 +104,14 @@ border-radius: 50%;
 }
 
 #icone-lupa {
+    display: block;
+    position: absolute;
+    font-size: 35px;
+    top: 5px;
+    right: 50px;
+    bottom: 10px;
+}
+#icone-conta {
     position: absolute;
     font-size: 35px;
     top: 5px;
@@ -111,13 +119,27 @@ border-radius: 50%;
     bottom: 10px;
 }
 
-
+#logo-do-app{
+    margin-left: 5px;
+    margin-top: 7px;
+    height: 35px;
+    width: auto;
+}
 
 
 #pesquisa{
+    font-size: 17px;
+    position: absolute;
     display: none;
-    width: 170px;
-    height:  25px;
+    left: 60px;
+    top: 7px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    width: 250px;
+    height:  30px;
 }
 
 #label1 {

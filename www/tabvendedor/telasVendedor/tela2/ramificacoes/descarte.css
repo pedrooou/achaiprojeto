@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.logo-container {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 60%;
+    object-fit: contain;
+}
+
+.bloco-acao {
+    display: flex;
+    align-items: center;
+    background: #f6e6fe;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px #0001;
+    padding: 32px 48px;
+    margin: 24px 0;
+    width: 60%;
+    max-width: 450px;
+    min-width: 240px;
+    font-size: 26px;
+    color: #5b4766;
+    gap: 24px;
+    justify-content: flex-start;
+}
+
+
+
+.bloco-acao i {
+    font-size: 40px;
+}
