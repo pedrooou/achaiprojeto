@@ -23,8 +23,11 @@ function atualizarBarraSuperior() {
     conta.className = "mdi mdi-account";
     lupa.style.display = "block";
 
-    // Verifica se está na tela1
-    if (iframe.src.endsWith("tela1/tela1comprador.html")) {
+    // Verifica se está na tela1 OU tela2
+    if (
+        iframe.src.endsWith("tela1/tela1comprador.html") ||
+        iframe.src.endsWith("tela2/tela2comprador.html")
+    ) {
         lupa.style.display = "block";
         conta.style.display = "block";
     } else {

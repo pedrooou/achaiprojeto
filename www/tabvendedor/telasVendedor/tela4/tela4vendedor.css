@@ -17,12 +17,12 @@ body{
    }
 
 .telas-menu {
-   margin-top: 10px;
+   margin-top: 1.2vh;
   width: 80%;
   border-radius: 10px;
   box-shadow: 0 2px 8px #0001;
    background: #f6e6fe;
-   padding: 10px;
+   padding: 1.2vh 2.4vw;
 }
 
 
@@ -30,12 +30,14 @@ body{
    display: flex;
   align-items: center;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 #image-logo{
-   width: 80px ; 
-   margin-right: 20px;
+   width: 18vw; 
+   margin-right: 5.6vw;
    height: auto;
+   min-width: 48px;
 }
 
 #infouser {
@@ -47,27 +49,41 @@ body{
 }
 
 #nome {
-   font-size: 30px;
+   font-size: 4vh;
    flex: 1;
    line-height: 1.1;
 }
 
 #email {
-   margin-top: 8px;
-   font-size: 18px;
+    margin-top: 1vh;
+    font-size: 2.2vh;
+    white-space: nowrap;         /* Não quebra linha */
+    overflow: hidden;            /* Esconde o excesso */
+    text-overflow: ellipsis;     /* Mostra os três pontinhos */
+    max-width: 50vw;         
+}
+
+@media (max-width: 400px) {
+    #image-logo {
+        width: 24vw;
+        max-width: 56px;
+    }
+    .mdi-logout {
+        font-size: 4vh;
+    }
 }
 
 .mdi-logout {
-   font-size: 50px;
-   margin-right: -15px ;
-   margin-left: 10px ;
+   font-size: 5vh;
+   margin-right: 0 ;
+   margin-left: 2vw ;
    color: #5b4766;
-   margin-bottom: -5px;
+   margin-bottom: 0;
 }
 
 
 #mascote {
-   height: 100px;
+   height: 12vh;
 }
 
 #tela1-conta {
@@ -101,7 +117,7 @@ body{
    justify-content: flex-start;
    display: flex;
    align-items: center;
-   font-size: 40px;
+   font-size: 5vh;
    color: #5b4766;
 }
 
@@ -109,20 +125,20 @@ body{
    justify-content: flex-start;
    display: flex;
    align-items: center;
-   font-size: 40px;
+   font-size: 5vh;
    color: #5b4766;
 }
 
 .mdi-book-cog {
-   font-size: 80px;
+   font-size: 10vh;
    color: #5b4766;
-   margin-right: 20px;
+   margin-right: 5.6vw;
 }
 
 .mdi-store {
-   font-size: 80px;
+   font-size: 10vh;
    color: #5b4766;
-   margin-right: 20px;
+   margin-right: 5.6vw;
 
 }
 

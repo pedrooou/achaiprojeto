@@ -17,23 +17,24 @@
       </div>
     </div>
     <iframe
-      src="../telasVendedor/tela1/tela1vendedor.html"
+      src="../telasVendedor/tela3/tela3vendedor.html"
       id="conteudo"
       class="conteudo-do-app"
     >
     </iframe>
     <!-- ...existing code... -->
     <div id="tab_bar">
+ 
       <button
-        id="botao-home"
-        onclick="mostrar('../telasVendedor/tela1/tela1vendedor.html', 'caixa-home')"
+        onclick="mostrar('../telasVendedor/tela3/tela3vendedor.html', 'caixa-pedidos')"
       >
-        <div id="caixa-home" class="caixa caixa-ativa">
-          <i class="mdi mdi-home"></i>
-          <label id="dis-inicio">inicio</label>
-          <i class="mdi"></i>
+        <div id="caixa-pedidos" class="caixa caixa-ativa">
+          <i class="mdi mdi-shopping"></i>
+          <label id="dis-pedidos">pedidos</label>
         </div>
       </button>
+
+    
       <button
         onclick="mostrar('../telasVendedor/tela2/tela2vendedor.html', 'caixa-localizar')"
       >
@@ -42,14 +43,7 @@
           <label id="dis-localizar">central verde</label>
         </div>
       </button>
-      <button
-        onclick="mostrar('../telasVendedor/tela3/tela3vendedor.html', 'caixa-pedidos')"
-      >
-        <div id="caixa-pedidos" class="caixa">
-          <i class="mdi mdi-shopping"></i>
-          <label id="dis-pedidos">pedidos</label>
-        </div>
-      </button>
+
       <button
         onclick="mostrar('../telasVendedor/tela4/tela4vendedor.html', 'caixa-menu')"
       >

@@ -19,8 +19,8 @@ body {
     border-radius: 16px;
     margin-bottom:0px;
     justify-content: center;
-    width: 85%;
-    height: 110px;
+    width: 85vw;
+    height: 15vh;
     box-sizing: border-box;
     font-size: 30px;
     background-color: #f6e6fe;
@@ -28,11 +28,11 @@ body {
 }
 
 #botaoquem, #botaocontato, #botaopoliticas{
- margin-bottom: 30px;
+ margin-bottom: 4vh;
 }
 
 #botaoquem {
-    margin-top: 40px;
+    margin-top: 5vh;
 }
 
 /*#botaocontato {}*/
@@ -40,19 +40,20 @@ body {
 #divlogo{
     background-color: #f6e6fe; 
     border-radius: 50%;
-    padding: 40px;
+    padding: 3vh;
     border: 4px solid #d1c0f5;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #logoprincipal {
-    width: 160px;
+    width: 12vw;
+    min-width: 120px;
 
 }
 
 .botoesnosso i {
-    font-size: 100px;
-    margin-right: 20px;
+    font-size: 10vh;
+    margin-right: 2vw;
     margin-left: 0;
     color: #5b4766; 
 }

@@ -9,11 +9,12 @@ body{
   display: block;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #tab_bar {
     display: flex;
-    position: fixed;
+    position: absolute;
     width: 100%;
     background:#f6e6fe ;
     bottom: 0;

@@ -75,3 +75,94 @@ body, html {
 #tela3{
     background: #75e658;
 }
+#tela4{
+    background: #75e658;
+}
+
+#tela5{
+    background: #8624b7;
+}
+
+#tela6{
+    background: #75e658;
+}
+
+#slide2-tela1{
+    background: #75e658;
+}
+
+#slide2-tela2{
+    background: #8624b7;
+}
+
+#slide2-tela3{
+    background: #75e658;
+}
+#slide2-tela4{
+    background: #75e658;
+}
+
+#slide2-tela5{
+    background: #8624b7;
+}
+
+#slide2-tela6{
+    background: #75e658;
+}
+
+.slider2 {
+  overflow: hidden;
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: 3vh;
+  box-sizing: border-box;
+  /* sem padding lateral! */
+}
+.slides2 {
+  height: 13vh;
+  display: flex;
+  transition: transform 0.4s cubic-bezier(.25,.8,.25,1);
+  will-change: transform;
+}
+.slider2 .slide2 {
+  border-radius: 12px;
+  box-sizing: border-box;
+  /* O JS já define a largura, mas garanta que não há margin! */
+  margin: 2vw;
+  height: 8vh; /* ajuste conforme seu conteúdo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-vertical {
+  overflow: hidden;
+  height: 35vh; /* Ajuste conforme desejar */
+  width: 90vw;
+  margin: 0px auto;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.slides-vertical {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s cubic-bezier(.25,.8,.25,1);
+  will-change: transform;
+}
+.slide-vertical {
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 0.5vh 0;
+  height: calc((50vh - 7vh) / 3.5); /* 3,5 slides visíveis, ajuste se quiser */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dac3e5;
+}
+#slidev1 { background: #eee6f2; }
+#slidev2 { background: #eee6f2; }
+#slidev3 { background: #eee6f2; }
+#slidev4 { background: #eee6f2; }
+#slidev5 { background: #eee6f2; }
+#slidev6 { background: #eee6f2; }
