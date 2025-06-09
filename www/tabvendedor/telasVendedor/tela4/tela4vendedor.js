@@ -6,6 +6,7 @@ document.getElementById('tela2-loja').onclick = function() {
     window.location.href = 'ramificacoes/lojaperfil.html'; 
 }
 
-document.getElementById('sair_icon').onclick = function() {
-    window.top.location.href = '../../../index.html'; 
+function sairDaConta() {
+    localStorage.removeItem('tipoConta');
+    window.top.location.href = "../../../index.html";
 }

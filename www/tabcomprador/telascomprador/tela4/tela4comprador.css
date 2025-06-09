@@ -129,7 +129,7 @@ body{
 
 #email{
    left: 17vw;
-   top: 4vh;
+   top: 4.5vh;
 }
 .infor-pontos #quant-pontos{
   bottom: 2vh;
@@ -236,7 +236,7 @@ body{
 
 #email{
    left: 27vw;
-   top: 4vh;
+   top: 4.5vh;
 }
 
 .infor-pontos #quant-pontos{
@@ -257,7 +257,7 @@ body{
 
 #email{
    left: 32vw;
-   top: 4vh;
+   top: 4.5vh;
 }
 
 .infor-pontos #quant-pontos{
@@ -271,8 +271,11 @@ body{
 
 }
 
-
-
+.spans.pequeno {
+  font-size: 2vh !important;
+  cursor: pointer;
+  user-select: none;
+}
 
 /* Ajuste geral para responsividade 
 body, #tela {

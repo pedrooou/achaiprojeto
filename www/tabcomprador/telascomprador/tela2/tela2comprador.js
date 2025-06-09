@@ -1,20 +1,43 @@
-// Coordenadas para exibir (exemplo: zona rural de Belém)
-const latitude = -1.455;
-const longitude = -48.489;
+// Inicializa o mapa com uma posição padrão (exemplo: Belém)
+const latitudePadrao = -1.0536;
+const longitudePadrao = -46.7656;
+const map = L.map('map').setView([latitudePadrao, longitudePadrao], 16);
 
-// Inicializa o mapa
-const map = L.map('map').setView([latitude, longitude], 16);
-
-// Camada estilo "Google Maps simples"
-L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=j6gTBHjDwnrxIrYsWR6Y', {
+// Adiciona camada de tiles
+const tileLayer = L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=j6gTBHjDwnrxIrYsWR6Y', {
     tileSize: 512,
     zoomOffset: -1,
     attribution: '© MapTiler © OpenStreetMap contributors',
     maxZoom: 20
 }).addTo(map);
 
-// Marcador de exemplo
-L.marker([latitude, longitude])
-    .addTo(map)
-    .bindPopup("Você está aqui!")
-    .openPopup();
+// Mostra o ícone de wifi-off se o mapa não carregar
+const iconeOff = document.getElementById('icone-off');
+tileLayer.on('tileerror', function() {
+    iconeOff.style.display = 'block';
+});
+
+// Função para centralizar no usuário
+function centralizarNoUsuario(lat, lng) {
+    map.setView([lat, lng], 16);
+    L.marker([lat, lng]).addTo(map).bindPopup("Você está aqui!").openPopup();
+}
+
+// Tenta obter a localização do usuário ao carregar o app (Cordova)
+document.addEventListener("deviceready", function() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            function(position) {
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+                centralizarNoUsuario(lat, lng);
+            },
+            function(error) {
+                alert("Não foi possível obter sua localização: " + error.message);
+            },
+            { enableHighAccuracy: true }
+        );
+    } else {
+        alert("Geolocalização não suportada neste dispositivo.");
+    }
+});

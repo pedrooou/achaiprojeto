@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="">
     <title>login app açhaí</title>
   </head>
+  <script>
+  // Redireciona se já existe tipo de conta salvo
+  document.addEventListener("DOMContentLoaded", function() {
+    var tipo = localStorage.getItem('tipoConta');
+    if (tipo === 'vendedor') {
+      window.location.href = "tabvendedor/telaTabVendedor/tabvendedor.html";
+    } else if (tipo === 'comprador') {
+      window.location.href = "tabcomprador/telaTabComprador/tabcomprador.html";
+    }
+    // Se não houver tipo, permanece na index.html
+  });
+</script>
   <body>
     <div class="tela-de-login" id="tela">
       <div id="imagem">
@@ -25,7 +37,7 @@
         </div>
       </div>
       <div id="botoes">
-        <button  id="botao_entrada" onclick = "Sair1(event)">Login</button> 
+        <button  id="botao_entrada">Login</button> 
        <button id="botao_criar_conta" onclick = "Sair2(event)" >Criar conta</button>
       </div>
     </div>

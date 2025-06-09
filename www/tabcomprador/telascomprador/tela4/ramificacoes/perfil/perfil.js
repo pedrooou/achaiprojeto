@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ...código existente...
-
     // Troca da foto de perfil
     const fotoInput = document.getElementById('input-banner-loja');
     const fotoPerfil = document.getElementById('foto-perfil');
@@ -16,6 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Preenche os inputs com nome e email do localStorage
+    const nome = localStorage.getItem('nomeConta') || '';
+    const email = localStorage.getItem('emailConta') || '';
+    const inputNome = document.getElementById('nome-loja');
+    const inputEmail = document.getElementById('endereco-loja');
+    if (inputNome) inputNome.value = nome;
+    if (inputEmail) inputEmail.value = email;
 });
 
 const btnItens = document.getElementById('botao-itens');

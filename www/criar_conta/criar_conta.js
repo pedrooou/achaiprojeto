@@ -2,8 +2,6 @@
 function toggleSenha() {
   const input = document.getElementById("senha1");
   const icone = document.getElementById("olho1");
-
-
   if (input.type === "password") {
     input.type = "text";
     icone.classList.remove("mdi-eye");
@@ -18,8 +16,6 @@ function toggleSenha() {
 function toggleSenha2() {
   const input2 = document.getElementById("senha2");
   const icone2 = document.getElementById("olho2");
-  
-
   if (input2.type === "password") {
     input2.type = "text";
     icone2.classList.remove("mdi-eye");
@@ -31,42 +27,6 @@ function toggleSenha2() {
   }
 }
 
-function mostrartela(event) {
-    tela.classList.add("sair"); tela.addEventListener("animationend", function aoFinalSair() {
-    window.location.href = "../tabcomprador/telaTabComprador/tabcomprador.html";
-    });
-  };
-
-  // ...existing code...
-
-function toggleOpcoes() {
-  const opcoes = document.querySelectorAll('.opcoes');
-  opcoes.forEach(opcao => {
-    opcao.style.display = (opcao.style.display === 'block') ? 'none' : 'block';
-  });
-}
-
-function selecionarOpcao(elemento) {
-  document.getElementById('selecoes').textContent = elemento.textContent;
-  // Esconde as opções após selecionar
-  const opcoes = document.querySelectorAll('.opcoes');
-  opcoes.forEach(opcao => {
-    opcao.style.display = 'none';
-  });
-}
-
-// Fechar opções ao clicar fora
-document.addEventListener('click', function(e) {
-  const caixa = document.getElementById('caixa-selecao');
-  if (!caixa.contains(e.target)) {
-    const opcoes = document.querySelectorAll('.opcoes');
-    opcoes.forEach(opcao => {
-      opcao.style.display = 'none';
-    });
-  }
-});
-
-//codigo para mudar o border radius da div de seleçao
 function toggleOpcoes() {
   const opcoes = document.querySelectorAll('.opcoes');
   const caixa = document.getElementById('caixa-selecao');
@@ -78,7 +38,7 @@ function toggleOpcoes() {
       opcao.classList.remove('animar');
     } else {
       opcao.style.display = 'block';
-      void opcao.offsetWidth; // força reflow para animação
+      void opcao.offsetWidth;
       opcao.classList.add('animar');
       aberto = true;
     }
@@ -92,9 +52,6 @@ function toggleOpcoes() {
   }
 }
 
-
-// ...código existente...
-
 function selecionarOpcao(elemento) {
   document.getElementById('selecoes').textContent = elemento.textContent;
   const opcoes = document.querySelectorAll('.opcoes');
@@ -102,43 +59,93 @@ function selecionarOpcao(elemento) {
     opcao.style.display = 'none';
   });
   document.getElementById('caixa-selecao').classList.remove('aberta');
-  
-  // Remove a classe para animar a diminuição da tela
   document.querySelector('.telacriarconta').classList.remove('opcoes-abertas');
-
-  // Lógica para mudar botão e ação
   const botao = document.getElementById('botaocriar');
   botao.textContent = (elemento.textContent === 'Vendedor') ? 'Próximo' : 'Criar';
 }
 
+// Validação e salvamento dos dados ao criar conta
 document.getElementById('botaocriar').onclick = function(event) {
-  // Validação dos campos obrigatórios
   const nome = document.querySelector('#dados1 input').value.trim();
   const email = document.querySelector('#dados2 input').value.trim();
   const senha1 = document.getElementById('senha1').value.trim();
   const senha2 = document.getElementById('senha2').value.trim();
   const tipo = document.getElementById('selecoes').textContent.trim();
 
+  // Verifica se todos os campos estão preenchidos
   if (!nome || !email || !senha1 || !senha2) {
     alert('Preencha todos os campos antes de continuar.');
     event.preventDefault();
     return false;
   }
-  if (tipo !== 'Vendedor' && tipo !== 'Comprador') {
-    alert('Selecione o tipo de conta antes de continuar.');
+
+  // Verifica se o nome tem pelo menos 5 caracteres
+  if (nome.length < 5) {
+    alert('Seu nome não tem a quantidade de caracteres suficiente para criar uma conta.');
     event.preventDefault();
     return false;
   }
+
+  // Verifica se o nome tem caracteres especiais
+  if (/[!@#$%&*(){}\[\]?°º'"]/g.test(nome)) {
+    alert('O nome não pode conter caracteres especiais.');
+    event.preventDefault();
+    return false;
+  }
+
+  // Verifica se o nome tem números
+  if (/\d/.test(nome)) {
+    alert('O nome não pode conter números.');
+    event.preventDefault();
+    return false;
+  }
+
+  // Verifica se o email termina com @gmail.com
+  if (!email.endsWith('@gmail.com')) {
+    alert('O email deve terminar com "@gmail.com".');
+    event.preventDefault();
+    return false;
+  }
+
+  // Verifica se o email começa com letra maiúscula
+  if (/^[A-Z]/.test(email)) {
+    alert('O email não pode começar com letra maiúscula.');
+    event.preventDefault();
+    return false;
+  }
+
+  // Verifica se a senha tem pelo menos 5 caracteres
+  if (senha1.length < 5 || senha2.length < 5) {
+    alert('A senha deve ter pelo menos 5 caracteres.');
+    event.preventDefault();
+    return false;
+  }
+
+  // Verifica se as senhas coincidem
   if (senha1 !== senha2) {
     alert('As senhas não coincidem.');
     event.preventDefault();
     return false;
   }
 
-  // Fluxo normal
+  // Verifica se o tipo foi selecionado
+  if (tipo !== 'Vendedor' && tipo !== 'Comprador') {
+    alert('Selecione o tipo de conta antes de continuar.');
+    event.preventDefault();
+    return false;
+  }
+
+  // Salva nome e email no localStorage para ambos os tipos
+localStorage.setItem('nomeConta', nome);
+localStorage.setItem('emailConta', email);
+localStorage.setItem('senhaConta', senha1);
+localStorage.setItem('tipoConta', tipo.toLowerCase());
+
   if (tipo === 'Vendedor') {
+    localStorage.setItem('tipoConta', 'vendedor');
     window.location.href = "../tabvendedor/telaTabVendedor/tabvendedor.html";
   } else if (tipo === 'Comprador') {
+    localStorage.setItem('tipoConta', 'comprador');
     event.preventDefault();
     const tela = document.getElementById('tela');
     tela.classList.add("sair");
@@ -147,4 +154,3 @@ document.getElementById('botaocriar').onclick = function(event) {
     }, { once: true });
   }
 };
-

@@ -1,53 +1,73 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 /* divs do pedidos */
 .pedidos-div{
        display: flex;
+       position: relative;
 }
 
 .pedidos-tela{
   background: #f6e6fe ;
-    width: 85%;
+    width: 85vw;
+
     margin: auto;
-    margin-top: 30px;
-    padding: 10px;
+    margin-top: 1vh;
+    padding: 1vh;
     border-radius: 25px;
 }
+#tela-pedidos{
+    margin-top: 2vh;
+}
 
+#mascote{
+   height: 3.5vh;
+   width: auto;
+}
 
+#historico-achai span{
+  margin-top: 8px;
+  margin-left: 8px;
+}
+#historico-achai{
+    display: flex;
+}
 
 .logo-da-loja{
-    height: 60px;
+    height:7vh;
     width: auto;
 }
 
 .infor-data-hora{
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    font-size: 1.8vh;
+    margin-top: 1.3vh;
+    margin-left: 2vw;
+    width: 30vw;
+    height: 1;
 }
 .preco{
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 60px;
-    margin-right: 10px;
+    font-size: 1.8vh;
+    margin-top: 1.3vh;
+    margin-bottom: 2vh;
+    margin-left: 14vw;
+    margin-right: 9vw;
 }
 
 #icone-mais{
-    font-size: 30px;
+    right: 0;
+    position: absolute;
+    font-size: 4vh;
 }
 
 .organ-imagem-data-hora{
     display: flex;
 }
 .infor-mais {
-    font-size: 25px;
+    font-size: 2.5vh;
     max-height: 0;
     overflow: hidden;
     display: block;

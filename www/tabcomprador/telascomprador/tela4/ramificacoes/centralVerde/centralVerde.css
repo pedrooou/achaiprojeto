@@ -1,0 +1,47 @@
+.infor-projeto{
+   width: 90vw;
+   height: 10dvh;
+   margin: auto;
+    background:#f6e6fe;
+    border-radius: 20px;
+    
+}
+
+
+#finalidade-caroco{
+   margin-top: 2vh;
+}
+#finalidade-diy{
+   margin-top: 1vh;
+}
+
+.infor-projeto{
+   position: relative;
+}
+
+#icone-finalidade-caroco{
+   position: absolute;
+   top: 1.3vh;
+   left: 5vw;
+   color: #5b4766;
+   font-size: 6vh;
+}
+#icone-finalidade-diy{
+   position: absolute;
+   top: 1.3vh;
+   left: 5vw;
+   color: white;
+   background: #5b4766;
+   border-radius: 40%;
+   font-size: 6vh;
+}
+
+.spans{
+   position: absolute;
+   font-size: 3vh;
+}
+
+#dis-central-verde{
+   top: 2.5vh;
+   left: 22vw;
+}

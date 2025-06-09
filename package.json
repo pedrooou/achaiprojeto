@@ -13,11 +13,21 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
-    "cordova-android": "^14.0.1"
+    "cordova-android": "^14.0.1",
+    "cordova-plugin-app-exit": "^0.0.2",
+    "cordova-plugin-dialogs": "^2.0.2",
+    "cordova-plugin-geolocation": "^5.0.0"
   },
   "cordova": {
     "platforms": [
       "android"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-app-exit": {},
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      }
+    }
   }
 }
