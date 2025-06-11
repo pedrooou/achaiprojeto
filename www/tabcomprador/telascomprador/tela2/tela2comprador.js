@@ -20,7 +20,7 @@ const lngBandeiras = -46.766635;
 
 // Adiciona o alfinete (marker) clicável
 const markerBandeiras = L.marker([latBandeiras, lngBandeiras]).addTo(map);
-markerBandeiras.bindPopup("Praça das Bandeiras - Bragança, PA");
+markerBandeiras.bindPopup("açí do Roberto Carlos. Bragança PA");
 
 // Ao clicar no alfinete, mostra a div com informações
 markerBandeiras.on('click', function() {

@@ -15,19 +15,14 @@
    margin-top: 1vh;
 }
 
-.infor-projeto{
-   position: relative;
-}
 
 #icone-finalidade-caroco{
-   position: absolute;
    top: 1.3vh;
    left: 5vw;
    color: #5b4766;
    font-size: 6vh;
 }
 #icone-finalidade-diy{
-   position: absolute;
    top: 1.3vh;
    left: 5vw;
    color: white;
@@ -37,7 +32,6 @@
 }
 
 .spans{
-   position: absolute;
    font-size: 3vh;
 }
 

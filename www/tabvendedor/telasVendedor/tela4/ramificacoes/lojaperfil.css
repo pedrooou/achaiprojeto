@@ -4,7 +4,8 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden; /* Evita rolagem indesejada */
+    overflow:hidden ; /* Evita rolagem indesejada */
+    margin-bottom: 8vh;
 }
 
 * {
@@ -12,13 +13,14 @@ html, body {
 }
 
 #fotoloja {
-     width: 28vw;
+width: 28vw;
     height: 28vw;
     min-width: 90px;
     min-height: 90px;
-    
+    max-width: 200px;   /* Limite máximo */
+    max-height: 200px;  /* Limite máximo */
     object-fit: cover;
-    margin-top: 5vh; /* para descer a foto sobre o banner */
+    margin-top: 5vh;
     position: relative;
     z-index: 2;
 }
@@ -79,16 +81,20 @@ label[for="input-banner-loja"] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
 
 }
 
 #divsalvar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 1.2vh;
+    gap: 2vw;
 }
 
 #divitens {
@@ -106,7 +112,7 @@ label[for="input-banner-loja"] {
     padding: 15px 0 10px 0;
     margin: 0 auto 20px auto;
     width: 60vw;
-    max-width: 400px;
+    max-width: 200px;
     box-sizing: border-box;
     background: none;
     border: none;
@@ -141,6 +147,9 @@ textarea.inputs {
 
 #salvar {
     width: 40% ;
+    min-width: 120px;
+    max-width: 200px;
+    margin-top: 0;
     text-align: center;
 border-radius: 12px;
     background-color: #5b4766;
@@ -157,15 +166,16 @@ border-radius: 12px;
 
     background: linear-gradient(135deg, #f6e6fe, #d8c2e0, #bfa0c9);
     font-size: 2.5vh;
-    width: 35%;
+    width: 40%;
+    min-width: 120px;
+    max-width: 200px;
     height: 100%;
 border-radius: 12px;
     background-color: #f6e6fe;
     color: #5b4766;
     padding-left: 4vw;
     padding-right: 4vw;
-    padding-top: 2.5vh;
-    padding-bottom: 2.5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     border: none;
-    margin-top: 2.5vh;
 }

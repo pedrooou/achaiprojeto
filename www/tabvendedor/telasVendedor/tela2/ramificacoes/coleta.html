@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coleta</title>
+    <link rel="stylesheet" href="../../../../css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="coleta.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Ícone de caminhão -->
+        <i class="mdi mdi-truck icon-top"></i>
+
+        <!-- Bloco Endereço -->
+        <div class="bloco bloco-endereco" id="blocoEndereco">
+            <div>
+                <i class="mdi mdi-map-marker"></i>
+                <span>Endereço de coleta</span>
+            </div>
+            <i class="mdi mdi-chevron-right"></i>
+        </div>
+
+        <!-- Bloco Quantidade -->
+        <div class="bloco bloco-quantidade">
+            <div class="quantidade-header" id="quantidadeHeader">
+                <span>Quantidade</span>
+                <i class="mdi mdi-chevron-down" id="iconeSeta"></i>
+            </div>
+            <div class="quantidade-opcoes" id="opcoesQuantidade">
+                <button class="quantidade-btn">1 saca</button>
+                <button class="quantidade-btn">2 sacas</button>
+                <button class="quantidade-btn">3 sacas</button>
+                <button class="quantidade-btn">4 sacas</button>
+                <button class="quantidade-btn">5 sacas</button>
+                <button class="quantidade-btn">6 sacas</button>
+            </div>
+        </div>
+
+        <!-- Botão Chamar Coleta -->
+        <button class="btn-coleta" id="btnColeta">Chamar coleta</button>
+    </div>
+
+    <!-- Popup -->
+  <div class="popup-bg" id="popupColeta">
+        <div class="popup-content">
+            <p>Coleta a caminho do seu ponto</p>
+            <i class="mdi mdi-truck popup-truck"></i>
+            <button class="popup-close" id="popupClose">OK</button>
+        </div>
+    </div>
+    <script src="coleta.js"></script>
+</body>
+</html>
