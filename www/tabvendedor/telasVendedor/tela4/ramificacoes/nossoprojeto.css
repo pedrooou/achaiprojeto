@@ -8,7 +8,7 @@ body {
     align-items: center;
     overflow: hidden;
     justify-content: center;
-    
+    position: relative;
 }
 
 
@@ -63,4 +63,18 @@ body {
     text-align: left;
     color: #5b4766 ;
 }
+
+.esconder {
+    display: hidden;
+}
+
+#popup {
+    display: block;
+    background-color: #5b4766;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    height: 40vh;
+}
+
 

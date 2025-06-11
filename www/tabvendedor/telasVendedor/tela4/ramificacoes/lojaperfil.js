@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+
+
     // Troca do banner
     const bannerInput = document.getElementById('input-banner-loja');
     const bannerDiv = document.getElementById('banner-loja');
@@ -31,3 +33,11 @@ if (btnItens) {
         window.location.href = 'telaitens/itensloja.html'; // ajuste o caminho se necessário
     };
 }
+
+function mostrarFile (){
+    const fileInput = document.getElementById('input-foto-loja');
+   fileInput.click();
+
+}
+
+

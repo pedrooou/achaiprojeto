@@ -1,10 +1,12 @@
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow:hidden ; /* Evita rolagem indesejada */
+    overflow: hidden;
+    /* Evita rolagem indesejada */
     margin-bottom: 8vh;
 }
 
@@ -13,16 +15,19 @@ html, body {
 }
 
 #fotoloja {
-width: 28vw;
+    width: 28vw;
     height: 28vw;
     min-width: 90px;
     min-height: 90px;
-    max-width: 200px;   /* Limite máximo */
-    max-height: 200px;  /* Limite máximo */
+    max-width: 200px;
+    /* Limite máximo */
+    max-height: 200px;
+    /* Limite máximo */
     object-fit: cover;
     margin-top: 5vh;
     position: relative;
-    z-index: 2;
+    z-index: 1;
+
 }
 
 .foto-loja-container {
@@ -37,7 +42,8 @@ width: 28vw;
 
 #banner-loja {
     width: 100%;
-    height: 30vw; /* ajuste a altura do banner */
+    height: 30vw;
+    /* ajuste a altura do banner */
     background: url('../../../../imagens/banner.png') center center/cover no-repeat;
     position: absolute;
     top: 0;
@@ -50,7 +56,7 @@ width: 28vw;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -68,6 +74,20 @@ label[for="input-banner-loja"] {
     position: relative;
     z-index: 2;
     margin-top: 2vh;
+}
+
+#selecionarfoto {
+    background-color: #9a7f98;
+    z-index: 1;
+    font-size: 30px;
+    margin-left: -30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 0 3px;
+padding-bottom: -1px;
+padding-top: 2px;
 }
 
 #input-foto-loja,
@@ -134,10 +154,13 @@ textarea.inputs {
         font-size: 16px;
         padding: 2.1vh 0 1.5vh 0;
     }
+
     #fotoloja {
         width: 45vw;
     }
-    #salvar, #botao-itens {
+
+    #salvar,
+    #botao-itens {
         font-size: 20px;
         padding-left: 8.5vw;
         padding-right: 8.5vw;
@@ -146,12 +169,12 @@ textarea.inputs {
 
 
 #salvar {
-    width: 40% ;
+    width: 40%;
     min-width: 120px;
     max-width: 200px;
     margin-top: 0;
     text-align: center;
-border-radius: 12px;
+    border-radius: 12px;
     background-color: #5b4766;
     color: white;
     border: none;
@@ -170,7 +193,7 @@ border-radius: 12px;
     min-width: 120px;
     max-width: 200px;
     height: 100%;
-border-radius: 12px;
+    border-radius: 12px;
     background-color: #f6e6fe;
     color: #5b4766;
     padding-left: 4vw;

@@ -136,7 +136,6 @@ body, html {
 }
 
 .slider-vertical {
-  overflow: hidden;
   height: 35vh; /* Ajuste conforme desejar */
   width: 90vw;
   margin: 0px auto;
