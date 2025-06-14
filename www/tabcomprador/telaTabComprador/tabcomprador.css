@@ -139,8 +139,11 @@ border-radius: 50%;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 20px;
-    width: 60vw;
-    height:  30px;
+    height: 30px;
+    right: 100px;
+    max-width: calc(100vw - 180px);
+    min-width: 120px;
+    box-sizing: border-box;
 }
 
 #label1 {

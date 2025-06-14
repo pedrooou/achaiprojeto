@@ -30,3 +30,9 @@ if (btnItens) {
         window.location.href = 'telaitens/itensloja.html'; // ajuste o caminho se necessário
     };
 }
+
+function voltar(){
+    const botao = document.getElementById('voltar-botao');
+
+    window.location.href = "../../tela4comprador.html";
+}

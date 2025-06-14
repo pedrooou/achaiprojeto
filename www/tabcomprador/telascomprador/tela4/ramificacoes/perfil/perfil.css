@@ -29,7 +29,18 @@ html, body {
 
 }
 
-
+#voltar-botao{
+    background: #5b4766;
+    display: block;
+    text-align: center;
+    color: white;
+    border-radius: 1dvh;
+    width: 70px;
+    height: 25px;
+    font-size: 20px;
+    margin-left: -75vw;
+    margin-top: 10px;
+}
 
 
 #editar-perfil-loja {
