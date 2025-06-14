@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../www/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="tabempresa.css" />
+    <title>tabempresa</title>
+  </head>
+
+  <body>
+    <div id="barra-superior">
+      <div id="barra-superior-esquerda">
+        <label id="label1">pesquisar</label>
+        <i id="icone-conta" class="mdi mdi-account" onclick="sairParaContaLoja()"></i>
+      </div>
+    </div>
+    <iframe
+      src="../telasEmpresa/tela2/tela2.html"
+      id="conteudo"
+      class="conteudo-do-app"
+    >
+    </iframe>
+    <div id="tab_bar">
+      <button
+        onclick="mostrar('../telasempresa/tela2/tela2.html', 'caixa-coleta')"
+      >
+        <div id="caixa-coleta" class="caixa caixa-ativa">
+          <i class="mdi mdi-truck"></i>
+          <label id="dis-coleta">chamar coleta</label>
+        </div>
+      </button>
+      <button
+        onclick="mostrar('../telasEmpresa/tela1/tela1.html', 'caixa-menu')"
+      >
+        <div id="caixa-menu" class="caixa">
+          <i class="mdi mdi-menu"></i>
+          <label id="dis-menu">menu</label>
+        </div>
+      </button>
+    </div>
+    <script src="tabempresa.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedidos de Coleta</title>
+  <link rel="stylesheet" href="../../../css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="tela2.css" />
+</head>
+<body>
+  <div id="tela-pedidos">
+    <h2>Pedidos de Coleta</h2>
+    <div class="pedido">
+      <div class="pedido-info">
+        <i class="mdi mdi-store"></i>
+        <div>
+          <span class="pedido-nome">Loja do João</span><br>
+          <span class="pedido-desc">Solicitou coleta para 15/06, 10h</span>
+        </div>
+      </div>
+      <div class="pedido-botoes">
+        <button class="btn-aceitar">Aceitar</button>
+        <button class="btn-detalhes" onclick="abrirDetalhesPedido('Loja do João', 'Rua A, 123', 10, 'Sacolas separadas', '15/06, 10h')">Detalhes</button>
+      </div>
+    </div>
+    <div class="pedido">
+      <div class="pedido-info">
+        <i class="mdi mdi-store"></i>
+        <div>
+          <span class="pedido-nome">Mercado Central</span><br>
+          <span class="pedido-desc">Solicitou coleta para 16/06, 14h</span>
+        </div>
+      </div>
+      <div class="pedido-botoes">
+        <button class="btn-aceitar">Aceitar</button>
+        <button class="btn-detalhes" onclick="abrirDetalhesPedido('Mercado Central', 'Av. Brasil, 500', 20, 'Retirar no depósito', '16/06, 14h')">Detalhes</button>
+      </div>
+    </div>
+    <!-- Adicione mais pedidos conforme necessário -->
+  </div>
+
+  <!-- Modal de detalhes do pedido -->
+  <div id="modal-detalhes" class="modal" style="display:none;">
+    <div class="modal-conteudo">
+      <h3>Detalhes do Pedido</h3>
+      <p><strong>Loja:</strong> <span id="detalhe-loja"></span></p>
+      <p><strong>Endereço:</strong> <span id="detalhe-endereco"></span></p>
+      <p><strong>Quantidade de sacas:</strong> <span id="detalhe-sacas"></span></p>
+      <p><strong>Observação do vendedor:</strong> <span id="detalhe-observacao"></span></p>
+      <p><strong>Data/Hora:</strong> <span id="detalhe-datahora"></span></p>
+      <button class="btn-modal" onclick="abrirResposta()">Responder</button>
+      <button class="btn-modal" onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Modal de resposta -->
+  <div id="modal-resposta" class="modal" style="display:none;">
+    <div class="modal-conteudo">
+      <h3>Responder Pedido</h3>
+      <label>Nome do motorista:</label>
+      <input type="text" id="resp-motorista" />
+      <label>Data da coleta:</label>
+      <input type="date" id="resp-data" />
+      <label>Hora aproximada:</label>
+      <input type="time" id="resp-hora" />
+      <label>Observação:</label>
+      <textarea id="resp-observacao"></textarea>
+      <button class="btn-modal" onclick="enviarResposta()">Enviar</button>
+      <button class="btn-modal" onclick="fecharModalResposta()">Cancelar</button>
+    </div>
+  </div>
+  <script src="tela2.js"></script>
+</body>
+</html>

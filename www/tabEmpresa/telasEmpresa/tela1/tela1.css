@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#tela {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.telas-menu {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+  background: #f6e6fe;
+  padding: 1.2vh 2.4vw;
+}
+#linhacima {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#image-logo {
+  width: 18vw;
+  min-width: 48px;
+  padding: 10px;
+}
+#infouser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+#nome {
+  font-size: 4vh;
+  flex: 1;
+  line-height: 1.1;
+}
+#email {
+  margin-top: 1vh;
+  font-size: 2.2vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50vw;
+}
+.mdi-logout, .mdi-account-edit, .mdi-book-cog {
+  font-size: 5vh;
+  color: #5b4766;
+  margin-right: 2vw;
+}
+#editar, #projeto {
+  display: flex;
+  align-items: center;
+  font-size: 3vh;
+  color: #5b4766;
+}

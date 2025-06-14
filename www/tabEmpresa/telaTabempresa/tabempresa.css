@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+  width: 100%;
+  overflow: visible;
+  display: block;
+}
+
+#tab_bar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background: #f6e6fe;
+  bottom: 0;
+  border: none;
+  height: 8vh;
+  border-top: 3px solid #ffffff;
+}
+
+iframe {
+  display: block;
+  height: 98vh;
+  border: none;
+  margin-bottom: 6vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#tab_bar button {
+  flex: 1;
+  padding: 1.2vh 2.4vw;
+  border: none;
+  color: #5b4766;
+  background: none;
+  font-size: 2vh;
+}
+
+.conteudo-do-app {
+  display: block;
+  height: 100%;
+  border: none;
+  margin-bottom: 50px;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#barra-superior {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 6vh;
+  background: #f6e6fe;
+  color: #5b4766;
+}
+
+#icone-conta {
+  position: absolute;
+  font-size: 4vh;
+  top: 0.5vh;
+  right: 2.2vw;
+  bottom: 1.2vh;
+}
+
+#label1 {
+  display: none;
+  position: absolute;
+}
+
+#barra-superior-esquerda {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* nomes dos botões da tab */
+#dis-coleta,
+#dis-menu {
+  font-size: 1.5vh;
+  display: block;
+  margin-top: -0.5em;
+}
+
+/* Icones dos Botões */
+.mdi-truck,
+.mdi-menu {
+  justify-content: center;
+  align-items: center;
+  font-size: 4vh;
+  margin: 0;
+  color: #5b4766;
+}
+
+/* caixas dos icones */
+.caixa-ativa {
+  background-color: #5b4766;
+  border-radius: 10px;
+  height: 6vh;
+}
+
+.caixa-ativa label,
+.caixa-ativa i {
+  color: #f6e6fe !important;
+}
+
+#caixa-coleta,
+#caixa-menu {
+  margin: auto;
+}

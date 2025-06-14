@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+#tela-pedidos {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+h2 {
+  color: #5b4766;
+  margin-bottom: 20px;
+}
+.pedido {
+  background: #f6e6fe;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+  display: flex;
+  flex-direction: column; /* muda para coluna */
+  margin-bottom: 16px;
+  padding: 24px; /* aumenta o padding */
+  font-size: 1.25em; /* aumenta a fonte do bloco */
+}
+.pedido-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px; /* espaço para os botões */
+  font-size: 1.15em; /* aumenta a fonte dos textos */
+}
+.pedido-nome {
+  font-weight: bold;
+  color: #5b4766;
+}
+.pedido-desc {
+  font-size: 1em;
+  color: #888;
+}
+.mdi-store {
+  font-size: 3em;
+  color: #5b4766;
+}
+.pedido-botoes {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.btn-aceitar, .btn-detalhes {
+  font-size: 1.1em; /* aumenta a fonte dos botões */
+  padding: 10px 22px;
+}
+.btn-aceitar {
+  background: #5b4766;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-detalhes {
+  background: #5b4766;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-detalhes:hover, .btn-aceitar:hover {
+  background: #7a5c8a;
+}
+
+/* ...existing code... */
+/* ...existing code... */
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #0008;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-conteudo {
+  background: #fff;
+  padding: 1.2em 1em;
+  border-radius: 16px;
+  max-width: 370px;    /* largura máxima do modal */
+  width: 70vw;         /* ocupa menos da tela */
+  box-shadow: 0 4px 24px #0002;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza tudo dentro do modal */
+}
+
+.modal-conteudo h3 {
+  color: #5b4766;
+  margin-bottom: 18px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.modal-conteudo label {
+  color: #5b4766;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 10px;
+  font-size: 1.08em;
+  align-self: flex-start;
+}
+
+.modal-conteudo input,
+.modal-conteudo textarea {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px 12px;
+  border: 1px solid #dac3e5;
+  border-radius: 8px;
+  font-size: 1.08em;
+  margin-bottom: 10px;
+  background: #f6e6fe;
+  color: #5b4766;
+  resize: none;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center; /* centraliza texto digitado */
+}
+
+.modal-conteudo textarea {
+  min-height: 60px;
+  max-height: 120px;
+}
+
+.btn-modal {
+  background: #5b4766;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1em;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  width: 90%;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.btn-modal:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 400px) {
+  .modal-conteudo {
+    padding: 1em 0.3em;
+    min-width: 0;
+    width: 97vw;
+    max-width: 97vw;
+  }
+  .modal-conteudo h3 {
+    font-size: 1.1em;
+  }
+  .modal-conteudo label,
+  .modal-conteudo input,
+  .modal-conteudo textarea {
+    font-size: 1em;
+  }
+}
