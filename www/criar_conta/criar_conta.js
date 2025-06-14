@@ -128,29 +128,37 @@ document.getElementById('botaocriar').onclick = function(event) {
     return false;
   }
 
-  // Verifica se o tipo foi selecionado
-  if (tipo !== 'Vendedor' && tipo !== 'Comprador') {
-    alert('Selecione o tipo de conta antes de continuar.');
-    event.preventDefault();
-    return false;
-  }
+  // ...existing code...
 
-  // Salva nome e email no localStorage para ambos os tipos
+// Verifica se o tipo foi selecionado
+if (tipo !== 'Vendedor' && tipo !== 'Comprador' && tipo !== 'Coletor') {
+  alert('Selecione o tipo de conta antes de continuar.');
+  event.preventDefault();
+  return false;
+}
+
+// Salva nome e email no localStorage para todos os tipos
 localStorage.setItem('nomeConta', nome);
 localStorage.setItem('emailConta', email);
 localStorage.setItem('senhaConta', senha1);
 localStorage.setItem('tipoConta', tipo.toLowerCase());
 
-  if (tipo === 'Vendedor') {
-    localStorage.setItem('tipoConta', 'vendedor');
-    window.location.href = "../tabvendedor/telaTabVendedor/tabvendedor.html";
-  } else if (tipo === 'Comprador') {
-    localStorage.setItem('tipoConta', 'comprador');
-    event.preventDefault();
-    const tela = document.getElementById('tela');
-    tela.classList.add("sair");
-    tela.addEventListener("animationend", function aoFinalSair() {
-      window.location.href = "../tabcomprador/telaTabComprador/tabcomprador.html";
-    }, { once: true });
-  }
+if (tipo === 'Vendedor') {
+  localStorage.setItem('tipoConta', 'vendedor');
+  window.location.href = "../tabvendedor/telaTabVendedor/tabvendedor.html";
+} else if (tipo === 'Comprador') {
+  localStorage.setItem('tipoConta', 'comprador');
+  event.preventDefault();
+  const tela = document.getElementById('tela');
+  tela.classList.add("sair");
+  tela.addEventListener("animationend", function aoFinalSair() {
+    window.location.href = "../tabcomprador/telaTabComprador/tabcomprador.html";
+  }, { once: true });
+} else if (tipo === 'Coletor') {
+  localStorage.setItem('tipoConta', 'coletor');
+  window.location.href = "../tabEmpresa/telaTabempresa/tabempresa.html";
+}
+
+// ...existing code...
+
 };

@@ -68,13 +68,51 @@ body {
     display: hidden;
 }
 
-#popup {
-    display: block;
-    background-color: #5b4766;
-    width: 80vw;
-    margin: auto;
-    position: relative;
-    height: 40vh;
+/* Popup de contato */
+.popup-bg {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
 }
-
-
+.popup-bg.show {
+    display: flex;
+}
+.popup-contato-content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 24px 24px 24px;
+    box-shadow: 0 4px 24px #0002;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px;   /* diminua aqui */
+    max-width: 320px;   /* limite opcional */
+    width: 80vw;        /* largura responsiva opcional */
+}
+.popup-contato-content h3 {
+    color: #5b4766;
+    margin-bottom: 16px;
+}
+.popup-contato-content p {
+    color: #5b4766;
+    margin: 6px 0;
+    font-size: 1.1em;
+}
+.btn-fechar-contato {
+    margin-top: 18px;
+    background: #a16cc1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-fechar-contato:hover {
+    background: #5b4766;
+}

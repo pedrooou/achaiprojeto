@@ -21,7 +21,7 @@ body {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 2px 8px #0001;
-    width: 100%;
+    width: 80vw;
     margin-bottom: 18px;
     padding: 18px 16px;
     display: flex;
@@ -81,7 +81,7 @@ body {
     color: #fff;
 }
 .btn-coleta {
-    width: 100%;
+    width: 80%;
     padding: 14px 0;
     background: #5b4766;
     color: #fff;
@@ -148,4 +148,23 @@ body {
     color: #a16cc1;
     margin-bottom: 8px;
     display: block;
+}
+
+.bloco-observacao {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0001;
+    width: 80vw;
+    margin-bottom: 18px;
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+}
+.bloco-observacao textarea {
+    font-size: 1em;
+    border-radius: 6px;
+    border: 1px solid #a16cc1;
+    padding: 8px;
+    color: #5b4766;
+    background: #faf7fc;
 }

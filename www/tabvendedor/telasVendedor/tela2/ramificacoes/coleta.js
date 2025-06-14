@@ -27,3 +27,13 @@ document.getElementById('btnColeta').onclick = function() {
 document.getElementById('popupClose').onclick = function() {
     document.getElementById('popupColeta').classList.remove('show');
 };
+
+document.getElementById('popupClose').onclick = function() {
+    document.getElementById('popupColeta').classList.remove('show');
+    // Redireciona para a central verde (ajuste o caminho se necessário)
+    window.location.href = "../../../../../www/tabvendedor/telasVendedor/tela2/tela2vendedor.html";
+};
+
+document.getElementById('btnHistorico').onclick = function() {
+    window.location.href = "coletahistorico.html";
+};

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Coletas</title>
+    <link rel="stylesheet" href="../../../../css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="coletahistorico.css">
+</head>
+<body>
+    <div class="container-historico">
+        <h2>Histórico de Coletas</h2>
+        <div class="coleta-item">
+            <span>Coleta 1 - 14/06/2025</span>
+            <button class="btn-detalhes" onclick="abrirDetalhesColeta(1)">Detalhes</button>
+        </div>
+        <div class="coleta-item">
+            <span>Coleta 2 - 10/06/2025</span>
+            <button class="btn-detalhes" onclick="abrirDetalhesColeta(2)">Detalhes</button>
+        </div>
+        <!-- Adicione mais coletas conforme necessário -->
+    </div>
+
+    <!-- Popup de Detalhes da Coleta -->
+<div class="popup-bg" id="popup-detalhes-coleta">
+    <div class="popup-content">
+        <h3>Detalhes da Coleta</h3>
+        <p><strong>Data:</strong> <span id="data-coleta">14/06/2025</span></p>
+        <label for="avaliacao">Avaliação:</label>
+        <span id="estrelas-avaliacao">
+            <i class="mdi mdi-star-outline estrela" data-valor="1"></i>
+            <i class="mdi mdi-star-outline estrela" data-valor="2"></i>
+            <i class="mdi mdi-star-outline estrela" data-valor="3"></i>
+            <i class="mdi mdi-star-outline estrela" data-valor="4"></i>
+            <i class="mdi mdi-star-outline estrela" data-valor="5"></i>
+        </span>
+        <label for="obs-coleta">Observação:</label>
+        <textarea id="obs-coleta" rows="3" placeholder="Observação da coleta..."></textarea>
+        <button class="btn-coleta" id="btnEnviarAvaliacao">Enviar</button>
+        <button class="popup-close" id="fecharPopupDetalhesColeta">Fechar</button>
+    </div>
+</div>
+    <script src="coletahistorico.js"></script>
+</body>
+</html>
