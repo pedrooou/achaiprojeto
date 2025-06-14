@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil do Motorista/Empresa</title>
+  <link rel="stylesheet" href="../../../css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="perfil.css" />
+</head>
+<body>
+  <div class="perfil-container">
+    <h2>Editar Perfil</h2>
+    <form id="form-perfil">
+      <div class="foto-perfil">
+        <img id="img-perfil" src="../../../imagens/mascote.png" alt="Foto do perfil">
+        <input type="file" id="input-foto" accept="image/*" />
+      </div>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Nome do motorista/empresa" required />
+
+      <label for="modelo">Modelo do carro:</label>
+      <input type="text" id="modelo" placeholder="Ex: Fiorino 2020" required />
+
+      <label for="placa">Placa do veículo:</label>
+      <input type="text" id="placa" placeholder="Ex: ABC-1234" required />
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" placeholder="(99) 99999-9999" required />
+
+      <label for="descricao">Descrição/Observação:</label>
+      <textarea id="descricao" rows="3" placeholder="Ex: Atende região central"></textarea>
+
+      <button type="submit" class="btn-salvar">Salvar</button>
+    </form>
+  </div>
+
+  <!-- ...restante do body... -->
+
+<!-- Popup de confirmação -->
+<div class="popup-bg" id="popup-confirmacao">
+  <div class="popup-content">
+    <p>Perfil salvo com sucesso!</p>
+    <button class="popup-close" id="fecharPopupConfirmacao">OK</button>
+  </div>
+</div>
+  <script src="perfil.js"></script>
+</body>
+</html>

@@ -19,8 +19,8 @@
         </div>
       </div>
       <div class="pedido-botoes">
-        <button class="btn-aceitar">Aceitar</button>
-        <button class="btn-detalhes" onclick="abrirDetalhesPedido('Loja do João', 'Rua A, 123', 10, 'Sacolas separadas', '15/06, 10h')">Detalhes</button>
+        <button class="btn-aceitar" onclick="aceitarPedido(this)">Aceitar</button>
+        <button class="btn-detalhes" onclick="abrirDetalhesPedido('Loja do João', 'Rua A, 123', 10, 'Sacolas separadas', '15/06, 10h')">Responder</button>
       </div>
     </div>
     <div class="pedido">
@@ -32,8 +32,8 @@
         </div>
       </div>
       <div class="pedido-botoes">
-        <button class="btn-aceitar">Aceitar</button>
-        <button class="btn-detalhes" onclick="abrirDetalhesPedido('Mercado Central', 'Av. Brasil, 500', 20, 'Retirar no depósito', '16/06, 14h')">Detalhes</button>
+        <button class="btn-aceitar" onclick="aceitarPedido(this)">Aceitar</button>
+        <button class="btn-detalhes" onclick="abrirDetalhesPedido('Mercado Central', 'Av. Brasil, 500', 20, 'Retirar no depósito', '16/06, 14h')">Responder</button>
       </div>
     </div>
     <!-- Adicione mais pedidos conforme necessário -->
@@ -69,6 +69,15 @@
       <button class="btn-modal" onclick="fecharModalResposta()">Cancelar</button>
     </div>
   </div>
+
+  <!-- Popup de Confirmação -->
+  <div class="popup-bg" id="popup-confirmacao">
+    <div class="popup-content">
+      <p id="mensagem-confirmacao">Resposta enviada com sucesso!</p>
+      <button class="popup-close" id="fecharPopupConfirmacao">OK</button>
+    </div>
+  </div>
+
   <script src="tela2.js"></script>
 </body>
 </html>

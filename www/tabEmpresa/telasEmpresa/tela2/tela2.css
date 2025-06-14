@@ -18,17 +18,17 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 2px 8px #0001;
   display: flex;
-  flex-direction: column; /* muda para coluna */
+  flex-direction: column;
   margin-bottom: 16px;
-  padding: 24px; /* aumenta o padding */
-  font-size: 1.25em; /* aumenta a fonte do bloco */
+  padding: 24px;
+  font-size: 1.25em;
 }
 .pedido-info {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 18px; /* espaço para os botões */
-  font-size: 1.15em; /* aumenta a fonte dos textos */
+  margin-bottom: 18px;
+  font-size: 1.15em;
 }
 .pedido-nome {
   font-weight: bold;
@@ -48,7 +48,7 @@ h2 {
   justify-content: flex-end;
 }
 .btn-aceitar, .btn-detalhes {
-  font-size: 1.1em; /* aumenta a fonte dos botões */
+  font-size: 1.1em;
   padding: 10px 22px;
 }
 .btn-aceitar {
@@ -71,9 +71,7 @@ h2 {
   background: #7a5c8a;
 }
 
-/* ...existing code... */
-/* ...existing code... */
-
+/* Modal styles */
 .modal {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -83,26 +81,23 @@ h2 {
   justify-content: center;
   z-index: 1000;
 }
-
 .modal-conteudo {
   background: #fff;
   padding: 1.2em 1em;
   border-radius: 16px;
-  max-width: 370px;    /* largura máxima do modal */
-  width: 70vw;         /* ocupa menos da tela */
+  max-width: 370px;
+  width: 70vw;
   box-shadow: 0 4px 24px #0002;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza tudo dentro do modal */
+  align-items: center;
 }
-
 .modal-conteudo h3 {
   color: #5b4766;
   margin-bottom: 18px;
   font-size: 1.3em;
   text-align: center;
 }
-
 .modal-conteudo label {
   color: #5b4766;
   font-weight: bold;
@@ -111,7 +106,6 @@ h2 {
   font-size: 1.08em;
   align-self: flex-start;
 }
-
 .modal-conteudo input,
 .modal-conteudo textarea {
   width: 90%;
@@ -128,14 +122,12 @@ h2 {
   resize: none;
   box-sizing: border-box;
   outline: none;
-  text-align: center; /* centraliza texto digitado */
+  text-align: center;
 }
-
 .modal-conteudo textarea {
   min-height: 60px;
   max-height: 120px;
 }
-
 .btn-modal {
   background: #5b4766;
   color: #fff;
@@ -150,11 +142,9 @@ h2 {
   letter-spacing: 0.5px;
   box-shadow: 0 2px 8px #0001;
 }
-
 .btn-modal:last-child {
   margin-bottom: 0;
 }
-
 @media (max-width: 400px) {
   .modal-conteudo {
     padding: 1em 0.3em;
@@ -170,4 +160,48 @@ h2 {
   .modal-conteudo textarea {
     font-size: 1em;
   }
+}
+
+/* Popup de confirmação */
+.popup-bg {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.popup-bg.show {
+    display: flex;
+}
+.popup-content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 24px 24px 24px;
+    box-shadow: 0 4px 24px #0002;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+    max-width: 90vw;
+}
+.popup-content p {
+    color: #5b4766;
+    font-size: 1.1em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.popup-close {
+    background: #a16cc1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.popup-close:hover {
+    background: #5b4766;
 }

@@ -1,0 +1,114 @@
+.perfil-container {
+  max-width: 400px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.perfil-container h2 {
+  color: #5b4766;
+  margin-bottom: 18px;
+}
+.foto-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.foto-perfil img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a16cc1;
+  margin-bottom: 8px;
+}
+.foto-perfil input[type="file"] {
+  font-size: 0.95em;
+}
+form label {
+  color: #5b4766;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  align-self: flex-start;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dac3e5;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-bottom: 8px;
+  background: #f6e6fe;
+  color: #5b4766;
+  box-sizing: border-box;
+  outline: none;
+}
+form textarea {
+  resize: vertical;
+}
+.btn-salvar {
+  background: #a16cc1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1em;
+  margin-top: 12px;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-salvar:hover {
+  background: #5b4766;
+}
+
+.popup-bg {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.popup-bg.show {
+    display: flex;
+}
+.popup-content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 24px 24px 24px;
+    box-shadow: 0 4px 24px #0002;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+    max-width: 90vw;
+}
+.popup-content p {
+    color: #5b4766;
+    font-size: 1.1em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.popup-close {
+    background: #a16cc1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.popup-close:hover {
+    background: #5b4766;
+}

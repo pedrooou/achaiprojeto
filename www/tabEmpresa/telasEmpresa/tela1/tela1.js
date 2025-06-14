@@ -3,8 +3,8 @@ function sairDaConta() {
   window.top.location.href = "../../../index.html";
 }
 function editarMotorista() {
-  window.location.href = 'ramificacoes/editar_motorista.html';
+  window.location.href = 'ramificacoes/perfil.html'; // alterado para perfil.html
 }
 function irParaProjeto() {
-  window.location.href = 'ramificacoes/nossoprojeto.html';
+  window.location.href = '../../../../www/tabvendedor/telasVendedor/tela4/ramificacoes/nossoprojeto.html';
 }
