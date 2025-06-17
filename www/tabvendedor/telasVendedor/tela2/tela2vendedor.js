@@ -6,3 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 });
+
+// ...existing code...
+document.getElementById('selo').onclick = function() {
+    window.location.href = 'ramificacoes/selos.html';
+};
+// ...existing code...

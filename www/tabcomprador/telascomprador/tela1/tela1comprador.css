@@ -8,7 +8,7 @@ body, html {
 
 .slider {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 25vh;
   padding-top: 35px;
   padding-bottom: 25px;
@@ -28,11 +28,6 @@ body, html {
   flex: 0 0 70%;
   margin-right: 24px;
   border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 
   /* Melhor renderização */
   backface-visibility: hidden;
@@ -66,6 +61,7 @@ body, html {
 
 #tela1{
     background: #75e658;
+
 }
 
 #tela2{
@@ -116,23 +112,22 @@ body, html {
   margin: 0 auto;
   margin-top: 3vh;
   box-sizing: border-box;
-  /* sem padding lateral! */
 }
 .slides2 {
-  height: 13vh;
+  height: 12vh;
   display: flex;
   transition: transform 0.4s cubic-bezier(.25,.8,.25,1);
   will-change: transform;
 }
-.slider2 .slide2 {
-  border-radius: 12px;
-  box-sizing: border-box;
-  /* O JS já define a largura, mas garanta que não há margin! */
-  margin: 2vw;
-  height: 8vh; /* ajuste conforme seu conteúdo */
-  display: flex;
+.slide2 {
+  min-width: 100px;
+  flex: 0 0 120px;
+  margin: 0.5px 8.7px;
+  background: #f6e6fe;
+  border-radius: 10px;
   align-items: center;
-  justify-content: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
 }
 
 .slider-vertical {
@@ -165,3 +160,60 @@ body, html {
 #slidev4 { background: #eee6f2; }
 #slidev5 { background: #eee6f2; }
 #slidev6 { background: #eee6f2; }
+
+
+/* conteudo dos promeiros slides */
+
+.organizacao{
+  display: flex;
+}
+.promo{
+  font-size: 9vw;
+}
+
+.conteudo{
+  color: white;
+  padding-top: 15px;
+  text-align: center;
+  width: 60vw;
+  height:25vh;
+  margin: auto;
+}
+.organizacao{
+  width: 100%;
+}
+.organizacao-img{
+  margin-top: 20px;
+}
+
+.organizacao-span{
+  text-align: center;
+  width: 45vw;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.quantidade-de-desconto{
+  font-size: 60px;
+}
+.de-desconto{
+  font-size: 21px;
+}
+
+/* Centraliza slides2 quando houver menos de 3 */
+.slides2.centralizar {
+  justify-content: center;
+}
+
+.organizacao2{
+  text-align: center;
+  margin-top: 5px;
+}
+.organizacao3{
+  text-align: center;
+  margin-top: -15px;
+}
+
+.organizacao3 img{
+  border-radius: 20px;
+}

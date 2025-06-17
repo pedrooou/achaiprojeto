@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="tabvendedor.css" />
-    <link rel="stylesheet" href="">
-    <title>tabcomprador</title>
+    <title>tabvendedor</title>
   </head>
 
   <body>
     <div id="barra-superior">
       <div id="barra-superior-esquerda">
+        <i id="icone-chat" class="mdi mdi-chat" onclick="abrirChat()"></i>
         <label id="label1">pesquisar</label>
+        <!-- Ícone de caixa de entrada -->
+        <i id="icone-caixaentrada" class="mdi mdi-inbox" onclick="abrirCaixaEntrada()" title="Caixa de entrada"></i>
         <i id="icone-conta" class="mdi mdi-account" onclick="sairParaContaLoja()"></i>
       </div>
     </div>
+
+    <!-- Caixa de entrada lateral -->
+    <div id="caixa-entrada-popup"></div>
+
     <iframe
       src="../telasVendedor/tela3/tela3vendedor.html"
       id="conteudo"
       class="conteudo-do-app"
-    >
-    </iframe>
-    <!-- ...existing code... -->
+    ></iframe>
     <div id="tab_bar">
- 
       <button
         onclick="mostrar('../telasVendedor/tela3/tela3vendedor.html', 'caixa-pedidos')"
       >
@@ -33,8 +36,6 @@
           <label id="dis-pedidos">pedidos</label>
         </div>
       </button>
-
-    
       <button
         onclick="mostrar('../telasVendedor/tela2/tela2vendedor.html', 'caixa-localizar')"
       >
@@ -43,7 +44,6 @@
           <label id="dis-localizar">central verde</label>
         </div>
       </button>
-
       <button
         onclick="mostrar('../telasVendedor/tela4/tela4vendedor.html', 'caixa-menu')"
       >
@@ -53,8 +53,8 @@
         </div>
       </button>
     </div>
-    <!-- ...existing code... -->
-
     <script src="tabvendedor.js"></script>
+    <script src="caixadeentrada/caixaentrada.js"></script>
+    <link rel="stylesheet" href="caixadeentrada/caixaentrada.css" />
   </body>
 </html>

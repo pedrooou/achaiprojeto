@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-
-
     // Troca do banner
     const bannerInput = document.getElementById('input-banner-loja');
     const bannerDiv = document.getElementById('banner-loja');
@@ -25,19 +23,34 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Troca da foto da loja
+    const fotoInput = document.getElementById('input-foto-loja');
+    const fotoImg = document.getElementById('fotoloja');
+    if (fotoInput && fotoImg) {
+        fotoInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(evt) {
+                    fotoImg.src = evt.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    }
+
+    // Botão Itens
+    const btnItens = document.getElementById('botao-itens');
+    if (btnItens) {
+        btnItens.onclick = function() {
+            window.location.href = 'telaitens/itensloja.html'; // ajuste o caminho se necessário
+        };
+    }
 });
 
-const btnItens = document.getElementById('botao-itens');
-if (btnItens) {
-    btnItens.onclick = function() {
-        window.location.href = 'telaitens/itensloja.html'; // ajuste o caminho se necessário
-    };
-}
-
+// Função global para abrir o seletor de foto
 function mostrarFile (){
     const fileInput = document.getElementById('input-foto-loja');
-   fileInput.click();
-
+    fileInput.click();
 }
-
-

@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>perfil loja</title>
+    <title>Perfil da Loja</title>
     <link rel="stylesheet" href="../../../../css/materialdesignicons.min.css">
     <link rel="stylesheet" href="lojaperfil.css">
 </head>
 <body>
 <div id="telaloja">
     <div class="foto-loja-container">
-        <div id="banner-loja"></div>
-        <input type="file" id="input-banner-loja" accept="image/*" style="display:none;">
-    <label for="input-banner-loja" class="custom-file-label">Mudar Banner</label>
-    <div id="divimagem" style="position: relative;">
-        <img id="fotoloja" src="../../../../imagens/logo.png" alt="Foto da Loja" >
-        <input type="file" id="input-foto-loja" accept="image/*">
-        <i onclick="mostrarFile()" id="selecionarfoto" class="mdi mdi-camera"></i>
-    </div>   
- </div>
-    <br>
-
-    <form id="editar-perfil-loja">
-        <input class="inputs" placeholder="Nome da sua loja" type="text" id="nome-loja" required><br>
-        <input class="inputs" placeholder="email" type="text" id="email-loja" required><br>
-        <input class="inputs" placeholder="Endereço" type="text" id="endereco-loja" name="endereco-loja" required><br>
-        <input class="inputs" placeholder="Número" type="text" id="numero" required><br>
-        <input class="inputs" placeholder="Bairro - Cidade" type="text" id="bairro-loja" name="bairro-loja" required><br>
-        <textarea class="inputs" placeholder="Descrição" id="descricao-loja" name="descricao-loja" rows="1" required></textarea><br>
-
+        <div id="banner-loja">
+            <label for="input-banner-loja" class="custom-file-label">Mudar Banner</label>
+            <input type="file" id="input-banner-loja" accept="image/*" style="display:none;">
+        </div>
+        <div id="divimagem">
+            <img id="fotoloja" src="../../../../imagens/logo.png" alt="Foto da Loja">
+            <input type="file" id="input-foto-loja" accept="image/*">
+            <i onclick="mostrarFile()" id="selecionarfoto" class="mdi mdi-camera"></i>
+        </div>
+    </div>
+    <form id="editar-perfil-loja" autocomplete="off">
+        <input class="inputs" placeholder="Nome da sua loja" type="text" id="nome-loja" required>
+        <input class="inputs" placeholder="Email" type="email" id="email-loja" required>
+        <input class="inputs" placeholder="Endereço" type="text" id="endereco-loja" name="endereco-loja" required>
+        <input class="inputs" placeholder="Número" type="text" id="numero" required>
+        <input class="inputs" placeholder="Bairro - Cidade" type="text" id="bairro-loja" name="bairro-loja" required>
+        <textarea class="inputs" placeholder="Descrição" id="descricao-loja" name="descricao-loja" rows="2" required></textarea>
         <div id="divsalvar">
             <button id="salvar" type="submit">Salvar</button>
-         <button type="button" id="botao-itens">Itens</button>
+            <button type="button" id="botao-itens">Itens</button>
         </div>
     </form>
 </div>
-    
-
-    <script src="lojaperfil.js"> </script>
+<script src="lojaperfil.js"></script>
 </body>
 </html>

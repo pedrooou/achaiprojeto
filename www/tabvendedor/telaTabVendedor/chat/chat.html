@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="chat.css" />
+  <link rel="stylesheet" href="../../../css/materialdesignicons.min.css" />
+  <title>Chat</title>
+</head>
+<body>
+  <div class="chat-main-container">
+    <div class="chat-clientes-lista" id="clientes-lista">
+      <div class="chat-clientes-header">
+        <span>Clientes</span>
+        <i class="mdi mdi-close chat-fechar" onclick="fecharChat()" title="Fechar"></i>
+      </div>
+      <ul id="lista-clientes">
+        <li class="cliente-item cliente-ativo" onclick="abrirChatCliente(this, 'Maria Silva')">
+          <i class="mdi mdi-account-circle cliente-avatar"></i>
+          <span class="cliente-nome">Maria Silva</span>
+        </li>
+        <li class="cliente-item" onclick="abrirChatCliente(this, 'João Souza')">
+          <i class="mdi mdi-account-circle cliente-avatar"></i>
+          <span class="cliente-nome">João Souza</span>
+        </li>
+        <li class="cliente-item" onclick="abrirChatCliente(this, 'Ana Paula')">
+          <i class="mdi mdi-account-circle cliente-avatar"></i>
+          <span class="cliente-nome">Ana Paula</span>
+        </li>
+      </ul>
+    </div>
+    <div class="chat-area" id="chat-area">
+      <div class="chat-header" id="chat-header-nome">
+        <span id="chat-header-titulo">Chat com Maria Silva</span>
+        <span>
+          <i class="mdi mdi-arrow-left chat-voltar" id="btn-voltar" onclick="voltarListaClientes()" title="Voltar"></i>
+          <i class="mdi mdi-close chat-fechar" onclick="fecharChat()" title="Fechar"></i>
+        </span>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="mensagem-sistema">Bem-vindo ao chat com Maria Silva! Em breve você poderá conversar com seus clientes aqui.</div>
+      </div>
+      <div class="chat-footer">
+        <input type="text" placeholder="Digite sua mensagem..." disabled />
+        <button disabled>Enviar</button>
+      </div>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>

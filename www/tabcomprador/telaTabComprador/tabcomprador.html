@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="tabcomprador.css" />
-    <link rel="stylesheet" href="">
-    <title>tabcomprador</title>
-  </head>
 
-  <body>
-    <div id="barra-superior">
-      <div id="barra-superior-esquerda">
-        <img id="logo-do-app" src="../../imagens/logo.png" alt="logo do aplicativo">
-        <input type="text" id="pesquisa" />
-        <label id="label1">pesquisar</label>
-        <i id="icone-lupa" class="mdi mdi-magnify"></i>
-         <i id="icone-conta" class="mdi mdi-account" onclick="sairParaConta()"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="tabcomprador.css" />
+  <link rel="stylesheet" href="">
+  <title>tabcomprador</title>
+</head>
+
+<body>
+  <div id="barra-superior">
+    <div id="barra-superior-esquerda">
+      <img id="logo-do-app" src="../../imagens/logo.png" alt="logo do aplicativo">
+      <input type="text" id="pesquisa" />
+      <label id="label1">pesquisar</label>
+      <i id="icone-lupa" class="mdi mdi-magnify"></i>
+      <i id="icone-conta" class="mdi mdi-account" ></i>
+      <div id="opcoes-input" class="opcoes novo-estado-input">
+        <div id="organizacao-icon"><i id="icone-down" class="mdi mdi-chevron-up"></i></div>
+        <div id="opcoes-organizacao" class="organizacao">
+          <div  id="botao-itens" class="opcoes-botao opcao1 novo-estado-botao">itens</div>
+          <div  id="botao-loja" class="opcoes-botao opcao2 novo-estado-botao" >lojas</div>
+        </div>
       </div>
     </div>
-    <iframe
-      src="../telascomprador/tela1/tela1comprador.html"
-      id="conteudo"
-      class="conteudo-do-app"
-    >
-    </iframe>
-    <!-- ...existing code... -->
-    <div id="tab_bar">
-      <button
-        id="botao-home"
-        onclick="mostrar('../telascomprador/tela1/tela1comprador.html', 'caixa-home')"
-      >
-        <div id="caixa-home" class="caixa caixa-ativa">
-          <i class="mdi mdi-home"></i>
-          <label id="dis-inicio">inicio</label>
-          <i class="mdi"></i>
-        </div>
-      </button>
-      <button
-        onclick="mostrar('../telascomprador/tela2/tela2comprador.html', 'caixa-localizar')"
-      >
-        <div id="caixa-localizar" class="caixa">
-          <i class="mdi mdi-map-marker"></i>
-          <label id="dis-localizar">localizar</label>
-        </div>
-      </button>
-      <button
-        onclick="mostrar('../telascomprador/tela3/tela3comprador.html', 'caixa-pedidos')"
-      >
-        <div id="caixa-pedidos" class="caixa">
-          <i class="mdi mdi-shopping"></i>
-          <label id="dis-pedidos">pedidos</label>
-        </div>
-      </button>
-      <button
-        onclick="mostrar('../telascomprador/tela4/tela4comprador.html', 'caixa-menu')"
-      >
-        <div id="caixa-menu" class="caixa">
-          <i class="mdi mdi-menu"></i>
-          <label id="dis-menu">menu</label>
-        </div>
-      </button>
-    </div>
-    <!-- ...existing code... -->
+  </div>
+  <iframe src="../telascomprador/tela1/tela1comprador.html" id="conteudo" class="conteudo-do-app">
+  </iframe>
+  <!-- ...existing code... -->
+  <div id="tab_bar">
+    <button id="botao-home" onclick="mostrar('../telascomprador/tela1/tela1comprador.html', 'caixa-home')">
+      <div id="caixa-home" class="caixa caixa-ativa">
+        <i class="mdi mdi-home"></i>
+        <label id="dis-inicio">inicio</label>
+        <i class="mdi"></i>
+      </div>
+    </button>
+    <button onclick="mostrar('../telascomprador/tela2/tela2comprador.html', 'caixa-localizar')">
+      <div id="caixa-localizar" class="caixa">
+        <i class="mdi mdi-map-marker"></i>
+        <label id="dis-localizar">localizar</label>
+      </div>
+    </button>
+    <button onclick="mostrar('../telascomprador/tela3/tela3comprador.html', 'caixa-pedidos')">
+      <div id="caixa-pedidos" class="caixa">
+        <i class="mdi mdi-shopping"></i>
+        <label id="dis-pedidos">pedidos</label>
+      </div>
+    </button>
+    <button onclick="mostrar('../telascomprador/tela4/tela4comprador.html', 'caixa-menu')">
+      <div id="caixa-menu" class="caixa">
+        <i class="mdi mdi-menu"></i>
+        <label id="dis-menu">menu</label>
+      </div>
+    </button>
+  </div>
+  <!-- ...existing code... -->
 
-    <script src="tabcomprador.js"></script>
-  </body>
+  <script src="tabcomprador.js"></script>
+</body>
+
 </html>

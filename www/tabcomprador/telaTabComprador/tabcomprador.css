@@ -12,6 +12,17 @@ body{
   position: relative;
 }
 
+#icone-chat {
+  position: absolute;
+  font-size: 2.2em;
+  top: 0.5vh;
+  left: 2vw;
+  color: #5b4766;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
+
 #tab_bar {
     display: flex;
     position: absolute;
@@ -118,6 +129,75 @@ border-radius: 50%;
     top: 5px;
     right: 10px;
     bottom: 10px;
+}
+
+.opcoes-botao{
+    display: none;
+    margin-top: 1.5vh;
+    transition: font-size 0.4s;
+    font-size: 6vw;
+    background: #5b4766;
+    color: white;
+    width: 45vw;
+    height: 4vh;
+    max-height: 4vh;
+    transition: max-height 0.5s;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 0.4vh;
+}
+
+.novo-estado-botao{
+    transition: font-size 0.4s;
+    transition: max-height 0.5s;
+    max-height: 0vh;
+    font-size: 0;
+}
+
+.opcao1{
+    margin-left: 2.5vw;
+    margin-right: 5vw;
+}
+
+.organizacao{
+    position: absolute;
+    display: flex;
+}
+#organizacao-icon{
+    position: absolute;
+    width: 100%;
+    left: 46vw;
+    top: -1vh;
+}
+
+.mdi-chevron-up{
+    font-size: 8vw;
+}
+.mdi-chevron-down{
+    font-size: 8vw;
+}
+
+.opcoes{
+    position: relative;
+    display: none;
+    width: 100%;
+    transition: height 1s;
+    height: 60px;
+    max-height: 60px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #f6e6fe;
+}
+
+/* novo estado do input*/
+.novo-estado-input{
+    transition: max-height 0.5s;
+    max-height: 20px;
+}
+.novo-novo-estado-input{
+    background: #f6e6fe;
+    transition: max-height 1s;
+    max-height: 0px;
 }
 
 #logo-do-app{

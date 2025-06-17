@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selos do Vendedor</title>
+    <link rel="stylesheet" href="../../../../css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="selos.css">
+</head>
+<body>
+    <div class="topbar-selos">
+        <i class="mdi mdi-chevron-left" id="voltar"></i>
+        <span>Selos do Vendedor</span>
+    </div>
+    <div class="container-selos">
+        <div class="descricao-selos">
+            <h2>Como funcionam os selos?</h2>
+            <p>
+                O nível de cada selo depende da frequência mensal de coleta da sua loja. Quanto mais coletas você disponibiliza, mais pontos acumula para subir de nível e conquistar novos selos!
+            </p>
+        </div>
+        <div class="lista-selos">
+            <div class="selo-item ativo" data-nivel="bronze">
+                <img src="../../../../imagens/selo_bronze.png" alt="Selo Bronze">
+                <div>
+                    <strong>Bronze</strong>
+                    <p>Até 5 coletas/mês</p>
+                </div>
+            </div>
+            <div class="selo-item ativo" data-nivel="prata">
+                <img src="../../../../imagens/selo_prata.png" alt="Selo Prata">
+                <div>
+                    <strong>Prata</strong>
+                    <p>6 a 15 coletas/mês</p>
+                </div>
+            </div>
+            <div class="selo-item" data-nivel="ouro">
+                <img src="../../../../imagens/selo_ouro.png" alt="Selo Ouro">
+                <div>
+                    <strong>Ouro</strong>
+                    <p>16 a 30 coletas/mês</p>
+                </div>
+            </div>
+            <div class="selo-item" data-nivel="diamante">
+                <img src="../../../../imagens/selo_diamante.png" alt="Selo Diamante">
+                <div>
+                    <strong>Diamante</strong>
+                    <p>31+ coletas/mês</p>
+                </div>
+            </div>
+        </div>
+        <div class="dica-selos">
+            <i class="mdi mdi-star-circle"></i>
+            <span>Dica: mantenha sua frequência de coletas para não perder seu selo!</span>
+        </div>
+    </div>
+    <!-- Popup de Benefícios dos Selos -->
+    <div id="popup-beneficios" class="popup-beneficios-bg">
+        <div class="popup-beneficios-content">
+            <span class="close-popup" id="closePopupBeneficios">&times;</span>
+            <h3 id="titulo-beneficio"></h3>
+            <ul id="lista-beneficios"></ul>
+        </div>
+    </div>
+    <script src="selos.js"></script>
+</body>
+</html>

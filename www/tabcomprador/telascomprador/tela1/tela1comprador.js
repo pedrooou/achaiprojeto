@@ -140,27 +140,67 @@ startAutoplay();
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  // --- SLIDER2: 6 slides, 3 visíveis, loop infinito real, snap centralizado ---
+  // --- SLIDER2: 3, 4-6 ou mais de 6 slides ---
   const slider2 = document.getElementById('slider2');
   const slides2 = document.getElementById('slides2');
   let slides = Array.from(slides2.children);
 
-  // Clona os 3 primeiros e 3 últimos para looping real
-  for (let i = 0; i < 3; i++) {
-    slides2.appendChild(slides[i].cloneNode(true)); // clones finais
-    slides2.insertBefore(slides[slides.length - 1 - i].cloneNode(true), slides2.firstChild); // clones iniciais
-  }
-
-  let totalSlides = slides2.children.length;
-  let currentIndex = 3; // começa no primeiro slide real
+  let totalSlidesOriginais = slides.length;
+  let totalSlides = slides.length;
+  let currentIndex = 0; 
   let startX = 0;
   let isDragging = false;
   let currentTranslate = 0;
   let lastDelta = 0;
+  let infinito = false;
+
+  // Limpa clones antigos se houver
+  function limparClones() {
+    while (slides2.children.length > totalSlidesOriginais) {
+      slides2.removeChild(slides2.lastChild);
+    }
+    while (slides2.children.length > totalSlidesOriginais) {
+      slides2.removeChild(slides2.firstChild);
+    }
+  }
+
+  // Ajusta o modo do carrossel conforme a quantidade de slides
+  function configurarSlider2() {
+    slides = Array.from(slides2.children);
+    totalSlidesOriginais = slides.length;
+
+    // Limpa clones antigos
+    limparClones();
+
+if (totalSlidesOriginais <= 3) {
+  // Fixo, sem movimentação
+  slides2.style.transform = 'translateX(0)';
+  slides2.style.transition = 'none';
+  infinito = false;
+  currentIndex = 0; // <-- Adicione isso!
+} else if (totalSlidesOriginais > 6) {
+      // Loop infinito: clona 3 primeiros e 3 últimos
+      for (let i = 0; i < 3; i++) {
+        slides2.appendChild(slides[i].cloneNode(true)); // clones finais
+        slides2.insertBefore(slides[slides.length - 1 - i].cloneNode(true), slides2.firstChild); // clones iniciais
+      }
+      totalSlides = slides2.children.length;
+      currentIndex = 3;
+      infinito = true;
+      slider2.style.pointerEvents = 'auto';
+    } else {
+      // Entre 4 e 6: movimentação normal, sem looping
+      currentIndex = 0;
+      infinito = false;
+      slider2.style.pointerEvents = 'auto';
+    }
+    ajustarSlides();
+    atualizarPosicao(true);
+  }
 
   function ajustarSlides() {
     const sliderWidth = slider2.offsetWidth;
-    const slideWidth = sliderWidth / 3.5; // Agora cabem 3,5 slides
+    const slideWidth = sliderWidth / 3.5; // 3,5 slides visíveis
     Array.from(slides2.children).forEach(slide => {
       slide.style.width = slideWidth + 'px';
       slide.style.flex = '0 0 ' + slideWidth + 'px';
@@ -170,41 +210,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function atualizarPosicao(instant = false) {
     const slideWidth = slider2.offsetWidth / 3.08;
-    currentTranslate = -currentIndex * slideWidth;
+    let translateIndex = currentIndex;
+    if (!infinito && totalSlidesOriginais > 3 && totalSlidesOriginais <= 6) {
+      // Não deixa passar do primeiro ou último
+      if (currentIndex < 0) translateIndex = 0;
+      if (currentIndex > totalSlidesOriginais - 3) translateIndex = totalSlidesOriginais - 3;
+    }
+    currentTranslate = -translateIndex * slideWidth;
     slides2.style.transition = instant ? 'none' : 'transform 0.4s cubic-bezier(.25,.8,.25,1)';
     slides2.style.transform = `translateX(${currentTranslate}px)`;
   }
 
   function corrigirLoop() {
+    if (!infinito) return;
     // Se foi para os clones do início, volta para o slide real correspondente
     if (currentIndex < 3) {
-      currentIndex += 6;
+      currentIndex += totalSlidesOriginais;
       atualizarPosicao(true);
     }
     // Se foi para os clones do final, volta para o slide real correspondente
-    if (currentIndex >= 6 + 3) {
-      currentIndex -= 6;
+    if (currentIndex >= totalSlidesOriginais + 3) {
+      currentIndex -= totalSlidesOriginais;
       atualizarPosicao(true);
     }
   }
 
   function snapToNearest() {
     const slideWidth = slider2.offsetWidth / 3;
-    // Calcula o índice mais próximo do centro
     const nearest = Math.round(-parseFloat(slides2.style.transform.replace('translateX(', '').replace('px)', '')) / slideWidth);
     currentIndex = nearest;
     atualizarPosicao();
     slides2.addEventListener('transitionend', corrigirLoop, { once: true });
   }
 
-  // ...código existente do slider2...
+  // --- Inércia e movimentação ---
+  let inertiaTimerH = null;
+  let velocityH = 0;
+  let lastMoveTimeH = 0;
+  let lastXH = 0;
 
-let inertiaTimerH = null;
-let velocityH = 0;
-let lastMoveTimeH = 0;
-let lastXH = 0;
-
-function onStartH(e) {
+  function onStartH(e) {
+    if (totalSlidesOriginais <= 3) return; // Não movimenta
     isDragging = true;
     startX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
     lastXH = startX;
@@ -213,9 +259,9 @@ function onStartH(e) {
     velocityH = 0;
     lastMoveTimeH = Date.now();
     if (inertiaTimerH) clearTimeout(inertiaTimerH);
-}
-function onMoveH(e) {
-    if (!isDragging) return;
+  }
+  function onMoveH(e) {
+    if (!isDragging || totalSlidesOriginais <= 3) return;
     const x = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
     const delta = x - startX;
     lastDelta = delta;
@@ -226,15 +272,21 @@ function onMoveH(e) {
     velocityH = (x - lastXH) / (now - lastMoveTimeH + 1);
     lastMoveTimeH = now;
     lastXH = x;
-}
-function onEndH(e) {
-    if (!isDragging) return;
+  }
+  function onEndH(e) {
+    if (!isDragging || totalSlidesOriginais <= 3) return;
     isDragging = false;
     const slideWidth = slider2.offsetWidth / 3.5;
-    let inertia = velocityH * 100; // quanto maior, mais "livre"
+    let inertia = velocityH * 100;
     let targetTranslate = currentTranslate + lastDelta + inertia;
-    let minTranslate = -((slides2.children.length - 1) * slideWidth);
-    let maxTranslate = 0;
+    let minTranslate, maxTranslate;
+    if (infinito) {
+      minTranslate = -((slides2.children.length - 1) * slideWidth);
+      maxTranslate = 0;
+    } else {
+      minTranslate = -((totalSlidesOriginais - 3) * slideWidth);
+      maxTranslate = 0;
+    }
     if (targetTranslate < minTranslate) targetTranslate = minTranslate;
     if (targetTranslate > maxTranslate) targetTranslate = maxTranslate;
 
@@ -244,27 +296,54 @@ function onEndH(e) {
     // Após 1s, faz o snap
     if (inertiaTimerH) clearTimeout(inertiaTimerH);
     inertiaTimerH = setTimeout(() => {
-        // Calcula o índice mais próximo do centro
-        const nearest = Math.round(-targetTranslate / slideWidth);
-        currentIndex = nearest;
-        atualizarPosicao();
-        slides2.addEventListener('transitionend', corrigirLoop, { once: true });
+      const nearest = Math.round(-targetTranslate / slideWidth);
+      currentIndex = nearest;
+      atualizarPosicao();
+      slides2.addEventListener('transitionend', corrigirLoop, { once: true });
     }, 1000);
-}
+  }
 
-// Troque os listeners do slider2 para usar as novas funções:
-slides2.addEventListener('mousedown', onStartH);
-slides2.addEventListener('mousemove', onMoveH);
-slides2.addEventListener('mouseup', onEndH);
-slides2.addEventListener('mouseleave', onEndH);
+  // Listeners
+  slides2.addEventListener('mousedown', onStartH);
+  slides2.addEventListener('mousemove', onMoveH);
+  slides2.addEventListener('mouseup', onEndH);
+  slides2.addEventListener('mouseleave', onEndH);
 
-slides2.addEventListener('touchstart', onStartH);
-slides2.addEventListener('touchmove', onMoveH);
-slides2.addEventListener('touchend', onEndH);
+  slides2.addEventListener('touchstart', onStartH);
+  slides2.addEventListener('touchmove', onMoveH);
+  slides2.addEventListener('touchend', onEndH);
 
   window.addEventListener('resize', ajustarSlides);
 
-  ajustarSlides();
+  // Inicialização dinâmica
+  configurarSlider2();
   setTimeout(() => atualizarPosicao(true), 10);
 });
 
+function centralizarSlides2() {
+  const slides2 = document.getElementById('slides2');
+  const qtd = slides2.children.length;
+  if (qtd <= 3) {
+    slides2.classList.add('centralizar');
+  } else {
+    slides2.classList.remove('centralizar');
+  }
+}
+
+// Chame após montar/adicionar/remover slides2 ou no final do DOMContentLoaded:
+centralizarSlides2();
+
+function abrirProdutoTela(tela) {
+  // Abre produto.html em um novo contexto (iframe ou janela)
+ window.location.href = "ramificacoes/categorias/categoria.html?tela=" + tela;
+}
+
+document.getElementById('slide2-tela1').onclick = function() {
+  abrirProdutoTela('tela1');
+};
+document.getElementById('slide2-tela2').onclick = function() {
+  abrirProdutoTela('tela2');
+};
+document.getElementById('slide2-tela3').onclick = function() {
+  abrirProdutoTela('tela3');
+};

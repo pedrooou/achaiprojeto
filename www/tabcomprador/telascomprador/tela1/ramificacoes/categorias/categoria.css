@@ -1,0 +1,146 @@
+body{
+    height: 97vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#tela1{
+    margin-top: -5vw;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#tela2{
+    margin-top: -5vw;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#tela3{
+    margin-top: -5vw;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#ttela1 { background:  #75e658; }
+#ttela2 { background: #8624b7; }
+#ttela3 { background: #75e658; }
+#ttela4 { background: #8624b7; }
+
+body {
+  background: #faf6ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider {
+  width: 100vw;
+  max-width: 420px;
+  margin: 30px auto 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 0 0 18px 0;
+}
+
+.slides {
+  display: flex;
+  gap: 0;
+  transition: transform 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.slide {
+  min-width: 100vw;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #faf6ff;
+  border-radius: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.slide img {
+  width: auto;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 18px ;
+  margin-bottom: 20px;
+}
+
+.preco {
+  color: #8624b7;
+  font-size: 1.1em;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.pagination span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  background: #e0c7f7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination span.active {
+  background: #8624b7;
+}
+
+#org232{
+    text-align: center;
+    font-size: 30px;
+    color: #8624b7;
+}
+
+#org-total{
+    width: 100vw;
+    display: block;
+}
+
+.orgpart{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+}
+
+.parte1{
+    border-radius: 20px;
+    margin-right: 3vw;
+    display: block;
+    width: 45vw;
+    margin-bottom: 5vh;
+    height: 30vw;
+    background-color: #8624b7;
+}
+.parte2{
+    border-radius: 20px;
+    display: block;
+    width: 45vw;
+    height: 30vw;
+    background-color: #75e658;
+}
+
+.org-total-part1{
+    display: block;
+    margin-top: 130px;
+}
+.org-total-part-tar1{
+    display: flex;
+}
+
+.organizacao-span-par1{
+    font-size: 13px;
+   width: 27vw;
+}
+.organizacao-span-par2{
+     font-size: 13px;
+}

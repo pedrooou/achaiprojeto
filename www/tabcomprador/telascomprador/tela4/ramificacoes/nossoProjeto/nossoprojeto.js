@@ -1,6 +1,6 @@
-function politica() {
-    window.location.href = '../../ramificacoes/nossoProjeto/quemSomosNos/quemsomosnos.html';
-
+function sairParaNossoProjeto() {
+   window.parent.document.getElementById('conteudo').src = 
+     '../../../tabvendedor/telasVendedor/tela4/ramificacoes/tela1NossoProjeto/quemsomos.html';
 }
 
 function voltar(){

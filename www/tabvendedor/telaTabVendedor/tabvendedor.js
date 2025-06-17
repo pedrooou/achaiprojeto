@@ -14,6 +14,15 @@ function sairParaContaLoja() {
     document.getElementById("conteudo").src = "../telasVendedor/tela4/ramificacoes/lojaperfil.html";
 }
 
+// Função para abrir o chat
+function abrirChat() {
+    document.getElementById("conteudo").src = "chat/chat.html";
+    // Remove a seleção das outras abas
+    document.querySelectorAll('.caixa').forEach(function (el) {
+        el.classList.remove('caixa-ativa');
+    });
+}
+
 // --- Cordova: botão voltar para sair do app SOMENTE na tela1 do vendedor ---
 document.addEventListener("deviceready", function() {
     document.addEventListener("backbutton", function (e) {
@@ -33,3 +42,4 @@ document.addEventListener("deviceready", function() {
         }
     }, false);
 });
+

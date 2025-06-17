@@ -9,18 +9,52 @@
   </head>
 
   <body>
-    <div id="barra-superior">
-      <div id="barra-superior-esquerda">
-        <label id="label1">pesquisar</label>
-        <i id="icone-conta" class="mdi mdi-account" onclick="sairParaContaLoja()"></i>
-      </div>
+   <!-- ...existing code... -->
+<!-- ...existing code... -->
+<div id="barra-superior">
+  <div id="barra-superior-esquerda">
+    <i id="icone-historico" class="mdi mdi-history" onclick="abrirHistorico()" title="Histórico de Coletas"></i>
+    <label id="label1">pesquisar</label>
+    <i id="icone-conta" class="mdi mdi-account" onclick="sairParaContaLoja()"></i>
+  </div>
+</div>
+<iframe
+  src="../telasEmpresa/tela2/tela2.html"
+  id="conteudo"
+  class="conteudo-do-app"
+>
+</iframe>
+
+<!-- Sidebar do histórico (agora à esquerda) -->
+<div id="sidebar-historico">
+  <div class="sidebar-header">
+    <span>Histórico de Coletas</span>
+    <i class="mdi mdi-close" onclick="fecharHistorico()" title="Fechar"></i>
+  </div>
+  <div id="lista-coletas">
+    <!-- Exemplo de coleta -->
+    <div class="coleta-item">
+      <div>Coleta do dia 14/06/2025</div>
+      <button onclick="abrirDetalhesColeta('14/06/2025')">Detalhes</button>
     </div>
-    <iframe
-      src="../telasEmpresa/tela2/tela2.html"
-      id="conteudo"
-      class="conteudo-do-app"
-    >
-    </iframe>
+    <!-- Adicione mais coletas conforme necessário -->
+  </div>
+</div>
+
+<!-- Popup de detalhes -->
+<div id="popup-detalhes" class="popup">
+  <div class="popup-content">
+    <span id="fechar-popup" onclick="fecharPopup()">&times;</span>
+    <h3>Detalhes da Coleta</h3>
+    <div id="detalhes-coleta">
+      <!-- Conteúdo preenchido via JS -->
+    </div>
+  </div>
+</div>
+<!-- ...existing code... -->
+
+
+
     <div id="tab_bar">
       <button
         onclick="mostrar('../telasempresa/tela2/tela2.html', 'caixa-coleta')"

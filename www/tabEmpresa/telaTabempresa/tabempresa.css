@@ -36,6 +36,129 @@ iframe {
   font-size: 2vh;
 }
 
+/* ...existing code... */
+/* ...existing code... */
+
+/* Ícone histórico na barra superior (agora à esquerda) */
+#icone-historico {
+  position: absolute;
+  font-size: 4vh;
+  top: 0.5vh;
+  left: 2vw;
+  cursor: pointer;
+}
+
+/* Sidebar à esquerda */
+#sidebar-historico {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: left 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+#sidebar-historico.aberto {
+  left: 0;
+}
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: #f6e6fe;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+#sidebar-historico .mdi-close {
+  cursor: pointer;
+  font-size: 2em;
+}
+#lista-coletas {
+  padding: 1em;
+  overflow-y: auto;
+  flex: 1;
+}
+/* ...existing code... */
+
+.coleta-item {
+  margin-bottom: 1.2em;
+  padding: 1em;
+  border-radius: 12px;
+  background: #f6e6fe;
+  border: 1.5px solid #e0c6f7;
+  box-shadow: 0 2px 8px rgba(90, 71, 102, 0.06);
+  color: #5b4766;
+  transition: box-shadow 0.2s, border 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.coleta-item:hover {
+  box-shadow: 0 4px 16px rgba(90, 71, 102, 0.13);
+  border: 1.5px solid #b48ad6;
+}
+
+.coleta-item > div {
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+
+.coleta-item button {
+  align-self: flex-end;
+  background: #5b4766;
+  color: #f6e6fe;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 1px 4px rgba(90, 71, 102, 0.08);
+}
+
+.coleta-item button:hover {
+  background: #7a5fa3;
+}
+
+/* ...existing code... */
+
+/* ...existing code... */
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+.popup.aberto {
+  display: flex;
+}
+.popup-content {
+  background: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  min-width: 300px;
+  position: relative;
+}
+#fechar-popup {
+  position: absolute;
+  top: 0.5em; right: 1em;
+  font-size: 2em;
+  cursor: pointer;
+}
+
 .conteudo-do-app {
   display: block;
   height: 100%;

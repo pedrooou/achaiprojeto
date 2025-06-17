@@ -1,3 +1,4 @@
+
 function mostrar(pagina, caixaId) {
     document.getElementById("conteudo").src = pagina;
 
@@ -9,6 +10,36 @@ function mostrar(pagina, caixaId) {
     // Adiciona a classe ativa à caixa clicada
     document.getElementById(caixaId).classList.add('caixa-ativa');
 }
+
+
+// ...existing code...
+
+// Abrir e fechar sidebar do histórico (agora à esquerda)
+function abrirHistorico() {
+    document.getElementById('sidebar-historico').classList.add('aberto');
+}
+function fecharHistorico() {
+    document.getElementById('sidebar-historico').classList.remove('aberto');
+}
+
+//
+
+// Abrir e fechar popup de detalhes
+function abrirDetalhesColeta(data) {
+    // Exemplo de conteúdo, substitua pelos dados reais
+    document.getElementById('detalhes-coleta').innerHTML = `
+        <strong>Data:</strong> ${data}<br>
+        <strong>Avaliação:</strong> 5 estrelas<br>
+        <strong>Observações:</strong> Nenhuma<br>
+        <strong>Loja visitada:</strong> Loja Exemplo
+    `;
+    document.getElementById('popup-detalhes').classList.add('aberto');
+}
+function fecharPopup() {
+    document.getElementById('popup-detalhes').classList.remove('aberto');
+}
+
+// ...existing code...
 
 function sairParaContaLoja() {
     document.getElementById("conteudo").src = "../telasVendedor/tela4/ramificacoes/lojaperfil.html";

@@ -5,7 +5,7 @@ body{
   padding: 0;
   height: 100dvh;
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
   display: block;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,6 @@ body{
     border: none;
     height: 8vh;
     border-top: 3px solid #ffffff;
-    
 }
 
 iframe {
@@ -83,8 +82,6 @@ border-radius: 20px;;
 padding-left: 5vw;
 }
 
-
-
 .perfil, .perfil img {
     width: 5vh;
     height: 5vh;
@@ -100,6 +97,15 @@ padding-left: 5vw;
     color:  #5b4766;
 }
 
+#icone-chat {
+    position: absolute;
+    font-size: 4vh;
+    top: 0.5vh;
+    left: 2vw;
+    color: #5b4766;
+    cursor: pointer;
+}
+
 #icone-conta {
     position: absolute;
     font-size: 4vh;
@@ -107,10 +113,6 @@ padding-left: 5vw;
     right: 2.2vw;
     bottom: 1.2vh;
 }
-
-
-
-
 
 #label1 {
     display: none;
@@ -151,8 +153,6 @@ padding-left: 5vw;
 
 /*Icones dos Botões*/
 
-
-
 .mdi-leaf, .mdi-shopping, .mdi-menu{
     justify-content: center;
     align-items: center;
@@ -160,9 +160,7 @@ padding-left: 5vw;
     margin: 0;
 }
 
-
 /*caixas dos icones*/
-
 
 .mdi-leaf,
 .mdi-menu,
@@ -184,15 +182,20 @@ padding-left: 5vw;
 .caixa-ativa i {
     color: #f6e6fe !important;
 }
-/* ...existing code... */
+
  #caixa-localizar, #caixa-pedidos, #caixa-menu{
    margin: auto;
-   /* Remova o background-color e border-radius daqui */
 }
 
-
-/* ...existing code... */
 #sacola{
     height: 0.25vh;
     width: auto;
+}
+
+#icone-caixaentrada {
+    margin-left: 10vw;
+    font-size: 2.5em; /* ou 3em, ou o tamanho que preferir */
+    color: #5b4766;
+    cursor: pointer;
+    transition: color 0.15s;
 }
