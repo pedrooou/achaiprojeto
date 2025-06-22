@@ -5,6 +5,10 @@ body{
     margin: 0;
 }
 
+html, body{
+  overflow: visible;
+}
+
 #tela1{
     margin-top: -5vw;
     display: none;

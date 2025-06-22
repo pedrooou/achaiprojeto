@@ -1,11 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="br.com.achai" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>açhaí</name>
-    <description>Sample Apache Cordova App</description>
+    <description>app achai o melhor do açaí</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    
+   <icon src="www/imagens/icone.app.png" />
+
+<!-- Ícones Android -->
+<platform name="android">
+    <icon src="www/imagens/icone.app.png" density="mdpi" />
+    <icon src="www/imagens/icone.app.png" density="hdpi" />
+    <icon src="www/imagens/icone.app.png" density="xhdpi" />
+    <icon src="www/imagens/icone.app.png" density="xxhdpi" />
+    <icon src="www/imagens/icone.app.png" density="xxxhdpi" />
+</platform>
+
+<!-- Ícones iOS -->
+<platform name="ios">
+    <icon src="www/imagens/icone.app.png" width="180" height="180" />
+    <!-- Adicione outros tamanhos se desejar -->
+</platform>
 </widget>

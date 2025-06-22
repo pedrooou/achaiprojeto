@@ -119,6 +119,11 @@ body, html {
   transition: transform 0.4s cubic-bezier(.25,.8,.25,1);
   will-change: transform;
 }
+
+.imagem-produto{
+ height: 8vh;
+}
+
 .slide2 {
   min-width: 100px;
   flex: 0 0 120px;

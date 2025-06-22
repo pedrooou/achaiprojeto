@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu Empresa</title>
+  <link rel="stylesheet" href="../../../css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="tela1.css" />
+</head>
+<body>
+  <div id="tela">
+    <div id="tela1-conta" class="telas-menu">
+      <div id="linhacima">
+        <img id="image-logo" src="../../../imagens/logo.png" alt="logo" />
+        <div id="infouser">
+          <span id="nome">Cooperativa Verde</span>
+          <span id="email">cooperativa@email.com</span>
+        </div>
+        <i id="sair_icon" class="mdi mdi-logout" onclick="sairDaConta()"></i>
+      </div>
+    </div>
+    <div id="tela2-editar" class="telas-menu" onclick="editarMotorista()">
+      <div id="editar">
+        <i class="mdi mdi-account-edit"></i>
+        <span>Editar informações do motorista</span>
+      </div>
+    </div>
+    <div id="tela3-projeto" class="telas-menu" onclick="irParaProjeto()">
+      <div id="projeto">
+        <i class="mdi mdi-book-cog"></i>
+        <span>Nosso projeto</span>
+      </div>
+    </div>
+  </div>
+  <script src="tela1.js"></script>
+</body>
+</html>
