@@ -153,7 +153,7 @@ padding-left: 5vw;
 
 /*Icones dos Botões*/
 
-.mdi-leaf, .mdi-shopping, .mdi-menu{
+.mdi-leaf, .mdi-clipboard-text, .mdi-menu{
     justify-content: center;
     align-items: center;
     font-size: 4vh;
@@ -164,7 +164,7 @@ padding-left: 5vw;
 
 .mdi-leaf,
 .mdi-menu,
-.mdi-shopping {
+.mdi-clipboard-text {
     justify-content: center;
     align-items: center;
     font-size: 4vh; /* ajuste o tamanho conforme cada ícone */

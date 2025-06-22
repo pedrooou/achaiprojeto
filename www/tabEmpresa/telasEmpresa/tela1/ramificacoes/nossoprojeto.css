@@ -1,0 +1,118 @@
+html{
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+}
+
+
+.botoesnosso {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    margin-bottom:0px;
+    justify-content: center;
+    width: 85vw;
+    height: 15vh;
+    box-sizing: border-box;
+    font-size: 30px;
+    background-color: #f6e6fe;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#botaoquem, #botaocontato, #botaopoliticas{
+ margin-bottom: 4vh;
+}
+
+#botaoquem {
+    margin-top: 5vh;
+}
+
+/*#botaocontato {}*/
+
+#divlogo{
+    background-color: #f6e6fe; 
+    border-radius: 50%;
+    padding: 3vh;
+    border: 4px solid #d1c0f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logoprincipal {
+    width: 12vw;
+    min-width: 120px;
+
+}
+
+.botoesnosso i {
+    font-size: 10vh;
+    margin-right: 2vw;
+    margin-left: 0;
+    color: #5b4766; 
+}
+
+.botoesnosso span {
+    flex: 1;
+    text-align: left;
+    color: #5b4766 ;
+}
+
+.esconder {
+    display: hidden;
+}
+
+/* Popup de contato */
+.popup-bg {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.popup-bg.show {
+    display: flex;
+}
+.popup-contato-content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 24px 24px 24px;
+    box-shadow: 0 4px 24px #0002;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px;   /* diminua aqui */
+    max-width: 320px;   /* limite opcional */
+    width: 80vw;        /* largura responsiva opcional */
+}
+.popup-contato-content h3 {
+    color: #5b4766;
+    margin-bottom: 16px;
+}
+.popup-contato-content p {
+    color: #5b4766;
+    margin: 6px 0;
+    font-size: 1.1em;
+}
+.btn-fechar-contato {
+    margin-top: 18px;
+    background: #a16cc1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-fechar-contato:hover {
+    background: #5b4766;
+}

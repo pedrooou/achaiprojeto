@@ -26,3 +26,14 @@ document.addEventListener('click', function () {
         div.classList.remove('aberta'); // usa a transição curta
     });
 });
+
+
+document.querySelectorAll('.aceitar').forEach(btn => {
+    btn.onclick = function(e) {
+        e.stopPropagation();
+        document.getElementById('popup-aceitar').style.display = 'flex';
+    };
+});
+document.getElementById('fechar-popup-aceitar').onclick = function() {
+    document.getElementById('popup-aceitar').style.display = 'none';
+};

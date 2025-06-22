@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Impulsionar Loja</title>
+    <link rel="stylesheet" href="impulsionar.css">
+    <link rel="stylesheet" href="../../../../css/materialdesignicons.min.css">
+</head>
+<body>
+    <div class="impulsionar-container">
+        <h2><i class="mdi mdi-bullhorn"></i> Impulsione sua loja!</h2>
+        <p>Destaque sua loja para mais clientes, apareça no topo das buscas e aumente suas vendas.</p>
+        <form id="form-impulsionar">
+    <label for="nome-loja">Nome da loja:</label>
+    <input type="text" id="nome-loja" required placeholder="Digite o nome da sua loja">
+
+    <label for="plano">Escolha um plano:</label>
+    <select id="plano" required>
+        <option value="">Selecione...</option>
+        <option value="7">Destaque por 7 dias</option>
+        <option value="30">Destaque por 30 dias</option>
+    </select>
+
+    <label for="contato">Seu contato (WhatsApp ou Email):</label>
+    <input type="text" id="contato" required placeholder="(xx) xxxxx-xxxx ou email">
+
+    <label for="mensagem">Mensagem (opcional):</label>
+    <textarea id="mensagem" rows="2" placeholder="Conte o que espera com o impulsionamento"></textarea>
+
+    <label style="display:flex;align-items:center;margin-top:10px;">
+      <input type="checkbox" required style="margin-right:6px;">
+      Concordo com os termos do impulsionamento
+    </label>
+
+    <button type="submit" class="btn-impulsionar">Solicitar Impulsionamento</button>
+</form>
+        <div id="mensagem-impulsionar" style="display:none;">
+            <i class="mdi mdi-check-circle"></i> Solicitação enviada! Entraremos em contato.
+        </div>
+    </div>
+    <script>
+    document.getElementById('form-impulsionar').onsubmit = function(e) {
+        e.preventDefault();
+        document.getElementById('form-impulsionar').style.display = 'none';
+        document.getElementById('mensagem-impulsionar').style.display = 'block';
+    };
+    </script>
+</body>
+</html>

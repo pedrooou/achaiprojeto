@@ -4,6 +4,80 @@ body {
     font-family: Arial, sans-serif;
     background: #faf7fc;
 }
+
+/* ...código existente... */
+#popupEnderecoForm .popup-content {
+    background: #fff;
+    border-radius: 14px;
+    padding: 32px 24px 24px 24px;
+    max-width: 350px;
+    width: 90vw; /* Garante que não ultrapasse a tela */
+    margin: 60px auto;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#popupEnderecoForm form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-sizing: border-box;
+}
+
+#popupEnderecoForm .inputs {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #cfc6e0;
+    border-radius: 7px;
+    font-size: 1rem;
+    background: #faf8fc;
+    color: #5b4766;
+    outline: none;
+    transition: border 0.2s;
+}
+
+#popupEnderecoForm .btn-coleta {
+    margin: 0 6px;
+    padding: 10px 0;
+    border-radius: 7px;
+    border: none;
+    background: #7c5eb6;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+#popupEnderecoForm .botoes-popup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+@media (max-width: 400px) {
+    #popupEnderecoForm .popup-content {
+        padding: 18px 6px 12px 6px;
+        max-width: 98vw;
+        width: 98vw;
+    }
+    #popupEnderecoForm form {
+        max-width: 98vw;
+    }
+}
+/* ...código existente... */
+
+
 .container {
     max-width: 400px;
     margin: 0 auto;

@@ -37,3 +37,21 @@ document.getElementById('popupClose').onclick = function() {
 document.getElementById('btnHistorico').onclick = function() {
     window.location.href = "coletahistorico.html";
 };
+
+
+document.getElementById('blocoEndereco').onclick = function() {
+    document.getElementById('popupEnderecoForm').style.display = 'flex';
+};
+
+document.getElementById('cancelarEndereco').onclick = function() {
+    document.getElementById('popupEnderecoForm').style.display = 'none';
+};
+
+document.getElementById('formEnderecoColeta').onsubmit = function(e) {
+    e.preventDefault();
+    // Aqui você pode salvar os dados do endereço, exibir no bloco, etc.
+    document.getElementById('popupEnderecoForm').style.display = 'none';
+    // Exemplo: atualizar o texto do bloco com o endereço preenchido
+    const endereco = document.getElementById('endereco-coleta').value;
+    document.querySelector('#blocoEndereco span').textContent = endereco || 'Endereço de coleta';
+};

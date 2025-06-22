@@ -10,3 +10,17 @@ function sairDaConta() {
     localStorage.removeItem('tipoConta');
     window.top.location.href = "../../../index.html";
 }
+
+
+function abrirPerfilLoja() {
+  window.location.href = "ramificacoes/lojaperfil.html";
+}
+
+
+function abrirImpulsionar() {
+    window.location.href = "ramificacoes/impulsionar.html";
+    }
+
+
+
+

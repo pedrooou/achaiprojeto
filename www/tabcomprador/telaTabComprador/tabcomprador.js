@@ -42,10 +42,10 @@ function atualizarBarraSuperior() {
     pesquisa.value = "";
 }
 
-botaoOpcao1.onclick = function () {
+botaoOpcao1.onclick=function() {
     pesquisa.style.display = "block"; pesquisa.focus();
 };
-botaoOpcao2.onclick = function () {
+botaoOpcao2.onclick=function() {
     pesquisa.style.display = "block"; pesquisa.focus();
 };
 

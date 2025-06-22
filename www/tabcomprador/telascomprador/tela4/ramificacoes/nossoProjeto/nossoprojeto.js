@@ -3,6 +3,9 @@ function sairParaNossoProjeto() {
      '../../../tabvendedor/telasVendedor/tela4/ramificacoes/tela1NossoProjeto/quemsomos.html';
 }
 
+function politica() {
+    window.parent.document.getElementById('conteudo').src = '../telascomprador/tela4/ramificacoes/nossoProjeto/quemSomosNos/quemsomosnos.html';
+}
 function voltar(){
     const botao = document.getElementById('voltar-botao');
 

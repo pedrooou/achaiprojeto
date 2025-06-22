@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quem somos nos</title>
+  <link rel="stylesheet" href="nossoprojeto.css">
+  <link rel="stylesheet" href="../../../../css/materialdesignicons.min.css">
+  
+</head>
+
+<body>
+  <div id="divlogo">
+    <img id="logoprincipal" src="../../../../imagens/logo.png" alt="">
+  </div>
+  <button id="botaoquem" class="botoesnosso" onclick= "politica()">         
+    <i id="img1" class="mdi mdi-account"></i>
+    <span>Quem somos nós?</span>
+  </button>
+  <button onclick="abrirPopupPoliticas()" id="botaopoliticas" class="botoesnosso">
+    <i id="img2" class="mdi mdi-file-document"></i>
+    <span>Políticas</span>
+  </button>
+  <button onclick="abrirPopupContato()" id="botaocontato" class="botoesnosso">
+    <i id="img3" class="mdi mdi-phone"></i>
+    <span>Contato</span>
+  </button>
+
+  <!-- Popup de Contato -->
+<div id="popup-contato" class="popup-bg">
+  <div class="popup-contato-content">
+    <h3>Contato da Empresa</h3>
+    <p><strong>Email:</strong> curuape2025achai@gmail.com</p>
+    <p><strong>Telefone:</strong> (91) 9 3006-2025</p>
+    <button id="fechar-contato" class="btn-fechar-contato">Fechar</button>
+  </div>
+</div>
+
+<!-- Popup de Políticas -->
+<div id="popup-politicas" class="popup-bg">
+  <div class="popup-contato-content">
+    <i class="mdi mdi-file-document" style="font-size:48px;color:#a16cc1;margin-bottom:8px;"></i>
+    <h3>Políticas e Termos de Uso</h3>
+    <p>Leia nossos termos para entender seus direitos e deveres no uso do app.</p>
+    <a href="termos_de_uso.pdf" download class="btn-fechar-contato" style="margin-bottom:10px;display:inline-block;text-align:center;">
+      <i class="mdi mdi-download"></i> Baixar PDF
+    </a>
+    <button id="fechar-politicas" class="btn-fechar-contato">Fechar</button>
+  </div>
+</div>
+
+
+</div>
+
+  <script src="nossoprojeto.js"></script>
+</body>
+
+</html>

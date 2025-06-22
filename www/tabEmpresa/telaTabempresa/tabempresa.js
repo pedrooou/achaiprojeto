@@ -42,7 +42,7 @@ function fecharPopup() {
 // ...existing code...
 
 function sairParaContaLoja() {
-    document.getElementById("conteudo").src = "../telasVendedor/tela4/ramificacoes/lojaperfil.html";
+    document.getElementById('conteudo').src = '../telasEmpresa/tela1/ramificacoes/perfil.html';
 }
 
 // Cordova: botão voltar para sair do app SOMENTE na tela1 do vendedor

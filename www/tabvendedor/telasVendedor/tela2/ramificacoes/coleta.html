@@ -1,61 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coleta</title>
-    <link rel="stylesheet" href="../../../../css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="coleta.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../../../css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="coleta.css" />
+  </head>
+  <body>
     <div class="container">
-        <!-- Ícone de caminhão -->
-        <i class="mdi mdi-truck icon-top"></i>
+      <!-- Ícone de caminhão -->
+      <i class="mdi mdi-truck icon-top"></i>
 
-        <!-- Bloco Endereço -->
-        <div class="bloco bloco-endereco" id="blocoEndereco">
-            <div>
-                <i class="mdi mdi-map-marker"></i>
-                <span>Endereço de coleta</span>
-            </div>
-            <i class="mdi mdi-chevron-right"></i>
+      <!-- Bloco Endereço -->
+      <div class="bloco bloco-endereco" id="blocoEndereco">
+        <div>
+          <i class="mdi mdi-map-marker"></i>
+          <span>Endereço de coleta</span>
         </div>
+        <i class="mdi mdi-chevron-right"></i>
+      </div>
 
-        <!-- Bloco Quantidade -->
-        <div class="bloco bloco-quantidade">
-            <div class="quantidade-header" id="quantidadeHeader">
-                <span>Quantidade</span>
-                <i class="mdi mdi-chevron-down" id="iconeSeta"></i>
-            </div>
-            <div class="quantidade-opcoes" id="opcoesQuantidade">
-                <button class="quantidade-btn">1 saca</button>
-                <button class="quantidade-btn">2 sacas</button>
-                <button class="quantidade-btn">3 sacas</button>
-                <button class="quantidade-btn">4 sacas</button>
-                <button class="quantidade-btn">5 sacas</button>
-                <button class="quantidade-btn">6 sacas</button>
-            </div>
+      <!-- Bloco Quantidade -->
+      <div class="bloco bloco-quantidade">
+        <div class="quantidade-header" id="quantidadeHeader">
+          <span>Quantidade</span>
+          <i class="mdi mdi-chevron-down" id="iconeSeta"></i>
         </div>
-<!-- Bloco Observação -->
-<div class="bloco bloco-observacao">
-    <label for="observacao" style="color:#5b4766; font-weight:bold;">Observação</label>
-    <textarea id="observacao" rows="3" placeholder="Adicione uma observação ou comentário..." style="width:100%;resize:vertical;margin-top:8px;"></textarea>
-</div>
+        <div class="quantidade-opcoes" id="opcoesQuantidade">
+          <button class="quantidade-btn">1 saca</button>
+          <button class="quantidade-btn">2 sacas</button>
+          <button class="quantidade-btn">3 sacas</button>
+          <button class="quantidade-btn">4 sacas</button>
+          <button class="quantidade-btn">5 sacas</button>
+          <button class="quantidade-btn">6 sacas</button>
+        </div>
+      </div>
+      <!-- Bloco Observação -->
+      <div class="bloco bloco-observacao">
+        <label for="observacao" style="color: #5b4766; font-weight: bold"
+          >Observação</label
+        >
+        <textarea
+          id="observacao"
+          rows="3"
+          placeholder="Adicione uma observação ou comentário..."
+          style="width: 100%; resize: vertical; margin-top: 8px"
+        ></textarea>
+      </div>
 
-<!-- Botão Chamar Coleta -->
-<button class="btn-coleta" id="btnColeta">Chamar coleta</button>
+      <!-- Botão Chamar Coleta -->
+      <button class="btn-coleta" id="btnColeta">Chamar coleta</button>
 
-<button class="btn-coleta" id="btnHistorico">Histórico de Coletas</button>
+      <button class="btn-coleta" id="btnHistorico">Histórico de Coletas</button>
     </div>
 
     <!-- Popup -->
-  <div class="popup-bg" id="popupColeta">
-        <div class="popup-content">
-            <p>a Coleta está a caminho do seu ponto</p>
-            <i class="mdi mdi-truck popup-truck"></i>
-            <button class="popup-close" id="popupClose">OK</button>
-        </div>
+    <div class="popup-bg" id="popupColeta">
+      <div class="popup-content">
+        <p>a Coleta está a caminho do seu ponto</p>
+        <i class="mdi mdi-truck popup-truck"></i>
+        <button class="popup-close" id="popupClose">OK</button>
+      </div>
     </div>
+
+    <!-- ...código existente... -->
+
+    <!-- Popup Endereço -->
+    <div class="popup-bg" id="popupEnderecoForm" style="display: none">
+      <div class="popup-content">
+        >
+        <form id="formEnderecoColeta" autocomplete="off">
+          <input
+            class="inputs"
+            placeholder="Endereço"
+            type="text"
+            id="endereco-coleta"
+            required
+          />
+          <input
+            class="inputs"
+            placeholder="Referencial"
+            type="text"
+            id="referencial-coleta"
+            required
+          />
+          <input
+            class="inputs"
+            placeholder="Número"
+            type="text"
+            id="numero-coleta"
+            required
+          />
+          <input
+            class="inputs"
+            placeholder="Bairro - Cidade"
+            type="text"
+            id="bairro-coleta"
+            required
+          />
+          <div class="botoes-popup">
+            <button type="submit" class="btn-coleta">Salvar</button>
+            <button type="button" class="btn-coleta" id="cancelarEndereco">
+              Cancelar
+            </button>
+          </div>
+        </form>
+        <!-- ...código existente... -->
+      </div>
+    </div>
+    <!-- ...código existente... -->
+
     <script src="coleta.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,48 @@
+.impulsionar-container {
+    max-width: 350px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0002;
+    padding: 32px 18px;
+    text-align: center;
+}
+.impulsionar-container h2 {
+    color: #7c5eb6;
+    margin-bottom: 12px;
+}
+.impulsionar-container label {
+    display: block;
+    margin: 16px 0 4px 0;
+    color: #5b4766;
+    font-weight: bold;
+}
+.impulsionar-container input, .impulsionar-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #cfc6e0;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+.btn-impulsionar {
+    background: #7c5eb6;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+.btn-impulsionar:hover {
+    background: #5b4766;
+}
+#mensagem-impulsionar {
+    color: #4caf50;
+    font-size: 1.1em;
+    margin-top: 24px;
+}

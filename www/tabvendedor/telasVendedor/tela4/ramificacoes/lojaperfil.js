@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Botão Ver Loja
+document.getElementById('botao-ver-loja').onclick = function() {
+    // Troque o caminho abaixo pelo caminho da tela que você irá criar
+    window.location.href = "../../../../tabcomprador/telascomprador/tela1/ramificacoes/produtos/perfilDaLoja/perfildaloja.html";
+};
+
     // Troca do banner
     const bannerInput = document.getElementById('input-banner-loja');
     const bannerDiv = document.getElementById('banner-loja');

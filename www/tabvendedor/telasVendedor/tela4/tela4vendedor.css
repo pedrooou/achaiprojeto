@@ -16,15 +16,38 @@ body{
    margin-top:-20%
    }
 
+/* ...código existente... */
+
 .telas-menu {
-   margin-top: 1.2vh;
   width: 80%;
+  margin: 1.2vh auto;
   border-radius: 10px;
+  background: #f6e6fe;
   box-shadow: 0 2px 8px #0001;
-   background: #f6e6fe;
-   padding: 1.2vh 2.4vw;
+  padding: 1.8vh 2vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
+.telas-menu:hover {
+  background: #e0c7f7;
+}
+
+#impulsionar {
+  display: flex;
+  align-items: center;
+  font-size: 5vh;
+  color: #5b4766;
+}
+
+#impulsionar .mdi-bullhorn {
+  font-size: 10vh;
+  margin-right: 5.6vw;
+}
+
+/* ...código existente... */
 
 #linhacima {
    display: flex;
