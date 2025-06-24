@@ -1,9 +1,58 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 139.5dvh;
   font-family: sans-serif;
   background: #fff;
+}
+
+.org-infor-loja{
+  display: flex;
+}
+
+.imagem-loja{
+  height: 70px;
+}
+
+.icone-selo1{
+  color: #a89a46;
+  font-size: 15vw;
+}
+.icone-selo2{
+  color: #a89a46;
+  font-size: 15vw;
+}
+.icone-selo3{
+    color: #818181;
+  font-size: 15vw;
+}
+.icone-selo4{
+    color: #818181;
+  font-size: 15vw;
+}
+.icone-selo5{
+  color: #81392c;
+  font-size: 15vw;
+}
+.icone-selo6{
+  
+  color: #81392c;
+  font-size: 15vw;
+}
+.org-icone-selo{
+  margin-left: 18vw;
+}
+
+.org-infor-dis-loja{
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  justify-content: center;
+}
+
+.org-imagem{
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 .slider {
@@ -156,7 +205,7 @@ body, html {
   height: calc((50vh - 7vh) / 3.5); /* 3,5 slides visíveis, ajuste se quiser */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   background: #dac3e5;
 }
 #slidev1 { background: #eee6f2; }

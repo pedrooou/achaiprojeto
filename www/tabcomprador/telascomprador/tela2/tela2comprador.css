@@ -28,7 +28,7 @@ font-size: 4vw;
     margin-right: 10px;
 }
 
-#infor-mapa {
+.infor-loja {
     display: none;
     position: absolute;
     border-top-left-radius: 30px;

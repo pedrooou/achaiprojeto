@@ -5,6 +5,10 @@ body{
     position: relative;
 }
 
+html, body{
+    overflow:  visible;
+}
+
 
 
 #tela{

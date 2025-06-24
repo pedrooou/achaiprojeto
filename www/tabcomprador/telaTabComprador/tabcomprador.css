@@ -154,6 +154,13 @@ border-radius: 50%;
     font-size: 0;
 }
 
+#icone-pedido-atual{
+    left: 15vw;
+    top: 0;
+    position: absolute;
+    font-size: 45px;
+}
+
 .opcao1{
     margin-left: 2.5vw;
     margin-right: 5vw;
@@ -178,6 +185,7 @@ border-radius: 50%;
 }
 
 .opcoes{
+    margin-top: -2px;
     position: relative;
     display: none;
     width: 100%;

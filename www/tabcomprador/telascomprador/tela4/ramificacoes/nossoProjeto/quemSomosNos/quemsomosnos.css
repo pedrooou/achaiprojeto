@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    height: 117dvh;
     background: linear-gradient(135deg, #e6f6ef 0%, #f6e6fe 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
     color: #4f0c4b;
-    min-height: 100vh;
 }
 
 .qs-container {

@@ -1,4 +1,4 @@
-   const params = new URLSearchParams(window.location.search);
+ const params = new URLSearchParams(window.location.search);
     const tela = params.get('tela');
     if (tela && document.getElementById(tela)) {
       document.getElementById(tela).style.display = 'block';
@@ -53,4 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicializa
     updateSlider();
   });
+    // Popup de construção SÓ na tela 3
+  const popup = document.getElementById('popup-construcao');
+  const btnFechar = document.getElementById('popup-fechar');
+  // Seleciona só os cards da tela 3
+  document.querySelectorAll('#tela3 .parte1-tela3 , #tela3 .parte2-tela3').forEach(function(div) {
+    div.addEventListener('click', function() {
+      popup.style.display = 'flex';
+    });
+  });
+  btnFechar.addEventListener('click', function() {
+    popup.style.display = 'none';
+  });
+
+
 });
+
+  function voltar(){
+    window.location.href = "../../tela1comprador.html";
+}

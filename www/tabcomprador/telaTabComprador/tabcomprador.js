@@ -19,6 +19,7 @@ const botaoOpcao1 = document.getElementById('botao-itens');
 const botaoOpcao2 = document.getElementById('botao-loja');
 const orgIcon = document.getElementById('organizacao-icon');
 const icone = document.getElementById('icone-down');
+const iconeCarro = document.getElementById('icone-pedido-atual');
 
 let pesquisaAtiva = false;
 
@@ -30,28 +31,36 @@ function atualizarBarraSuperior() {
 
     // Verifica se está na tela1 OU tela2
     if (
-        iframe.src.endsWith("tela1/tela1comprador.html") ||
-        iframe.src.endsWith("tela2/tela2comprador.html")
+        iframe.src.endsWith("tela1/tela1comprador.html")
     ) {
+        iconeCarro.style.display = "block";
+        lupa.style.display = "block";
+        conta.style.display = "block";
+    } else if (iframe.src.endsWith("tela2/tela2comprador.html")) {
+        iconeCarro.style.display = "block";
+         opcoes.style.display = "none";
         lupa.style.display = "block";
         conta.style.display = "block";
     } else {
+        iconeCarro.style.display = "block";
+        opcoes.style.display = "none";
         lupa.style.display = "none";
         conta.style.display = "block";
     }
     pesquisa.value = "";
 }
 
-botaoOpcao1.onclick=function() {
+botaoOpcao1.onclick = function () {
     pesquisa.style.display = "block"; pesquisa.focus();
 };
-botaoOpcao2.onclick=function() {
+botaoOpcao2.onclick = function () {
     pesquisa.style.display = "block"; pesquisa.focus();
 };
 
 // pesquisa.style.display = "block"; pesquisa.focus();
 
 function aparecerOpcoes() {
+    iconeCarro.style.display = "none";
     opcoes.style.display = "block";
     opcoes.classList.remove('novo-estado-input');
     botaoOpcao1.classList.remove("novo-estado-botao");
@@ -67,12 +76,14 @@ lupa.onclick = function () {
         aparecerOpcoes();
         conta.className = "mdi mdi-microphone";
     } else {
+        iconeCarro.style.display = "block";
         opcoes.style.display = "none";
-        botaoOpcao2.addEventListener("transitionend", function ess() {
+        botaoOpcao2.addEventListener("transitionend", function () {
             botaoOpcao2.style.display = "none";
         });
     }
     if (pesquisaAtiva && iframe.src.endsWith("tela2/tela2comprador.html")) {
+        iconeCarro.style.display = "none";
         pesquisa.style.display = "block";
         pesquisa.focus();
 
@@ -159,4 +170,27 @@ icone.onclick = function () {
     });
 };
 conta.onclick = sairParaConta;
+
+const botaoVoltarTelaInicio = document.getElementById('logo-do-app');
+
+botaoVoltarTelaInicio.onclick = function () {
+    // Garante que sempre volta para a tela inicial do comprador
+    const iframe = document.getElementById("conteudo");
+    if (iframe) {
+        iframe.src = '../telascomprador/tela1/tela1comprador.html';
+    }
+    // Remove a classe ativa de todas as caixas
+    document.querySelectorAll('.caixa').forEach(function (el) {
+        el.classList.remove('caixa-ativa');
+    });
+    // Ativa apenas o botão "Início"
+    const caixaHome = document.getElementById('caixa-home');
+    if (caixaHome) {
+        caixaHome.classList.add('caixa-ativa');
+    }
+}
+
+iconeCarro.onclick = function(){
+    iframe.src = "ramificacoes/pedidoAtual/pedidoatual.html";
+}
 

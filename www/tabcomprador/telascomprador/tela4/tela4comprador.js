@@ -11,7 +11,7 @@ function sairParaSeusPontos() {
    window.parent.document.getElementById('conteudo').src = '../telascomprador/tela4/ramificacoes/seusPontos/seusPontos.html';
 }
 function sairParaCentralVerde() {
-   window.parent.document.getElementById('conteudo').src = '../telascomprador/tela4/ramificacoes/centralVerde/centralVerde.html';
+ window.location.href = "../../../timeline/finalidades.html";
 }
 function sairParaNossoProjeto() {
    window.parent.document.getElementById('conteudo').src = '../telascomprador/tela4/ramificacoes/nossoProjeto/nossoprojeto.html';
