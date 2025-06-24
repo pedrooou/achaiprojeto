@@ -13,6 +13,9 @@
 
 <!-- Ícones Android -->
 <platform name="android">
+    <!-- Esta linha resolve o problema do teclado empurrando a tela -->
+    <preference name="android-windowSoftInputMode" value="adjustPan" />
+
     <icon src="www/imagens/icone.app.png" density="mdpi" />
     <icon src="www/imagens/icone.app.png" density="hdpi" />
     <icon src="www/imagens/icone.app.png" density="xhdpi" />

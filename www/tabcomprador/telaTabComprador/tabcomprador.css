@@ -3,13 +3,17 @@ body{
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  height: 100vh;
-  width: 100%;
+  height: 100dvh;
+  width: 100vw;
   overflow: hidden;
   display: block;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: relative
+}
+main{
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 #icone-chat {
@@ -35,9 +39,9 @@ body{
 
 iframe {
     display: block;
-    height:98%;
+    height:98vh;
     border: none;
-    margin-bottom: 50px;
+    margin-bottom: 6vh;
     width: 100%;
     overflow: hidden;
 }

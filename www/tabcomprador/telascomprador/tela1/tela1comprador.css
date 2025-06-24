@@ -2,8 +2,16 @@ body, html {
   margin: 0;
   padding: 0;
   height: 139.5dvh;
+  width: 100vw;
   font-family: sans-serif;
   background: #fff;
+}
+
+body{
+  display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
 }
 
 .org-infor-loja{
