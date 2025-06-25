@@ -38,6 +38,7 @@ body{
   margin-left: 8px;
 }
 #historico-achai{
+    flex-direction: column;
     display: flex;
 }
 
@@ -47,14 +48,13 @@ body{
 }
 
 .infor-data-hora{
-    font-size: 1.8vh;
-    margin-top: 1.3vh;
+    font-size: 2.2vh;
     margin-left: 2vw;
-    width: 30vw;
+    width: 40vw;
     height: 1;
 }
 .preco{
-    font-size: 1.8vh;
+     font-size: 2.2vh;;
     margin-top: 1.3vh;
     margin-bottom: 2vh;
     margin-left: 14vw;
@@ -71,10 +71,11 @@ body{
     display: flex;
 }
 .infor-mais {
+    width: 100vw;
     font-size: 2.5vh;
     max-height: 0;
     overflow: hidden;
-    display: block;
+    display: flex;
     transition: max-height 0.3s ease; /* transição padrão de fechamento */
 }
 
