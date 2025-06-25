@@ -56,6 +56,14 @@ body {
     margin-bottom: 4px;
     color: #3a2d6d;
 }
+
+.nome-produto {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #3a2d6d;
+}
 .avaliacao-loja {
     font-size: 1.1rem;
     color: #f7b731;

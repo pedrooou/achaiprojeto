@@ -2,13 +2,13 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #faf7fc;
+    background: #F9FFF7;
     font-family: 'Segoe UI', Arial, sans-serif;
     overflow-x: hidden;
 }
 
 .titulo-pagina {
-    color: #5b4766;
+    color: #2E6B2F;
     text-align: center;
     margin-top: 30px;
     font-size: 2rem;
@@ -18,8 +18,8 @@ body, html {
 
 .adicionar-item {
     background: #fff;
-    color: #5b4766;
-    border: 1.5px solid #b388ff;
+    color: #2E6B2F;
+    border: 1.5px solid #A2D39C;
     padding: 10px 22px;
     border-radius: 12px;
     font-size: 1.1rem;
@@ -35,8 +35,8 @@ body, html {
     transition: background 0.2s, border 0.2s;
 }
 .adicionar-item:hover {
-    background: #f6e6fe;
-    border: 1.5px solid #7a5a8c;
+    background: #F9FFF7;
+    border: 1.5px solid #4BBF2F;
 }
 
 .lista-itens {
@@ -58,12 +58,12 @@ body, html {
     max-width: 420px;
     cursor: pointer;
     position: relative;
-    border: 1px solid #ece6f6;
+    border: 1px solid #B7E4C7;
     transition: box-shadow 0.2s, border 0.2s;
 }
 .item-bloco:hover {
-    border: 1.5px solid #b388ff;
-    box-shadow: 0 2px 12px #b388ff22;
+    border: 1.5px solid #A2D39C;
+    box-shadow: 0 2px 12px #A2D39C22;
 }
 
 .item-imagem img {
@@ -72,8 +72,8 @@ body, html {
     border-radius: 10px;
     object-fit: cover;
     margin-right: 16px;
-    border: 1.5px solid #ece6f6;
-    background: #faf7fc;
+    border: 1.5px solid #B7E4C7;
+    background: #F9FFF7;
 }
 
 .item-info {
@@ -86,20 +86,20 @@ body, html {
 .item-nome {
     font-size: 1.08rem;
     font-weight: 600;
-    color: #5b4766;
+    color: #2E6B2F;
     margin-bottom: 2px;
 }
 
 .item-preco {
     font-size: 1rem;
-    color: #7a5a8c;
+    color: #4BBF2F;
     font-weight: 400;
 }
 
 .item-editar {
     background: none;
-    color: #7a5a8c;
-    border: 1px solid #b388ff;
+    color: #4BBF2F;
+    border: 1px solid #A2D39C;
     border-radius: 8px;
     padding: 7px 16px;
     cursor: pointer;
@@ -110,15 +110,15 @@ body, html {
     font-weight: 500;
 }
 .item-editar:hover {
-    background: #f6e6fe;
-    color: #5b4766;
-    border: 1.5px solid #7a5a8c;
+    background: #F9FFF7;
+    color: #2E6B2F;
+    border: 1.5px solid #4BBF2F;
 }
 
 .popup-fundo {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(90, 71, 102, 0.08);
+    background: rgba(46,107,47, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +129,7 @@ body, html {
     background: #fff;
     border-radius: 16px;
     padding: 28px 20px 18px 20px;
-    box-shadow: 0 4px 32px #b388ff22;
+    box-shadow: 0 4px 32px #A2D39C22;
     min-width: 260px;
     max-width: 95vw;
     width: 320px;
@@ -144,16 +144,16 @@ body, html {
     top: 12px;
     right: 12px;
     font-size: 1.3rem;
-    color: #b388ff;
+    color: #A2D39C;
     cursor: pointer;
     transition: color 0.2s;
 }
 .popup-fechar:hover {
-    color: #5b4766;
+    color: #2E6B2F;
 }
 
 #popup-titulo {
-    color: #5b4766;
+    color: #2E6B2F;
     margin-bottom: 12px;
     text-align: center;
     font-size: 1.2rem;
@@ -161,7 +161,7 @@ body, html {
 }
 
 #form-editar-item label {
-    color: #7a5a8c;
+    color: #4BBF2F;
     font-weight: 500;
     margin-top: 8px;
     margin-bottom: 2px;
@@ -174,17 +174,17 @@ body, html {
     width: 100%;
     padding: 8px 10px;
     border-radius: 8px;
-    border: 1px solid #ece6f6;
+    border: 1px solid #B7E4C7;
     margin-bottom: 8px;
     font-size: 1rem;
-    background: #faf7fc;
-    color: #5b4766;
+    background: #F9FFF7;
+    color: #2E6B2F;
     outline: none;
     transition: border 0.2s;
 }
 #form-editar-item input[type="text"]:focus,
 #form-editar-item input[type="number"]:focus {
-    border: 1.5px solid #b388ff;
+    border: 1.5px solid #A2D39C;
 }
 
 #form-editar-item input[type="file"] {
@@ -195,7 +195,7 @@ body, html {
     width: 70px;
     height: 70px;
     border-radius: 8px;
-    background: #faf7fc;
+    background: #F9FFF7;
     margin: 0 auto 10px auto;
     display: flex;
     align-items: center;
@@ -212,7 +212,7 @@ body, html {
 /* ...existing code... */
 .item-descricao {
     font-size: 0.97rem;
-    color: #8b7a99;
+    color: #4BBF2F;
     margin-bottom: 4px;
     margin-top: 2px;
     font-weight: 400;
@@ -224,16 +224,16 @@ body, html {
     align-items: center;
     gap: 2px;
     font-size: 1.1em;
-    color: #b388ff;
+    color: #A2D39C;
     margin-bottom: 2px;
 }
 .item-avaliacao .nota, .item-avaliacao-popup .nota {
-    color: #7a5a8c;
+    color: #4BBF2F;
     font-size: 0.98em;
     margin-left: 4px;
 }
 .item-avaliacao-popup label {
-    color: #7a5a8c;
+    color: #4BBF2F;
     font-size: 0.97em;
     margin-bottom: 2px;
     display: block;
@@ -246,11 +246,11 @@ body, html {
     width: 100%;
     padding: 8px 10px;
     border-radius: 8px;
-    border: 1px solid #ece6f6;
+    border: 1px solid #B7E4C7;
     margin-bottom: 8px;
     font-size: 1rem;
-    background: #faf7fc;
-    color: #5b4766;
+    background: #F9FFF7;
+    color: #2E6B2F;
     outline: none;
     resize: vertical;
     min-height: 40px;
@@ -258,7 +258,7 @@ body, html {
     transition: border 0.2s;
 }
 #form-editar-item textarea:focus {
-    border: 1.5px solid #b388ff;
+    border: 1.5px solid #A2D39C;
 }
 /* ...existing code... */
 .item-editar {
@@ -267,7 +267,7 @@ body, html {
 /* ...existing code... */
 
 .btn-salvar {
-    background: #5b4766;
+    background: #2E6B2F;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -285,5 +285,5 @@ body, html {
     gap: 7px;
 }
 .btn-salvar:hover {
-    background: #7a5a8c;
+    background: #4BBF2F;
 }

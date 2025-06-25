@@ -10,7 +10,7 @@
   align-items: center;
 }
 .perfil-container h2 {
-  color: #5b4766;
+  color: #452811;
   margin-bottom: 18px;
 }
 .foto-perfil {
@@ -24,14 +24,14 @@
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #a16cc1;
+  border: 3px solid #9D5419;
   margin-bottom: 8px;
 }
 .foto-perfil input[type="file"] {
   font-size: 0.95em;
 }
 form label {
-  color: #5b4766;
+  color: #452811;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 4px;
@@ -40,12 +40,12 @@ form label {
 form input, form textarea {
   width: 100%;
   padding: 10px 12px;
-  border: 1px solid #dac3e5;
+  border: 1px solid #E7D6C2;
   border-radius: 8px;
   font-size: 1em;
   margin-bottom: 8px;
-  background: #f6e6fe;
-  color: #5b4766;
+  background: #FFFAF6;
+  color: #452811;
   box-sizing: border-box;
   outline: none;
 }
@@ -53,7 +53,7 @@ form textarea {
   resize: vertical;
 }
 .btn-salvar {
-  background: #a16cc1;
+  background: #9D5419;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -67,7 +67,7 @@ form textarea {
   transition: background 0.2s;
 }
 .btn-salvar:hover {
-  background: #5b4766;
+  background: #452811;
 }
 
 .popup-bg {
@@ -94,13 +94,13 @@ form textarea {
     max-width: 90vw;
 }
 .popup-content p {
-    color: #5b4766;
+    color: #452811;
     font-size: 1.1em;
     margin-bottom: 16px;
     text-align: center;
 }
 .popup-close {
-    background: #a16cc1;
+    background: #9D5419;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -110,5 +110,5 @@ form textarea {
     transition: background 0.2s;
 }
 .popup-close:hover {
-    background: #5b4766;
+    background: #452811;
 }

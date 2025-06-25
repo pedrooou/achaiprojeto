@@ -1,117 +1,147 @@
-body{
+body {
     margin: 0;
     padding: 0;
+    background: #F9FFF7;
 }
-
-/* divs do pedidos */
-.pedidos-div{
-       display: flex;
+#tela {
+    max-width: 420px;
+    margin: 32px auto;
+    padding: 0 10px;
+    padding-bottom: 80px;
 }
-
-.pedidos-tela{
-  background: #f6e6fe ;
-    width: 85vw;
-    margin: auto;
-    margin-top: 3vh;
-    padding: 2vh;
-    border-radius: 3vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-
+.pedidos-tela {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px #0001;
+    margin-bottom: 22px;
+    padding: 0;
+    transition: box-shadow 0.2s;
+    width: 100%;
 }
-
-
-
-.logo-da-loja{
-    height: 7vh;
-    width: auto;
+.pedidos-tela:hover {
+    box-shadow: 0 4px 16px #0002;
 }
-
-.infor-data-hora{
-    font-size: 2vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
-.preco{
-    font-size: 15px;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 15vw;
-    margin-right: 2.2vw;
-}
-
-#icone-mais{
-    font-size: 4vh;
-}
-
-.organ-imagem-data-hora{
-    display: flex;
-}
-.infor-mais {
-    font-size: 25px;
-    max-height: 0;
-    overflow: hidden;
-    display: block;
-    text-align: center;
-    transition: max-height 0.3s ease; /* transição padrão de fechamento */
-}
-
-.infor-mais.aberta {
-    max-height: 200px;
-    transition: max-height 1s ease; /* transição de abertura */
-}
-
-.aceitar {
-    border-radius: 10px;
-    padding: 1vh 2vw;
-    margin-left: 12vw;
-    margin-right: 12vw;
-    margin-top: 1.2vh;
-    margin-bottom: 1.2vh;
-    color: white;
-    background-color: purple ;
-}
-
-
-/* ...código existente... */
-.popup-bg {
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.35);
+.pedidos-div {
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 1000;
+    justify-content: space-between;
+    padding: 18px 16px 8px 16px;
 }
-.popup-content {
+.organ-imagem-data-hora {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo-da-loja {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.infor-data-hora {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 10px;
+}
+.nome-cliente {
+    font-weight: bold;
+    color: #2E6B2F;
+    font-size: 1.08em;
+}
+.data-hora {
+    color: #4BBF2F;
+    font-size: 0.98em;
+}
+.preco {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+}
+.status-pago {
+    color: #4BBF2F;
+    font-size: 0.98em;
+    font-weight: bold;
+}
+.item-resumo {
+    color: #75E658;
+    font-size: 0.95em;
+}
+.produtos-pedido {
+    margin: 0 0 0 66px;
+    color: #2E6B2F;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.botoes-pedido {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0 16px 66px;
+}
+.aceitar, .cancelar {
+    border-radius: 10px;
+    padding: 10px 28px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-align: center;
+    border: none;
+    font-size: 1em;
+}
+.aceitar {
+    background-color: #75E658;
+}
+.aceitar:hover {
+    background: #2E6B2F;
+}
+.cancelar {
+    background-color: #e57373;
+}
+.cancelar:hover {
+    background: #b71c1c;
+}
+
+/* Popup */
+.popup-bg {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.popup-bg .popup-content {
     background: #fff;
-    border-radius: 14px;
+    border-radius: 16px;
     padding: 32px 24px 24px 24px;
-    min-width: 220px;
-    box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 24px #0002;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 220px;
+    max-width: 90vw;
 }
 .popup-msg {
-    font-size: 1.2em;
-    color: #5b4766;
-    margin-bottom: 18px;
+    color: #2E6B2F;
+    font-size: 1.1em;
+    margin-bottom: 16px;
+    text-align: center;
 }
 .btn-popup {
-    padding: 10px 32px;
-    border-radius: 7px;
-    border: none;
-    background: #7c5eb6;
+    background: #75E658;
     color: #fff;
-    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
     font-size: 1em;
     cursor: pointer;
     transition: background 0.2s;
 }
 .btn-popup:hover {
-    background: #5b4766;
+    background: #2E6B2F;
 }
-/* ...código existente... */

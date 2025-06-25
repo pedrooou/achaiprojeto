@@ -10,11 +10,11 @@ body {
   padding: 20px;
 }
 h2 {
-  color: #5b4766;
+  color: #452811;
   margin-bottom: 20px;
 }
 .pedido {
-  background: #f6e6fe;
+  background: #FFFAF6;
   border-radius: 10px;
   box-shadow: 0 2px 8px #0001;
   display: flex;
@@ -32,7 +32,7 @@ h2 {
 }
 .pedido-nome {
   font-weight: bold;
-  color: #5b4766;
+  color: #452811;
 }
 .pedido-desc {
   font-size: 1em;
@@ -40,7 +40,7 @@ h2 {
 }
 .mdi-store {
   font-size: 3em;
-  color: #5b4766;
+  color: #452811;
 }
 .pedido-botoes {
   display: flex;
@@ -52,7 +52,7 @@ h2 {
   padding: 10px 22px;
 }
 .btn-aceitar {
-  background: #5b4766;
+  background: #9D5419;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -60,7 +60,7 @@ h2 {
   transition: background 0.2s;
 }
 .btn-detalhes {
-  background: #5b4766;
+  background: #9D5419;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -68,7 +68,7 @@ h2 {
   transition: background 0.2s;
 }
 .btn-detalhes:hover, .btn-aceitar:hover {
-  background: #7a5c8a;
+  background: #452811;
 }
 
 /* Modal styles */
@@ -93,13 +93,13 @@ h2 {
   align-items: center;
 }
 .modal-conteudo h3 {
-  color: #5b4766;
+  color: #452811;
   margin-bottom: 18px;
   font-size: 1.3em;
   text-align: center;
 }
 .modal-conteudo label {
-  color: #5b4766;
+  color: #452811;
   font-weight: bold;
   margin-bottom: 6px;
   margin-top: 10px;
@@ -113,12 +113,12 @@ h2 {
   margin-right: auto;
   display: block;
   padding: 10px 12px;
-  border: 1px solid #dac3e5;
+  border: 1px solid #E7D6C2;
   border-radius: 8px;
   font-size: 1.08em;
   margin-bottom: 10px;
-  background: #f6e6fe;
-  color: #5b4766;
+  background: #FFFAF6;
+  color: #452811;
   resize: none;
   box-sizing: border-box;
   outline: none;
@@ -129,7 +129,7 @@ h2 {
   max-height: 120px;
 }
 .btn-modal {
-  background: #5b4766;
+  background: #9D5419;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -144,6 +144,9 @@ h2 {
 }
 .btn-modal:last-child {
   margin-bottom: 0;
+}
+.btn-modal:hover {
+  background: #452811;
 }
 @media (max-width: 400px) {
   .modal-conteudo {
@@ -187,13 +190,13 @@ h2 {
     max-width: 90vw;
 }
 .popup-content p {
-    color: #5b4766;
+    color: #452811;
     font-size: 1.1em;
     margin-bottom: 16px;
     text-align: center;
 }
 .popup-close {
-    background: #a16cc1;
+    background: #9D5419;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -203,5 +206,5 @@ h2 {
     transition: background 0.2s;
 }
 .popup-close:hover {
-    background: #5b4766;
+    background: #452811;
 }

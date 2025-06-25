@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #f6e6fe;
+    background: #F9FFF7;
 }
 
 body {
@@ -50,7 +50,7 @@ body {
 .custom-file-label {
     margin: 12px 18px 0 0;
     padding: 7px 18px;
-    background: #5b4766;
+    background: #2E6B2F;
     color: #fff;
     border-radius: 6px;
     font-size: 1em;
@@ -63,7 +63,7 @@ body {
     transition: background 0.2s;
 }
 .custom-file-label:hover {
-    background: #7a5b8c;
+    background: #4BBF2F;
 }
 
 #divimagem {
@@ -83,12 +83,12 @@ body {
     border-radius: 50%;
     border: 3px solid #fff;
     box-shadow: 0 2px 8px #0002;
-    background: #f6e6fe;
+    background: #F9FFF7;
     z-index: 2;
 }
 
 #selecionarfoto {
-    background-color: #9a7f98;
+    background-color: #75E658;
     color: #fff;
     font-size: 28px;
     border-radius: 50%;
@@ -124,8 +124,8 @@ body {
     width: 100%;
     background: none;
     border: none;
-    border-bottom: 1.5px solid #9a7f98;
-    color: #5b4766;
+    border-bottom: 1.5px solid #A2D39C;
+    color: #2E6B2F;
     outline: none;
     border-radius: 0;
     transition: border-color 0.2s;
@@ -133,8 +133,8 @@ body {
 }
 
 .inputs:focus {
-    border-bottom: 2px solid #5b4766;
-    background: #f6e6fe;
+    border-bottom: 2px solid #2E6B2F;
+    background: #F9FFF7;
 }
 
 textarea.inputs {
@@ -163,14 +163,14 @@ textarea.inputs {
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    background: linear-gradient(135deg, #e0d7f7, #bfa0c9 80%);
-    color: #5b4766;
+    background: linear-gradient(135deg, #A2D39C, #B7E4C7 80%);
+    color: #2E6B2F;
     transition: background 0.2s, color 0.2s;
 }
 
 #botao-ver-loja:hover {
-    background: #d8c2e0;
-    color: #4a3757;
+    background: #B7E4C7;
+    color: #2E6B2F;
 }
 /* ...código existente... */
 
@@ -188,21 +188,21 @@ textarea.inputs {
 }
 
 #salvar {
-    background-color: #5b4766;
+    background-color: #2E6B2F;
     color: #fff;
 }
 
 #salvar:hover {
-    background-color: #7a5b8c;
+    background-color: #4BBF2F;
 }
 
 #botao-itens {
-    background: linear-gradient(135deg, #f6e6fe, #d8c2e0, #bfa0c9);
-    color: #5b4766;
+    background: linear-gradient(135deg, #F9FFF7, #B7E4C7, #A2D39C);
+    color: #2E6B2F;
 }
 
 #botao-itens:hover {
-    background: #e0c7f7;
+    background: #A2D39C;
 }
 
 @media (max-width: 600px) {

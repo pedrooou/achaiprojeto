@@ -2,7 +2,7 @@
   display: flex;
   height: 98vh;
   width: 100%;
-  background: #f6e6fe;
+  background: #F9FFF7;
   border-radius: 10px;
   box-sizing: border-box;
   overflow: hidden;
@@ -13,8 +13,8 @@
   width: 28vw;
   min-width: 180px;
   max-width: 260px;
-  background: #e7d0f2;
-  border-right: 2px solid #5b4766;
+  background: #A2D39C;
+  border-right: 2px solid #2E6B2F;
   display: flex;
   flex-direction: column;
   transition: all 0.3s;
@@ -24,19 +24,12 @@
 }
 
 .chat-clientes-header {
-  background: #5b4766;
+  background: #2E6B2F;
   color: #fff;
   padding: 2vh 1vw;
   font-size: 2.5vh;
   text-align: center;
   border-top-right-radius: 10px;
-    border-top-left-radius: 10px; /* Adicione esta linha */
-  font-weight: bold;
-  letter-spacing: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* Remova overflow:hidden se existir */
 }
 
 #lista-clientes {
@@ -53,16 +46,16 @@
   gap: 1vw;
   padding: 2vh 1vw;
   cursor: pointer;
-  color: #5b4766;
+  color: #2E6B2F;
   font-size: 2.2vh;
-  border-bottom: 1px solid #d1b6e0;
+  border-bottom: 1px solid #B7E4C7;
   transition: background 0.2s, color 0.2s;
   font-weight: 600;
 }
 
 .cliente-avatar {
   font-size: 3.2vh;
-  color: #5b4766;
+  color: #2E6B2F;
 }
 
 
@@ -77,7 +70,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: #f6e6fe;
+  background: #F9FFF7;
   transition: all 0.3s;
 }
 
@@ -86,7 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #5b4766;
+  background: #2E6B2F;
   color: #fff;
   padding: 2vh 2vw;
   font-size: 2.2vh;
@@ -121,7 +114,7 @@
 }
 
 .mensagem-sistema {
-  color: #5b4766;
+  color: #2E6B2F;
   background: #fff;
   padding: 1vh 2vw;
   border-radius: 8px;
@@ -132,7 +125,7 @@
 .chat-footer {
   display: flex;
   padding: 1vh 2vw;
-  background: #f6e6fe;
+  background: #F9FFF7;
   border-bottom-right-radius: 10px;
   gap: 1vw;
 }
@@ -149,7 +142,7 @@
   padding: 1vh 2vw;
   border-radius: 20px;
   border: none;
-  background: #5b4766;
+  background: #2E6B2F;
   color: #fff;
   font-size: 2vh;
   cursor: not-allowed;
@@ -167,7 +160,7 @@
     min-width: 0;
     margin: 2vh auto 0 auto;
     border-right: none;
-    border-bottom: 2px solid #5b4766;
+    border-bottom: 2px solid #2E6B2F;
     border-radius: 10px;
     border-top-left-radius: 10px; /* Garante o arredondamento no mobile */
     border-top-right-radius: 10px; /* Garante o arredondamento no mobile */

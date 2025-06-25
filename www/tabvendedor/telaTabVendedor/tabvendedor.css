@@ -15,7 +15,7 @@ body{
     display: flex;
     position: fixed;
     width: 100%;
-    background:#f6e6fe ;
+    background:#F9FFF7 ;
     bottom: 0;
     border: none;
     height: 8vh;
@@ -35,7 +35,7 @@ iframe {
     flex: 1;
     padding: 1.2vh 2.4vw;
     border: none;
-    color: #5b4766;
+    color: #2E6B2F;
     background: none;
     font-size: 2vh;
 }
@@ -70,7 +70,7 @@ iframe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4f0c4b;
+    background-color: #2E6B2F;
     padding: 1.2vh 2.4vh;
 }
 
@@ -93,8 +93,8 @@ padding-left: 5vw;
     position: relative;
     width: 100vw;
     height: 6vh;
-    background: #f6e6fe;
-    color:  #5b4766;
+    background: #F9FFF7;
+    color:  #2E6B2F;
 }
 
 #icone-chat {
@@ -102,7 +102,7 @@ padding-left: 5vw;
     font-size: 4vh;
     top: 0.5vh;
     left: 2vw;
-    color: #5b4766;
+    color: #2E6B2F;
     cursor: pointer;
 }
 
@@ -158,6 +158,7 @@ padding-left: 5vw;
     align-items: center;
     font-size: 4vh;
     margin: 0;
+    color: #2E6B2F;
 }
 
 /*caixas dos icones*/
@@ -167,20 +168,20 @@ padding-left: 5vw;
 .mdi-clipboard-text {
     justify-content: center;
     align-items: center;
-    font-size: 4vh; /* ajuste o tamanho conforme cada ícone */
+    font-size: 4vh;
     margin: 0;
-    color: #5b4766; /* cor padrão dos ícones inativos */
+    color: #2E6B2F;
 }
 
 .caixa-ativa {
-    background-color: #5b4766;
+    background-color: #2E6B2F;
     border-radius: 10px;
     height: 6vh;
 }
 
 .caixa-ativa label,
 .caixa-ativa i {
-    color: #f6e6fe !important;
+    color: #F9FFF7 !important;
 }
 
  #caixa-localizar, #caixa-pedidos, #caixa-menu{
@@ -194,8 +195,8 @@ padding-left: 5vw;
 
 #icone-caixaentrada {
     margin-left: 10vw;
-    font-size: 2.5em; /* ou 3em, ou o tamanho que preferir */
-    color: #5b4766;
+    font-size: 2.5em;
+    color: #2E6B2F;
     cursor: pointer;
     transition: color 0.15s;
 }

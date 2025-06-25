@@ -16,7 +16,7 @@ body {
   width: 80%;
   border-radius: 10px;
   box-shadow: 0 2px 8px #0001;
-  background: #f6e6fe;
+  background: #FFFAF6;
   padding: 1.2vh 2.4vw;
 }
 #linhacima {
@@ -40,6 +40,7 @@ body {
   font-size: 4vh;
   flex: 1;
   line-height: 1.1;
+  color: #452811;
 }
 #email {
   margin-top: 1vh;
@@ -48,15 +49,16 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 50vw;
+  color: #452811;
 }
 .mdi-logout, .mdi-account-edit, .mdi-book-cog {
   font-size: 5vh;
-  color: #5b4766;
+  color: #452811;
   margin-right: 2vw;
 }
 #editar, #projeto {
   display: flex;
   align-items: center;
   font-size: 3vh;
-  color: #5b4766;
+  color: #452811;
 }

@@ -5,17 +5,19 @@ body {
   width: 100%;
   overflow: visible;
   display: block;
+  color: #452811;
+  background: #FFFAF6;
 }
 
 #tab_bar {
   display: flex;
   position: fixed;
   width: 100%;
-  background: #f6e6fe;
+  background: #FFFAF6;
   bottom: 0;
   border: none;
   height: 8vh;
-  border-top: 3px solid #ffffff;
+  border-top: 3px solid #fff;
 }
 
 iframe {
@@ -31,7 +33,7 @@ iframe {
   flex: 1;
   padding: 1.2vh 2.4vw;
   border: none;
-  color: #5b4766;
+  color: #452811;
   background: none;
   font-size: 2vh;
 }
@@ -70,7 +72,7 @@ iframe {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  background: #f6e6fe;
+  background: #FFFAF6;
   font-weight: bold;
   border-bottom: 1px solid #eee;
 }
@@ -89,10 +91,10 @@ iframe {
   margin-bottom: 1.2em;
   padding: 1em;
   border-radius: 12px;
-  background: #f6e6fe;
-  border: 1.5px solid #e0c6f7;
-  box-shadow: 0 2px 8px rgba(90, 71, 102, 0.06);
-  color: #5b4766;
+  background: #FFFAF6;
+  border: 1.5px solid #E7D6C2;
+  box-shadow: 0 2px 8px rgba(69, 40, 17, 0.06);
+  color: #452811;
   transition: box-shadow 0.2s, border 0.2s;
   display: flex;
   flex-direction: column;
@@ -100,8 +102,8 @@ iframe {
 }
 
 .coleta-item:hover {
-  box-shadow: 0 4px 16px rgba(90, 71, 102, 0.13);
-  border: 1.5px solid #b48ad6;
+  box-shadow: 0 4px 16px rgba(69, 40, 17, 0.13);
+  border: 1.5px solid #9D5419;
 }
 
 .coleta-item > div {
@@ -112,19 +114,19 @@ iframe {
 
 .coleta-item button {
   align-self: flex-end;
-  background: #5b4766;
-  color: #f6e6fe;
+  background: #9D5419;
+  color: #FFFAF6;
   border: none;
   border-radius: 8px;
   padding: 0.4em 1.2em;
   font-size: 1em;
   cursor: pointer;
   transition: background 0.2s;
-  box-shadow: 0 1px 4px rgba(90, 71, 102, 0.08);
+  box-shadow: 0 1px 4px rgba(69, 40, 17, 0.08);
 }
 
 .coleta-item button:hover {
-  background: #7a5fa3;
+  background: #452811;
 }
 
 /* ...existing code... */
@@ -179,8 +181,8 @@ iframe {
   position: relative;
   width: 100vw;
   height: 6vh;
-  background: #f6e6fe;
-  color: #5b4766;
+  background: #FFFAF6;
+  color: #452811;
 }
 
 #icone-conta {
@@ -217,22 +219,22 @@ iframe {
   align-items: center;
   font-size: 4vh;
   margin: 0;
-  color: #5b4766;
+  color: #452811;
 }
 
 /* caixas dos icones */
 .caixa-ativa {
-  background-color: #5b4766;
+  background-color: #452811;
   border-radius: 10px;
   height: 6vh;
 }
 
 .caixa-ativa label,
 .caixa-ativa i {
-  color: #f6e6fe !important;
+  color: #FFFAF6 !important;
 }
 
-#caixa-coleta,
-#caixa-menu {
-  margin: auto;
+/* Bordas e detalhes */
+.some-class-for-borders {
+  border-color: #E7D6C2;
 }

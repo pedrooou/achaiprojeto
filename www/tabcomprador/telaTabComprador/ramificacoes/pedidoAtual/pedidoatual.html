@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Status do Pedido</title>
+    <link rel="stylesheet" href="../../../../../css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="pedidoatual.css">
 </head>
 <body>
-    <h1>tela pedido atual</h1>
+    <div class="pedido-container">
+        <h2>Pedido em Andamento</h2>
+        <div class="pedido-card">
+            <div class="pedido-status-tracker">
+                <div class="status-etapa ativo">
+                    <i class="mdi mdi-cart"></i>
+                    <span>Recebido</span>
+                </div>
+                <div class="status-linha ativo"></div>
+                <div class="status-etapa ativo">
+                    <i class="mdi mdi-silverware-fork-knife"></i>
+                    <span>Preparando</span>
+                </div>
+                <div class="status-linha"></div>
+                <div class="status-etapa">
+                    <i class="mdi mdi-truck-delivery"></i>
+                    <span>A caminho</span>
+                </div>
+                <div class="status-linha"></div>
+                <div class="status-etapa">
+                    <i class="mdi mdi-home"></i>
+                    <span>Entregue</span>
+                </div>
+            </div>
+            <div class="pedido-itens">
+                <h3>Itens do Pedido</h3>
+                <ul>
+                    <li>
+                        <span class="item-nome">Açaí 1L</span>
+                        <span class="item-qtd">x1</span>
+                        <span class="item-preco">R$ 25,00</span>
+                    </li>
+                    <li>
+                        <span class="item-nome">500mg de farinha de tapioca</span>
+                        <span class="item-qtd">x2</span>
+                        <span class="item-preco">R$ 8,00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="pedido-detalhes">
+                <p><strong>Endereço de entrega:</strong> Rua das Palmeiras, 123</p>
+                <p><strong>Data do pedido:</strong> 25/06/2025</p>
+                <p><strong>Valor total:</strong> <span class="valor-total">R$ 33,00</span></p>
+            </div>
+            <div class="pedido-acoes">
+                <button class="btn-cancelar"><i class="mdi mdi-cancel"></i> Cancelar pedido</button>
+                <button class="btn-ajuda"><i class="mdi mdi-help-circle-outline"></i> Ajuda</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

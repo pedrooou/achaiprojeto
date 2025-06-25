@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e6f6ef 0%, #f6e6fe 100%);
+    background: linear-gradient(135deg, #e6f6ef 0%, #F9FFF7 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
-    color: #4f0c4b;
+    color: #2E6B2F;
     min-height: 100vh;
 }
 
@@ -14,7 +14,7 @@ body {
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(90, 71, 102, 0.10);
     padding: 2.5em 2em 2em 2em;
-    border: 2px solid #b7e4c7;
+    border: 2px solid #B7E4C7;
 }
 
 .qs-header {
@@ -28,13 +28,13 @@ body {
 .qs-header h1 {
     font-family: 'Segoe UI Semibold', Arial, sans-serif;
     font-size: 2.2em;
-    color: #5b4766;
+    color: #2E6B2F;
     margin: 0;
     letter-spacing: 1px;
 }
 
 .qs-content h2 {
-    color: #4caf50;
+    color: #4BBF2F;
     font-size: 1.3em;
     margin-top: 1.2em;
     margin-bottom: 0.5em;
@@ -45,15 +45,15 @@ body {
     font-size: 1.08em;
     line-height: 1.7;
     margin-bottom: 1.1em;
-    color: #4f0c4b;
-    background: #f6e6fe;
+    color: #2E6B2F;
+    background: #F9FFF7;
     border-radius: 10px;
     padding: 1em 1.2em;
-    border-left: 5px solid #4caf50;
+    border-left: 5px solid #4BBF2F;
 }
 
 .qs-content strong {
-    color: #7a5fa3;
+    color: #75E658;
 }
 
 @media (max-width: 700px) {

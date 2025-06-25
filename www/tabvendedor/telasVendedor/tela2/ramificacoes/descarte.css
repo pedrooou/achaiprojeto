@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background: #fff;
+    background: #F9FFF7;
     margin-top: 5vh;
 }
 
@@ -28,7 +28,7 @@ body {
 .bloco-acao{
     display: flex;
     align-items: center;
-    background: #f6e6fe;
+    background: #F9FFF7;
     border-radius: 20px;
     box-shadow: 0 2px 12px #0001;
     padding: 4vh 6vw;
@@ -37,7 +37,7 @@ body {
     max-width: 450px;
     min-width: 240px;
     font-size: 26px;
-    color: #5b4766;
+    color: #2E6B2F;
     gap: 24px;
     justify-content: flex-start;
 }

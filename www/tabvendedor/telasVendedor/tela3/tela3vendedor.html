@@ -1,187 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tela3vendedor.css">
     <link rel="stylesheet" href="../../../css/materialdesignicons.min.css">
-    <title>pedidos</title>
+    <title>Pedidos</title>
 </head>
-
-<body>
+<body style="background:#faf7fc;">
     <div id="tela">
-       <div class="pedidos-tela" id="tela-pedidos" onclick="mostrarInforMais()">
+        <div class="pedidos-tela">
             <div class="pedidos-div">
                 <div class="organ-imagem-data-hora">
-                    <div id="imagem-loja">
-                        <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
-                    </div>
-
+                    <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
                     <div class="infor-data-hora">
-                        <div id="nome">
-                           <span>José Alvez</span>
-                           <span></span>
-                        </div>
-                        <div id="data">
-                            <span>Data:</span>
-                            <span>01/06/2025</span>
-                        </div>
-                        <div id="hora">
-                            <span>Horário:</span>
-                            <span>10:00</span>
-                        </div>
+                        <span class="nome-cliente">José Alvez</span>
+                        <span class="data-hora">01/06/2025 • 10:00</span>
                     </div>
                 </div>
                 <div class="preco">
-                    <span>R$:</span>
-                    <span>150,00</span>
-                      <div id="item">
-                        <span>Item 03</span>
-                    </div>
-
-                    <div id="pagamento">
-                        <span>Pago</span>
-                    </div>
-                  
+                    <span>R$ 150,00</span>
+                    <span class="status-pago">Pago</span>
+                    <span class="item-resumo">Item 03</span>
                 </div>
-                <i id="icone-mais" class="mdi mdi-chevron-down"></i>
             </div>
-            <div class="infor-mais" id="mais">
+            <div class="produtos-pedido">
                 <span>5 litros de açaí</span>
-                <div class="aceitar"> <span>Aceitar</span></div>
+                <span>Observação: Entregar na portaria</span>
+            </div>
+            <div class="botoes-pedido">
+                <button class="aceitar">Aceitar</button>
+                <button class="cancelar">Cancelar</button>
             </div>
         </div>
 
-       
-         <div class="pedidos-tela" id="tela-pedidos" onclick="mostrarInforMais2()">
+        <div class="pedidos-tela">
             <div class="pedidos-div">
                 <div class="organ-imagem-data-hora">
-                    <div id="imagem-loja">
-                        <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
-                    </div>
-
+                    <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
                     <div class="infor-data-hora">
-                        <div id="nome">
-                           <span>João Frango</span>
-                           </div>
-                        <div id="data">
-                            <span>Data:</span>
-                            <span>31/05/2025</span>
-                        </div>
-                        <div id="hora">
-                            <span>Horário:</span>
-                            <span>15:00</span>
-                        </div>
+                        <span class="nome-cliente">João Frango</span>
+                        <span class="data-hora">31/05/2025 • 15:00</span>
                     </div>
                 </div>
                 <div class="preco">
-                    <span>R$:</span>
-                    <span>35,00</span>
-                    <div>
-                        <span id="item">Item 02</span>
-                    </div>
-
-                    <div id="pagamento">
-                        <span>Pago</span>
-                    </div>
+                    <span>R$ 35,00</span>
+                    <span class="status-pago">Pago</span>
+                    <span class="item-resumo">Item 02</span>
                 </div>
-                <i id="icone-mais" class="mdi mdi-chevron-down"></i>
             </div>
-            <div class="infor-mais" id="mais2">
-                <span>2 Litros de açaí médio</span>
-                <div class="aceitar">Aceitar</div>
+            <div class="produtos-pedido">
+                <span>2 litros de açaí médio</span>
+            </div>
+            <div class="botoes-pedido">
+                <button class="aceitar">Aceitar</button>
+                <button class="cancelar">Cancelar</button>
             </div>
         </div>
-         <div class="pedidos-tela" id="tela-pedidos" onclick="mostrarInforMais3()">
+
+        <div class="pedidos-tela">
             <div class="pedidos-div">
                 <div class="organ-imagem-data-hora">
-                    <div id="imagem-loja">
-                        <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
-                    </div>
-
+                    <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
                     <div class="infor-data-hora">
-                        <div>
-                            <span>Maria Silva</span>
-                        </div>
-                        <div id="data">
-                            <span>Data:</span>
-                            <span>31/05/2025</span>
-                        </div>
-                        <div id="hora">
-                            <span>Horário:</span>
-                            <span>13:15</span>
-                        </div>
+                        <span class="nome-cliente">Maria Silva</span>
+                        <span class="data-hora">31/05/2025 • 13:15</span>
                     </div>
                 </div>
                 <div class="preco">
-                    <span>R$:</span>
-                    <span>23,00</span>
-
-                    <div>
-                        <span id="item">Item 01</span>
-                    </div>
-                    <div id="pagamento">
-                        <span>Pago</span>
-                    </div>
+                    <span>R$ 23,00</span>
+                    <span class="status-pago">Pago</span>
+                    <span class="item-resumo">Item 01</span>
                 </div>
-                <i id="icone-mais" class="mdi mdi-chevron-down"></i>
             </div>
-            <div class="infor-mais" id="mais3">
-                <span>1 Litro de açai</span>
-                <div class="aceitar">Aceitar</div>
+            <div class="produtos-pedido">
+                <span>1 litro de açaí</span>
+            </div>
+            <div class="botoes-pedido">
+                <button class="aceitar">Aceitar</button>
+                <button class="cancelar">Cancelar</button>
             </div>
         </div>
-        <div class="pedidos-tela" id="tela-pedidos" onclick="mostrarInforMais4()">
+
+        <div class="pedidos-tela">
             <div class="pedidos-div">
                 <div class="organ-imagem-data-hora">
-                    <div id="imagem-loja">
-                        <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
-                    </div>
-
+                    <img class="logo-da-loja" src="../../../imagens/logo.png" alt="">
                     <div class="infor-data-hora">
-                        <div id="nome">
-                            <span>Pedro Souza</span>
-                        </div>
-                        <div id="data">
-                            <span>data:</span>
-                            <span>31/05/2025</span>
-                        </div>
-                        <div id="hora">
-                            <span>horário:</span>
-                            <span>09:23</span>
-                        </div>
+                        <span class="nome-cliente">Pedro Souza</span>
+                        <span class="data-hora">31/05/2025 • 09:23</span>
                     </div>
                 </div>
                 <div class="preco">
-                    <span>R$:</span>
-                    <span>50,00</span>
-
-                    <div>
-                        <span id="item">Item 04</span>
-                    </div>
-
-                    <div id="pagamento">
-                        <span>pago</span>
-                    </div>
+                    <span>R$ 50,00</span>
+                    <span class="status-pago">Pago</span>
+                    <span class="item-resumo">Item 04</span>
                 </div>
-                <i id="icone-mais" class="mdi mdi-chevron-down"></i>
             </div>
-            <div class="infor-mais" id="mais4">
-                <span>Barca de açaí - retirada</span>
-                <div class="aceitar">Aceitar</div>
+            <div class="produtos-pedido">
+                <span>Barca de açaí</span>
+                <span>Observação: Retirada</span>
+            </div>
+            <div class="botoes-pedido">
+                <button class="aceitar">Aceitar</button>
+                <button class="cancelar">Cancelar</button>
             </div>
         </div>
     </div>
 
     <div id="popup-aceitar" class="popup-bg" style="display:none;">
-    <div class="popup-content">
-        <span class="popup-msg">Pedido aceito com sucesso!</span>
-        <button id="fechar-popup-aceitar" class="btn-popup">OK</button>
+        <div class="popup-content">
+            <span class="popup-msg">Pedido aceito com sucesso!</span>
+            <button id="fechar-popup-aceitar" class="btn-popup">OK</button>
+        </div>
     </div>
-</div>
-
-    <div></div>
-   <script src="tela3vendedor.js"></script>
+    <script src="tela3vendedor.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@ position: relative;
   margin: 0 auto;
   max-height: 100%;
   max-width: 100%;
-  
+  font-size: 1.25rem;
 }
 
  
@@ -95,7 +95,7 @@ to { transform: translateX(-200%); }
 }
 
 input {
-  font-size: 13px;
+  font-size: 1.1rem;
   display: block;
   padding: 15px;
   padding-bottom: 10px;
@@ -109,7 +109,7 @@ input {
   background: none;
   border: none;
   border-bottom: 1px solid #9a7f98;
-  color: #9a7f98;
+  color: #5b4766;
 }
 
 #senha2{
@@ -124,6 +124,7 @@ input {
   transition: 0.3s;
   pointer-events: none;
   -webkit-transition: 0.3s;
+  font-size: 1.1rem;
 }
 
 #dados #dados1 input:focus + label,

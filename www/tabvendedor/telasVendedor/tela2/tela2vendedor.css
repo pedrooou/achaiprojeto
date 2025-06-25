@@ -19,7 +19,7 @@ html, body{
 
 
 #selo {
-    background: #f6e6fe;
+    background: #F9FFF7;
     border-radius: 10px;
     margin: auto;
     box-shadow: 0 2px 8px #0001;
@@ -34,7 +34,7 @@ html, body{
     padding-left: 3vw;
     padding-right: 3vw;
     box-sizing: border-box;
-    color: #5b4766;
+    color: #2E6B2F;
 
 }
 #selo .linha-baixo {
@@ -52,6 +52,7 @@ html, body{
 #selo .linha-cima {
     margin-top: 1.5vh;
     font-size: 2rem;
+    color: #2E6B2F;
     
 }
 
@@ -64,12 +65,13 @@ html, body{
     margin: 0;
     font-size: 5vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2E6B2F;
 }
 
 #descarte {
     height: 15%;
     margin-top: 2.1vh;
-    color: #5b4766;
+    color: #2E6B2F;
     font-size: 5vh;
 }
 
@@ -77,20 +79,20 @@ html, body{
 #descarteicon {
     font-size: 10vh;
     padding: 2vh 4vw;
-    color: #5b4766;
+    color: #2E6B2F;
   
 }
 
 #anuncio{
     margin-top: 2.1vh;
-    color: #5b4766;
+    color: #2E6B2F;
     font-size: 5vh;
 }
 
 #anuncioicon {
     padding: 2vh 4vw;
     font-size:10vh ;
-    color: #5b4766;
+    color: #2E6B2F;
 }
 
 .bloco-texto1 {
@@ -102,8 +104,13 @@ html, body{
     margin: auto;
     width: 85vw;
     height: auto;
-    background: #f6e6fe;
+    background: #F9FFF7;
     border-radius: 10px;
     box-shadow: 0 2px 8px #0001;
     font-size: 1.2em;
+}
+
+/* Menu nome e email */
+#nome, #email {
+    color: #2E6B2F;
 }
