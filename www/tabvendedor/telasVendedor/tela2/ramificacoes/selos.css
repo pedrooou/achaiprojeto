@@ -59,13 +59,12 @@ body {
 }
 
 .selo-item img {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: auto;
     margin-right: 14px;
     border-radius: 50%;
     background: #F9FFF7;
     object-fit: cover;
-    border: 1.5px solid #A2D39C;
 }
 
 .selo-item strong {

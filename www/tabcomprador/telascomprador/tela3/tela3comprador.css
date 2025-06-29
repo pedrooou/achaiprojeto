@@ -67,6 +67,10 @@ body{
     font-size: 4vh;
 }
 
+.nome-da-loja{
+ font-weight: 700;
+}
+
 .organ-imagem-data-hora{
     display: flex;
 }

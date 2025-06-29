@@ -48,7 +48,7 @@ body{
   font-size: 15vw;
 }
 .org-icone-selo{
-  margin-left: 18vw;
+  margin-left: 14vw;
 }
 
 .org-infor-dis-loja{
@@ -126,7 +126,7 @@ body{
 }
 
 #tela3{
-    background: #75e658;
+    background: #8624b7;
 }
 #tela4{
     background: #75e658;
@@ -169,7 +169,17 @@ body{
   margin: 0 auto;
   margin-top: 3vh;
   box-sizing: border-box;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 700;
 }
+
+.selos {
+ height: 16vw;
+ margin-right: 10px;
+}
+
+
 .slides2 {
   height: 12vh;
   display: flex;
@@ -189,7 +199,11 @@ body{
   border-radius: 10px;
   align-items: center;
   padding: 20px 0;
-  margin-bottom: 30px;
+  
+}
+
+.imagem-loja {
+  height: 80px;
 }
 
 .slider-vertical {
@@ -246,6 +260,7 @@ body{
 }
 .organizacao-img{
   margin-top: 20px;
+  margin-right: -20px;
 }
 
 .organizacao-span{
@@ -274,6 +289,8 @@ body{
 .organizacao3{
   text-align: center;
   margin-top: -15px;
+  margin-bottom: -5px;
+
 }
 
 .organizacao3 img{

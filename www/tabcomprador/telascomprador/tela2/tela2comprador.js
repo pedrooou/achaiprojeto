@@ -28,25 +28,25 @@ const lngBandeiras4 = -46.765380;
 
 // Adiciona o alfinete (marker) clicável
 const markerBandeiras1 = L.marker([latBandeiras1, lngBandeiras1]).addTo(map);
-markerBandeiras1.bindPopup("açí do Wagner. Bragança PA");
+markerBandeiras1.bindPopup("Açaí do Wagner. Bragança PA");
 // Adiciona o alfinete (marker) clicável
 const markerBandeiras2 = L.marker([-1.051464, -46.766250]).addTo(map);
-markerBandeiras2.bindPopup("açí da Sueli. Bragança PA");
+markerBandeiras2.bindPopup("Açaí do João. Bragança PA");
 // Adiciona o alfinete (marker) clicável
 const markerBandeiras3 = L.marker([-1.050398, -46.773679]).addTo(map);
-markerBandeiras3.bindPopup("açí do João. Bragança PA");
+markerBandeiras3.bindPopup("Açaí do João. Bragança PA");
 // Adiciona o alfinete (marker) clicável
 const markerBandeiras4 = L.marker([-1.057823, -46.770246]).addTo(map);
-markerBandeiras4.bindPopup("açí do Zé. Bragança PA");
+markerBandeiras4.bindPopup("Açaí Caeté. Bragança PA");
 
 const markerBandeiras5 = L.marker([-1.051951, -46.778198]).addTo(map);
-markerBandeiras5.bindPopup("açí do Maria. Bragança PA");
+markerBandeiras5.bindPopup("Açaí do Maria. Bragança PA");
 
 const markerBandeiras6 = L.marker([-1.052239, -46.772727]).addTo(map);
-markerBandeiras6.bindPopup("açí do Pedro. Bragança PA");
+markerBandeiras6.bindPopup("Açaí do Pedro. Bragança PA");
 
 const markerBandeiras7 = L.marker([-1.055160, -46.770126]).addTo(map);
-markerBandeiras7.bindPopup("açí do lucas. Bragança PA");
+markerBandeiras7.bindPopup("Açaí do lucas. Bragança PA");
 
 // Função para mostrar apenas o painel de info da loja correspondente
 function mostrarInfoLoja(id) {
